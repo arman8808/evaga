@@ -18,6 +18,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import TestimonailCard from "../../utils/TestimonailCard/TestimonailCard";
 import ImageCarosal from "../../utils/ImageCarosal/ImageCarosal";
 import BackgroundImage from "../../utils/BackgroundImage/BackgroundImage";
+import ContactUs from "../../layout/ContactUs/ContactUs";
 
 function HomePage() {
   const imageCarddata = [
@@ -314,6 +315,9 @@ function HomePage() {
       </div>
       <div className="w-11/12 flex items-start justify-start flex-col">
         <MarqueeComponet data={marqueedataThird} />
+      </div>
+      <div className="w-full">
+        <ContactUs />
       </div>
     </div>
   );
