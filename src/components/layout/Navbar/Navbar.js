@@ -17,7 +17,7 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     window.onscroll = function () {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 1) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -34,7 +34,7 @@ function Navbar() {
         scrolled ? "navbarAnimation" : "invisible"
       }`}
     >
-      <div className="w-11/12 flex items-center justify-between p-3 border-4 border-[black] rounded-full bg-[white]">
+      <div className="w-11/12 flex items-center justify-between p-3 border-2  rounded-full bg-[white]">
         <img src={logo} alt="logo" className="h-[4.5rem]" />
         <ul className="flex gap-3 text-[1.1rem] text-marqueColor font-semibold cursor-pointer">
           <li>
