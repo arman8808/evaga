@@ -3,10 +3,10 @@ import background from "../../../assets/Images/Mask group.png";
 function BackgroundImage() {
   return (
     <div
-      className="w-full h-[15rem]"
+      className="w-full h-[20rem]"
       style={{
         background: `url('${background}')`,
-        backgroundPosition: "cover",
+        backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}

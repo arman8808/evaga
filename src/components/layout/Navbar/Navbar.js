@@ -34,9 +34,9 @@ function Navbar() {
         scrolled ? "navbarAnimation" : "invisible"
       }`}
     >
-      <div className="w-11/12 flex items-center justify-between p-3 border-2  rounded-full bg-[white]">
+      <div className="w-11/12 flex items-center justify-around p-3 border-2  rounded-full bg-[white]">
         <img src={logo} alt="logo" className="h-[4.5rem]" />
-        <ul className="flex gap-3 text-[1.1rem] text-marqueColor font-semibold cursor-pointer">
+        <ul className="flex gap-4 text-[1.1rem] text-marqueColor font-semibold cursor-pointer">
           <li>
             <NavLink
               to="/"

@@ -46,3 +46,11 @@
   opacity: 1;
   transition: opacity ease-in-out 0.3s s;
 }
+.blue_linear {
+  background: linear-gradient(
+    80.14deg,
+    #8d2b9c -4.54%,
+    #400662 44.8%,
+    #0f0017 87.69%
+  );
+}
