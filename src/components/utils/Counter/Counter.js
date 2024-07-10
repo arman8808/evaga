@@ -2,7 +2,7 @@ import React from "react";
 
 function Counter() {
   return (
-    <div className="w-full flex items-center justify-between  p-[2rem] border-[1px] border-subHeading rounded-2xl boxShadow">
+    <div className="w-full flex items-center justify-between  p-[2rem] border-[1px] border-subHeading rounded-2xl boxShadow bg-[white]">
       <span className="flex items-center justify-center gap-1">
         <strong className="text-seconderyHeading text-mainHeading ">
           45K+

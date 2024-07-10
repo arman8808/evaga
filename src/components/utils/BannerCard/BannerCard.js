@@ -13,24 +13,31 @@ function BannerCard() {
       }}
       className=" w-full h-[20rem] rounded-md grid grid-cols-3 p-4 text-[white] mt-[4rem]"
     >
-      <div className="col-span-2 p-4 pt-[3rem] gap-4 flex flex-col items-start justify-start">
-        <h2 className="text-seconderyHeading font-semibold">
-          The Celebration of Our Love
-        </h2>
-        <p>
-          We’re here to help! Get in touch with us for any inquiries or
-          assistance
-        </p>
-        <span>
-          <button>Call With Us</button>
-          <button>Mail Us</button>
+      <div className="col-span-2 p-4 pt-[3rem] gap-[3rem] flex flex-col items-start justify-start">
+        <div className="flex flex-col items-start justify-start gap-4">
+          <h2 className="text-seconderyHeading font-semibold">
+            The Celebration of Our Love
+          </h2>
+          <p className="text-[white]">
+            We’re here to help! Get in touch with us for any inquiries or
+            assistance
+          </p>
+        </div>
+
+        <span className="flex items-center justify-center gap-2">
+          <button className="buttonNormal py-[1.5rem] text-[1rem] font-semibold hover:bg-[white] hover:text-[#4D0C6C] hover:transition ease-in-out delay-150">
+            Call With Us
+          </button>
+          <button className="buttonNormal py-[1.5rem] text-[1rem] font-semibold hover:bg-[white] hover:text-[#4D0C6C] hover:transition ease-in-out delay-150">
+            Mail Us
+          </button>
         </span>
       </div>
       <div className="relative ">
         <img
           src={women}
           alt="women"
-          className="absolute top-[-7rem] h-[25rem] "
+          className="absolute top-[-6rem] h-[25rem] "
         />
       </div>
     </div>

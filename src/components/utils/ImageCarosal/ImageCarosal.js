@@ -17,10 +17,11 @@ function ImageCarosal() {
       itemsFit: "contain",
     },
     1024: {
-      items: 4,
+      items: 3,
       itemsFit: "contain",
     },
   };
+
   return (
     <AliceCarousel
       responsive={responsive}
@@ -31,12 +32,26 @@ function ImageCarosal() {
       autoPlayInterval={5000}
       infinite
     >
-      <img src={image} className="mr-3" alt="ImageCarosal" />
-      <img src={image} className="mr-3" alt="ImageCarosal" />
-      <img src={image} className="mr-3" alt="ImageCarosal" />
-      <img src={image} className="mr-3" alt="ImageCarosal" />
-      <img src={image} className="mr-3" alt="ImageCarosal" />
-      <img src={image} className="mr-3" alt="ImageCarosal" />
+      <img
+        src={image}
+        className="w-[90%] h-[30rem] rounded-md cursor-pointer"
+        alt="ImageCarosal"
+      />
+      <img
+        src={image}
+        className="w-[90%] h-[30rem] rounded-md cursor-pointer"
+        alt="ImageCarosal"
+      />
+      <img
+        src={image}
+        className="w-[90%] h-[30rem] rounded-md cursor-pointer"
+        alt="ImageCarosal"
+      />
+      <img
+        src={image}
+        className="w-[90%] h-[30rem] rounded-md cursor-pointer"
+        alt="ImageCarosal"
+      />
     </AliceCarousel>
   );
 }

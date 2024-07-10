@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layout/Navbar/Navbar";
-import Footer from "./components/layout/Footer/Footer";
 import GoToTop from "./GoToTop";
 import { lazy, Suspense } from "react";
 import Loader from "./components/utils/Loader/Loader";
@@ -85,7 +84,6 @@ function App() {
             }
           />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );
