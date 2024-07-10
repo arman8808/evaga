@@ -1,6 +1,8 @@
 import React from "react";
 import background from "../../../assets/Images/Frame 64.png";
+import { useNavigate } from "react-router-dom";
 function BlogCard({ image, title, para }) {
+  const history = useNavigate();
   return (
     <div
       className="blur-effect  w-full  h-full min-h-[15rem] p-4 flex items-start justify-end flex-col text-[white] rounded-md gap-2"
@@ -20,6 +22,7 @@ function BlogCard({ image, title, para }) {
       <button
         className="buttonNormal border-[white]"
         style={{ borderColor: "white" }}
+        onClick={() => history(`/blog/Planning the Perfect Wedding`)}
       >
         Know More
       </button>

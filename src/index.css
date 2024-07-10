@@ -2,7 +2,7 @@
 /* @import url(assets/tan-pearl.otf); */
 @font-face {
   font-family: "tan-pearl";
-  src: url("assets/tan-pearl.otf") format("opentype");
+  src: url("assets/BodoniMT.ttf") format("TrueType");
   /* Additional font properties like font-weight and font-style can be specified here */
 }
 @tailwind base;

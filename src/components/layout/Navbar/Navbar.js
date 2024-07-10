@@ -30,7 +30,7 @@ function Navbar() {
   }, [scrolled]);
   return (
     <nav
-      className={`w-full flex items-center justify-center sticky top-0 z-50 ${
+      className={`w-full flex items-center justify-center sticky top-[1rem] z-50 ${
         scrolled ? "navbarAnimation" : "invisible"
       }`}
     >

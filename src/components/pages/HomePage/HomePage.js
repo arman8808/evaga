@@ -164,7 +164,7 @@ function HomePage() {
           <h1 className="text-seconderyHeading font-bold">
             Experience Luxury and Elegance in Every Event
           </h1>
-          <p>
+          <p className="text-[white]">
             Lorem ipsum dolor sit amet consectetur adipiscing elitsed eiusmod
             tempor incididunt dolore magna ali scelerisque in dictum non
             consectetur.
