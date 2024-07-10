@@ -8,6 +8,16 @@ import img2 from "../../../assets/Images/card top sev-4.png";
 import img3 from "../../../assets/Images/card top sev-5.png";
 import img4 from "../../../assets/Images/card top sev-1.png";
 import img5 from "../../../assets/Images/card top sev-3.png";
+import gallery from "../../../assets/Images/Rectangle 10.png";
+import gallery1 from "../../../assets/Images/Rectangle 12.png";
+import gallery3 from "../../../assets/Images/Rectangle 13.png";
+import gallery4 from "../../../assets/Images/Rectangle 16.png";
+import gallery5 from "../../../assets/Images/Rectangle 17.png";
+import gallery6 from "../../../assets/Images/Rectangle 19.png";
+import vector from "../../../assets/Images/Vector.png";
+import vector1 from "../../../assets/Images/Vector-2.png";
+import vector2 from "../../../assets/Images/logoipsum-246 1.png";
+import vector3 from "../../../assets/Images/Vector-1.png";
 import aboutSection from "../../../assets/Images/img  bg.png";
 import testimonailBackground from "../../../assets/Images/Container.png";
 import ImageCard from "../../utils/ImageCard/ImageCard";
@@ -19,6 +29,8 @@ import TestimonailCard from "../../utils/TestimonailCard/TestimonailCard";
 import ImageCarosal from "../../utils/ImageCarosal/ImageCarosal";
 import BackgroundImage from "../../utils/BackgroundImage/BackgroundImage";
 import ContactUs from "../../layout/ContactUs/ContactUs";
+import AccordionComponent from "../../utils/Accordion/Accordion";
+import { ImageList, ImageListItem } from "@mui/material";
 
 function HomePage() {
   const imageCarddata = [
@@ -107,7 +119,34 @@ function HomePage() {
       title: "Frequently Asked Questions",
     },
   ];
-
+  const marqueedataFourth = [
+    {
+      image: vector,
+      title: "Logoipsum",
+    },
+    {
+      image: vector1,
+      title: "Logoipsum",
+    },
+    {
+      image: vector2,
+      title: "Logoipsum",
+    },
+    {
+      image: vector3,
+      title: "Logoipsum",
+    },
+  ];
+  const itemData = [
+    gallery,
+    gallery1,
+    gallery3,
+    gallery4,
+    gallery5,
+    gallery6,
+    gallery3,
+    gallery1,
+  ];
   return (
     <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem]">
       <div className="w-full h-[100vh] flex items-center justify-center flex-col relative ">
@@ -316,6 +355,37 @@ function HomePage() {
       <div className="w-11/12 flex items-start justify-start flex-col">
         <MarqueeComponet data={marqueedataThird} />
       </div>
+      <div className="w-11/12 grid grid-cols-2 ">
+        <div>
+          <ImageList variant="masonry" cols={3} gap={8}>
+            {itemData.map((item) => (
+              <ImageListItem key={item.img}>
+                <img
+                  srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                  src={`${item}?w=248&fit=crop&auto=format`}
+                  alt={item.title}
+                  loading="lazy"
+                />
+              </ImageListItem>
+            ))}
+          </ImageList>
+        </div>
+        <div className="flex items-center justify-center flex-col ml-[-3rem] z-50">
+          <div className="w-full h-fit bg-[#F3F5F6] p-[1.5rem] rounded-md flex flex-col gap-1">
+            <AccordionComponent />
+            <AccordionComponent />
+            <AccordionComponent />
+            <AccordionComponent />
+            <AccordionComponent />
+            <AccordionComponent />
+            <AccordionComponent />
+          </div>
+        </div>
+      </div>
+      <div className="w-11/12">
+        <MarqueeComponet data={marqueedataFourth} />
+      </div>
+
       <div className="w-full">
         <ContactUs />
       </div>

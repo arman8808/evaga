@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 function ContactUs() {
   return (
     <div
-      className="w-full h-[40rem] "
+      className="w-full h-[40rem] flex items-center justify-center"
       style={{
         background: `url("${background}")`,
         backgroundColor: "#110015",

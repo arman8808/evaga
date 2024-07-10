@@ -24,6 +24,7 @@ function Contact() {
       </div>
       <div className="w-11/12 rounded-md">
         <iframe
+          title="Address"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6694449699194!2d77.63031727460319!3d12.928954415812832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1460d1af3721%3A0x7547770171fb3d5!2sWeWork!5e0!3m2!1sen!2sin!4v1720599166209!5m2!1sen!2sin"
           style={{ width: "100%", height: "20rem" }}
           allowfullscreen=""

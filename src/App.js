@@ -9,6 +9,8 @@ import Contact from "./components/pages/Contact/Contact";
 import Navbar from "./components/layout/Navbar/Navbar";
 import Footer from "./components/layout/Footer/Footer";
 import GoToTop from "./GoToTop";
+import Blog from "./components/pages/Blog/Blog";
+import SingleBlog from "./components/pages/Blog/SingleBlog";
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,8 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contactus" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:Id" element={<SingleBlog />} />
         </Routes>
         <Footer />
       </BrowserRouter>
