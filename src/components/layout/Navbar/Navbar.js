@@ -30,9 +30,10 @@ function Navbar() {
   }, [scrolled]);
   return (
     <nav
-      className={`w-full flex items-center justify-center sticky top-[1rem] z-50 ${
+      className={`w-full flex items-center justify-center sticky top-[1rem]  ${
         scrolled ? "navbarAnimation" : "invisible"
       }`}
+      style={{ zIndex: "999999" }}
     >
       <div className="w-11/12 flex items-center justify-around p-3 border-2  rounded-full bg-[white]">
         <img src={logo} alt="logo" className="h-[4.5rem]" />

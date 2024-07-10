@@ -1,12 +1,12 @@
 import React from "react";
 import logo from "../../../assets/Images/favicon.png";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { Backdrop, Box, Modal, Slide, Typography } from "@mui/material";
+import { Backdrop, Box, Fade, Modal, Typography } from "@mui/material";
 function JobCard() {
   const style = {
     position: "absolute",
-    top: "10%",
-    left: "25%",
+    top: "50%",
+    left: "50%",
     transform: "translate(-50%, -50%)",
     width: 800,
     bgcolor: "background.paper",
@@ -47,7 +47,7 @@ function JobCard() {
           },
         }}
       >
-        <Slide direction={"down"} in={open}>
+        <Fade in={open}>
           <Box sx={style}>
             <Typography
               id="transition-modal-title"
@@ -116,7 +116,7 @@ function JobCard() {
               </div>
             </form>
           </Box>
-        </Slide>
+        </Fade>
       </Modal>
     </div>
   );

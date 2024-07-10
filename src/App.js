@@ -1,16 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import HomePage from "./components/pages/HomePage/HomePage";
-import AboutUs from "./components/pages/AboutUs/AboutUs";
-import Service from "./components/pages/Service/Service";
-import Gallery from "./components/pages/Gallery/Gallery";
-import Career from "./components/pages/Career/Career";
-import Contact from "./components/pages/Contact/Contact";
 import Navbar from "./components/layout/Navbar/Navbar";
 import Footer from "./components/layout/Footer/Footer";
 import GoToTop from "./GoToTop";
-import Blog from "./components/pages/Blog/Blog";
-import SingleBlog from "./components/pages/Blog/SingleBlog";
+import { lazy, Suspense } from "react";
+import Loader from "./components/utils/Loader/Loader";
+const HomePage = lazy(() => import("./components/pages/HomePage/HomePage"));
+const AboutUs = lazy(() => import("./components/pages/AboutUs/AboutUs"));
+const Service = lazy(() => import("./components/pages/Service/Service"));
+const Gallery = lazy(() => import("./components/pages/Gallery/Gallery"));
+const Career = lazy(() => import("./components/pages/Career/Career"));
+const Contact = lazy(() => import("./components/pages/Contact/Contact"));
+const Blog = lazy(() => import("./components/pages/Blog/Blog"));
+const SingleBlog = lazy(() => import("./components/pages/Blog/SingleBlog"));
 function App() {
   return (
     <div className="App">
@@ -18,14 +20,70 @@ function App() {
         <Navbar />
         <GoToTop />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/contactus" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:Id" element={<SingleBlog />} />
+          <Route
+            path="/"
+            element={
+              <Suspense fallback={<Loader />}>
+                <HomePage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/aboutus"
+            element={
+              <Suspense fallback={<Loader />}>
+                <AboutUs />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/service"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Service />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/gallery"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Gallery />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/career"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Career />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/contactus"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Contact />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/blog"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Blog />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/blog/:Id"
+            element={
+              <Suspense fallback={<Loader />}>
+                <SingleBlog />
+              </Suspense>
+            }
+          />
         </Routes>
         <Footer />
       </BrowserRouter>
