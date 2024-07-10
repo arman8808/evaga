@@ -55,3 +55,8 @@
     #0f0017 87.69%
   );
 }
+.flex_start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
