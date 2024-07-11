@@ -5,7 +5,7 @@ import favicon from "../../../assets/Images/favicon.png";
 import Counter from "../../utils/Counter/Counter";
 import image from "../../../assets/Images/image.png";
 import woman from "../../../assets/Images/woman image.png";
-import Group from "../../../assets/Images/Group.png";
+import Group from "../../../assets/Images/bgimg.png";
 import ImageCarosal from "../../utils/ImageCarosal/ImageCarosal";
 import BannerCard from "../../utils/BannerCard/BannerCard";
 import Footer from "../../layout/Footer/Footer";
@@ -42,14 +42,13 @@ function AboutUs() {
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>
-            <p>About us</p>
+            <p className="text-[white] text-normalHeading font-semibold">
+              About us
+            </p>
           </div>
         </div>
         <div className="w-11/12 grid grid-cols-2 gap-1">
-          <div
-            className="flex items-start justify-start flex-col gap-3 w-full h-fit"
-            style={{ background: `url('${Group})` }}
-          >
+          <div className="flex items-start justify-start flex-col gap-3 w-full h-[20rem]">
             <h2 className="text-subHeading  text-seconderyHeading font-semibold">
               Chronicle Quest
             </h2>
@@ -68,6 +67,7 @@ function AboutUs() {
               moments of your special day. Our mission is to create timeless
               memories that you will cherish forever.
             </p>
+            <img src={Group} alt="snake skin" />
           </div>
           <div className="flex items-center justify-center">
             <img src={woman} alt="about" className="h-[25rem] " />

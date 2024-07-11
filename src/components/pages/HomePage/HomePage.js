@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import heroVideo from "../../../assets/Videos/herosection.mp4";
 import poster from "../../../assets/Images/Screenshot 2024-07-08 171201.png";
 import Counter from "../../utils/Counter/Counter";
@@ -24,7 +24,11 @@ import ImageCard from "../../utils/ImageCard/ImageCard";
 import MarqueeComponet from "../../utils/Marquee/Marquee";
 import favicon from "../../../assets/Images/favicon.png";
 import image from "../../../assets/Images/image.png";
-import { IoIosArrowForward } from "react-icons/io";
+import {
+  IoIosArrowForward,
+  IoIosArrowRoundBack,
+  IoIosArrowRoundForward,
+} from "react-icons/io";
 import TestimonailCard from "../../utils/TestimonailCard/TestimonailCard";
 import ImageCarosal from "../../utils/ImageCarosal/ImageCarosal";
 import BackgroundImage from "../../utils/BackgroundImage/BackgroundImage";
@@ -158,6 +162,24 @@ function HomePage() {
       itemsFit: "contain",
     },
   };
+  const CustomPrevButton = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="custom-prev-button text-[4rem] text-[#BFBFBF] hover:text-[#3D3D3D] font-normal"
+    >
+      <IoIosArrowRoundBack />
+    </button>
+  );
+
+  const CustomNextButton = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="custom-next-button text-[4rem] text-[#BFBFBF] hover:text-[#3D3D3D] font-normal"
+    >
+      <IoIosArrowRoundForward />
+    </button>
+  );
+  const carouselRef = useRef(null);
   return (
     <>
       <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem]">
@@ -281,7 +303,21 @@ function HomePage() {
               mouseTracking
               responsive={responsive}
               disableDotsControls
+              ref={carouselRef}
+              renderPrevButton={({ isDisabled }) => (
+                <CustomPrevButton
+                  onClick={() => carouselRef.current.slidePrev()}
+                />
+              )}
+              renderNextButton={({ isDisabled }) => (
+                <CustomNextButton
+                  onClick={() => carouselRef.current.slideNext()}
+                />
+              )}
             >
+              <TestimonailCard />
+              <TestimonailCard />
+              <TestimonailCard />
               <TestimonailCard />
             </AliceCarousel>
           </div>

@@ -18,7 +18,9 @@ function Contact() {
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>
-            <p className="text-[white]">Contact Us</p>
+            <p className="text-[white] text-normalHeading font-semibold">
+              Contact Us
+            </p>
           </div>
         </div>
         <div className="w-full">

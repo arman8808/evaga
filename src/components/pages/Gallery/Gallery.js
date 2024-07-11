@@ -38,7 +38,9 @@ function Gallery() {
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>
-            <p className="text-[white]">Gallery</p>
+            <p className="text-[white] text-normalHeading font-semibold">
+              Gallery
+            </p>
           </div>
         </div>
         <div

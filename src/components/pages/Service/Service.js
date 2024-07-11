@@ -20,7 +20,9 @@ function Service() {
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>
-            <p>Service</p>
+            <p className="text-[white] text-normalHeading font-semibold">
+              Service
+            </p>
           </div>
         </div>
         <div className="w-11/12 grid grid-cols-3 gap-4">
