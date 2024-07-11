@@ -137,6 +137,9 @@ function Navbar() {
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
               >
                 Home
               </NavLink>
