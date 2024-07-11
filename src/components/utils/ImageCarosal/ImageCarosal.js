@@ -49,7 +49,7 @@ function ImageCarosal() {
       />
       <img
         src={image}
-        className="w-[90%] h-[30rem] mobile:h-[28rem] rounded-md cursor-pointer"
+        className="w-[90%] h-[30rem] mobile:h-[25rem] rounded-md cursor-pointer"
         alt="ImageCarosal"
       />
     </AliceCarousel>
