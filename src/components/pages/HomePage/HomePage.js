@@ -212,7 +212,7 @@ function HomePage() {
               <input
                 type="text"
                 placeholder="Phone Number"
-                className="bg-transparent  outline-none border-b-2 p- mobile:w-full"
+                className="bg-transparent  outline-none border-b-2 p-1 mobile:w-full"
               />
               <button className="normal border-2 rounded-md p-1">
                 Book Now
