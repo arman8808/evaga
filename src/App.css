@@ -62,7 +62,7 @@
   justify-content: flex-start;
 }
 .liner_grident_border {
-  border: 2px solid red;
+  border: 2px solid;
   border-image-slice: 1;
   border-width: 1px;
   border-image-source: linear-gradient(
