@@ -25,7 +25,7 @@ function Service() {
             </p>
           </div>
         </div>
-        <div className="w-11/12 grid grid-cols-3 gap-4 mobile:grid-cols-1">
+        <div className="w-11/12 grid grid-cols-3 gap-4 mobile:grid-cols-1 tablet:grid-cols-1">
           <div className="flex items-center justify-center w-full">
             <img src={service} alt="service" className="object-contain" />
           </div>
@@ -63,7 +63,7 @@ function Service() {
             </div>
           </div>
         </div>
-        <div className="w-11/12 grid grid-cols-3 gap-4 mobile:flex mobile:flex-col-reverse">
+        <div className="w-11/12 grid grid-cols-3 gap-4 mobile:flex mobile:flex-col-reverse tablet:flex tablet:flex-col-reverse">
           <div className="col-span-2 flex items-center justify-center flex-col gap-4">
             <div className="flex items-start justify-start gap-2 flex-col">
               <h3 className="text-mainHeading text-para font-normalHeading">

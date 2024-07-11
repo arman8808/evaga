@@ -39,6 +39,7 @@ import { ImageList, ImageListItem } from "@mui/material";
 import Footer from "../../layout/Footer/Footer";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import { useForm } from "react-hook-form";
 function HomePage() {
   const imageCarddata = [
     {
@@ -181,6 +182,15 @@ function HomePage() {
     </button>
   );
   const carouselRef = useRef(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data) => {
+    console.log(data);
+  };
   return (
     <>
       <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
@@ -195,7 +205,7 @@ function HomePage() {
           >
             <source src={heroVideo} type="video/mp4" />
           </video>
-          <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] text-[white] text-center gap-3">
+          <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] md:w-[70%] tablet:w-[90%] text-[white] text-center gap-3">
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>
@@ -204,16 +214,32 @@ function HomePage() {
               tempor incididunt dolore magna ali scelerisque in dictum non
               consectetur.
             </p>
-            <form className="glass-effect flex items-center justify-center gap-2 mobile:flex-col mobile:w-11/12 liner_grident_border">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="glass-effect flex items-center justify-center gap-2 mobile:flex-col mobile:w-11/12 md:w-[100%] liner_grident_border"
+            >
               <input
                 type="text"
                 placeholder="Event"
                 className="bg-transparent  outline-none border-b-2 p-1 mobile:w-full"
+                {...register("EventType", {
+                  required: true,
+
+                  validate: (value) => {
+                    return !!value.trim();
+                  },
+                })}
               />
               <input
                 type="text"
                 placeholder="Phone Number"
                 className="bg-transparent  outline-none border-b-2 p-1 mobile:w-full"
+                {...register("phone", {
+                  required: true,
+                  pattern: /^[0-9+-]+$/,
+                  minLength: 10,
+                  maxLength: 10,
+                })}
               />
               <button className="normal border-2 rounded-md p-1">
                 Book Now
@@ -302,7 +328,7 @@ function HomePage() {
               Testimonials
             </h6>
           </span>
-          <div className="flex items-center justify-center w-[50%] mobile:w-[85%]">
+          <div className="flex items-center justify-center w-[50%] mobile:w-[85%] tablet:w-[80%]">
             <AliceCarousel
               mouseTracking
               responsive={responsive}
@@ -414,7 +440,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full origin-center rotate-180">
           <BackgroundImage />
         </div>
         <div className="w-11/12 flex items-start justify-start flex-col">

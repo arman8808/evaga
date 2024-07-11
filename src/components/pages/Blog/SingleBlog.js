@@ -5,7 +5,7 @@ function SingleBlog() {
   return (
     <>
       <div className=" w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
-        <div className="w-11/12 grid grid-cols-3 gap-4  mobile:grid-cols-1">
+        <div className="w-11/12 grid grid-cols-3 gap-4  mobile:grid-cols-1 tablet:grid-cols-1">
           <img src={image} alt="banner" className="col-span-2" />
           <div className="flex items-start justify-end flex-col gap-3">
             <h2>Planning the Perfect Wedding</h2>

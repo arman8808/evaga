@@ -52,7 +52,7 @@ function Gallery() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="w-8/12 gallery grid grid-cols-1 gap-4 mobile:w-11/12">
+          <div className="w-8/12 gallery grid grid-cols-1 gap-4 mobile:w-11/12 tablet:w-11/12">
             <ImageList variant="masonry" cols={3} gap={8}>
               {itemData.map((item) => (
                 <ImageListItem key={item.img}>

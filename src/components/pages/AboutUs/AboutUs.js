@@ -47,7 +47,7 @@ function AboutUs() {
             </p>
           </div>
         </div>
-        <div className="w-11/12 grid grid-cols-2 gap-1 mobile:flex mobile:flex-col-reverse">
+        <div className="w-11/12 grid grid-cols-2 gap-1 mobile:flex mobile:flex-col-reverse tablet:flex tablet:flex-col-reverse">
           <div className="flex items-start justify-start flex-col gap-3 w-full h-fit">
             <h2 className="text-subHeading  text-seconderyHeading font-semibold">
               Chronicle Quest

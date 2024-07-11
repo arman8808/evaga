@@ -62,9 +62,9 @@ function Navbar() {
       }`}
       style={{ zIndex: "999999" }}
     >
-      <div className="w-11/12 flex items-center justify-around p-3 border-2  rounded-full bg-[white] mobile:justify-between">
+      <div className="w-11/12 flex items-center justify-around p-3 border-2  rounded-full bg-[white] mobile:justify-between tablet:justify-between">
         <img src={logo} alt="logo" className="h-[4.5rem] mobile:h-[3.5rem]" />
-        <ul className="flex gap-4 text-[1.1rem] text-marqueColor font-semibold cursor-pointer mobile:hidden">
+        <ul className="flex gap-4 text-[1.1rem] text-marqueColor font-semibold cursor-pointer mobile:hidden tablet:hidden">
           <li>
             <NavLink
               to="/"
@@ -115,7 +115,7 @@ function Navbar() {
           </li>
         </ul>
         <button
-          className="buttonNormal text-marqueColor flex items-center gap-1 text-[1.1rem] font-medium mobile:hidden"
+          className="buttonNormal text-marqueColor flex items-center gap-1 text-[1.1rem] font-medium mobile:hidden tablet:hidden"
           onClick={handleOpen}
         >
           Call Back Request <MdOutlinePhoneInTalk />
