@@ -18,6 +18,7 @@ import vector from "../../../assets/Images/Vector.png";
 import vector1 from "../../../assets/Images/Vector-2.png";
 import vector2 from "../../../assets/Images/logoipsum-246 1.png";
 import vector3 from "../../../assets/Images/Vector-1.png";
+import counterBackground from "../../../assets/Images/section.png";
 import aboutSection from "../../../assets/Images/img  bg.png";
 import testimonailBackground from "../../../assets/Images/Container.png";
 import ImageCard from "../../utils/ImageCard/ImageCard";
@@ -203,7 +204,7 @@ function HomePage() {
               tempor incididunt dolore magna ali scelerisque in dictum non
               consectetur.
             </p>
-            <form className="glass-effect flex items-center justify-center gap-2 mobile:flex-col mobile:w-11/12">
+            <form className="glass-effect flex items-center justify-center gap-2 mobile:flex-col mobile:w-11/12 liner_grident_border">
               <input
                 type="text"
                 placeholder="Event"
@@ -220,7 +221,10 @@ function HomePage() {
             </form>
           </div>
         </div>
-        <div className="w-10/12 mobile:w-11/12 mt-[-6rem] z-50">
+        <div
+          className="w-10/12 h-fit mobile:w-11/12 mt-[-6rem] z-50"
+          style={{ background: `url("${counterBackground}")` }}
+        >
           <Counter />
         </div>
         <div className="w-11/12 flex items-start justify-start flex-col gap-4">
@@ -409,6 +413,9 @@ function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="w-full">
+          <BackgroundImage />
         </div>
         <div className="w-11/12 flex items-start justify-start flex-col">
           <MarqueeComponet data={marqueedataThird} />

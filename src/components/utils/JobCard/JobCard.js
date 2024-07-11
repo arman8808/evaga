@@ -8,13 +8,15 @@ function JobCard() {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 800,
+    // width: 800,
     bgcolor: "background.paper",
     border: "0px solid transparent",
     boxShadow: 24,
     p: 4,
     outline: "none",
     borderRadius: "5px",
+    overflowY: "scroll",
+    zIndex: "9999999",
   };
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -48,7 +50,7 @@ function JobCard() {
         }}
       >
         <Fade in={open}>
-          <Box sx={style}>
+          <Box sx={style} className="w-[800px] h-[600px] mobile:w-[90%]">
             <Typography
               id="transition-modal-title"
               variant="h6"
@@ -82,7 +84,7 @@ function JobCard() {
                   className="w-full border-2 h-[2.5rem] rounded-full px-2 outline-none"
                 />
               </div>
-              <div className="w-full grid grid-cols-2 gap-3">
+              <div className="w-full grid grid-cols-2 gap-3 mobile:grid-cols-1">
                 <div className="flex_start flex-col gap-2 w-full">
                   <p>Job Location*</p>
                   <input
@@ -104,7 +106,7 @@ function JobCard() {
                   </select>
                 </div>
               </div>
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center justify-start gap-2 mobile:flex-col-reverse">
                 <button className="buttonNormal rounded-full">Apply Now</button>
                 <p>
                   By Clicking{" "}
