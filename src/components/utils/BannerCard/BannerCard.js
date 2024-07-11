@@ -11,9 +11,9 @@ function BannerCard() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className=" w-full h-[20rem] rounded-md grid grid-cols-3 p-4 text-[white] mt-[4rem]"
+      className=" w-full h-[20rem] rounded-md grid grid-cols-3 p-4 text-[white] mt-[4rem] mobile:grid-cols-1"
     >
-      <div className="col-span-2 p-4 pt-[3rem] gap-[3rem] flex flex-col items-start justify-start">
+      <div className="col-span-2 mobile:col-span-1 p-4 pt-[3rem] gap-[3rem] mobile:gap-[1rem] flex flex-col items-start justify-start">
         <div className="flex flex-col items-start justify-start gap-4">
           <h2 className="text-seconderyHeading font-semibold">
             The Celebration of Our Love
@@ -33,7 +33,7 @@ function BannerCard() {
           </button>
         </span>
       </div>
-      <div className="relative ">
+      <div className="relative mobile:hidden">
         <img
           src={women}
           alt="women"
