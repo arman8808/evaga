@@ -12,7 +12,7 @@ function Blog() {
   return (
     <>
       <div className="w-full flex items-center justify-center flex-col gap-[3rem]">
-        <div className="w-10/12 gap-4 grid grid-cols-2">
+        <div className="w-10/12 gap-4 grid grid-cols-2 mobile:grid-cols-1">
           <div>
             <BlogCard
               image={background}
@@ -39,7 +39,7 @@ function Blog() {
             />
           </div>
         </div>
-        <div className="w-10/12 gap-4 grid grid-cols-2">
+        <div className="w-10/12 gap-4 grid grid-cols-2  mobile:grid-cols-1">
           <BlogCard
             image={background3}
             title={"Planning the Perfect Wedding"}

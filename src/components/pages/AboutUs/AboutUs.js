@@ -30,7 +30,7 @@ function AboutUs() {
   ];
   return (
     <>
-      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem]">
+      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
         <div className="w-full h-[100vh] flex items-center justify-center flex-col relative ">
           <img
             src={aboutus}
@@ -38,7 +38,7 @@ function AboutUs() {
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute flex items-center justify-center flex-col w-[50%] text-[white] text-center gap-3">
+          <div className="absolute flex items-center justify-center flex-col w-[50%] text-[white] text-center gap-3 mobile:w-[90%]">
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>
@@ -47,8 +47,8 @@ function AboutUs() {
             </p>
           </div>
         </div>
-        <div className="w-11/12 grid grid-cols-2 gap-1">
-          <div className="flex items-start justify-start flex-col gap-3 w-full h-[20rem]">
+        <div className="w-11/12 grid grid-cols-2 gap-1 mobile:flex mobile:flex-col-reverse">
+          <div className="flex items-start justify-start flex-col gap-3 w-full h-fit">
             <h2 className="text-subHeading  text-seconderyHeading font-semibold">
               Chronicle Quest
             </h2>
@@ -67,7 +67,7 @@ function AboutUs() {
               moments of your special day. Our mission is to create timeless
               memories that you will cherish forever.
             </p>
-            <img src={Group} alt="snake skin" />
+            <img src={Group} alt="snake skin" className="mobile:hidden" />
           </div>
           <div className="flex items-center justify-center">
             <img src={woman} alt="about" className="h-[25rem] " />
@@ -92,7 +92,7 @@ function AboutUs() {
             <h3 className="text-normalHeading text-mainHeading font-semibold">
               Major Event
             </h3>
-            <div className="grid grid-cols-2 ">
+            <div className="grid grid-cols-2 mobile:flex mobile:flex-col-reverse mobile:gap-4">
               <div className="border-r-2 border-[#454545] flex flex-col gap-1">
                 <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
                   350+ Attendees
@@ -122,7 +122,7 @@ function AboutUs() {
             <h3 className="text-normalHeading text-mainHeading font-semibold">
               EXPERIENCES
             </h3>
-            <div className="grid grid-cols-2 ">
+            <div className="grid grid-cols-2 mobile:flex mobile:flex-col mobile:gap-4">
               <div className="flex items-center justify-center">
                 <img src={image} alt="marjor" className="h-[22rem]" />
               </div>

@@ -182,7 +182,7 @@ function HomePage() {
   const carouselRef = useRef(null);
   return (
     <>
-      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem]">
+      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
         <div className="w-full h-[100vh] flex items-center justify-center flex-col relative ">
           <video
             controls={false}
@@ -194,7 +194,7 @@ function HomePage() {
           >
             <source src={heroVideo} type="video/mp4" />
           </video>
-          <div className="absolute flex items-center justify-center flex-col w-[50%] text-[white] text-center gap-3">
+          <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] text-[white] text-center gap-3">
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>
@@ -203,16 +203,16 @@ function HomePage() {
               tempor incididunt dolore magna ali scelerisque in dictum non
               consectetur.
             </p>
-            <form className="glass-effect flex items-center justify-center gap-2">
+            <form className="glass-effect flex items-center justify-center gap-2 mobile:flex-col mobile:w-11/12">
               <input
                 type="text"
                 placeholder="Event"
-                className="bg-transparent  outline-none border-b-2 p-1"
+                className="bg-transparent  outline-none border-b-2 p-1 mobile:w-full"
               />
               <input
                 type="text"
                 placeholder="Phone Number"
-                className="bg-transparent  outline-none border-b-2 p-1"
+                className="bg-transparent  outline-none border-b-2 p- mobile:w-full"
               />
               <button className="normal border-2 rounded-md p-1">
                 Book Now
@@ -220,7 +220,7 @@ function HomePage() {
             </form>
           </div>
         </div>
-        <div className="w-10/12 mt-[-6rem] z-50">
+        <div className="w-10/12 mobile:w-11/12 mt-[-6rem] z-50">
           <Counter />
         </div>
         <div className="w-11/12 flex items-start justify-start flex-col gap-4">
@@ -237,7 +237,7 @@ function HomePage() {
               events and brand experiences worldwide.
             </p>
           </span>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-4 mobile:grid-cols-1">
             {imageCarddata?.map((item) => (
               <ImageCard
                 image={item?.image}
@@ -250,7 +250,7 @@ function HomePage() {
         <div className="w-11/12">
           <MarqueeComponet data={marqueedata} />
         </div>
-        <div className="w-11/12 grid grid-cols-2 gap-4">
+        <div className="w-11/12 grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse mobile:gap-1">
           <div className="flex items-start justify-start flex-col gap-4">
             <h6 className="text-normalHeading text-subHeading font-semibold">
               ABOUT Consession
@@ -278,7 +278,7 @@ function HomePage() {
             <img
               src={aboutSection}
               alt="aboutSection"
-              className="h-[32rem] object-contain"
+              className="h-[32rem] object-contain mobile:object-cover"
             />
           </div>
         </div>
@@ -298,7 +298,7 @@ function HomePage() {
               Testimonials
             </h6>
           </span>
-          <div className="flex items-center justify-center w-[50%]">
+          <div className="flex items-center justify-center w-[50%] mobile:w-[85%]">
             <AliceCarousel
               mouseTracking
               responsive={responsive}
@@ -352,7 +352,7 @@ function HomePage() {
             <h3 className="text-normalHeading text-mainHeading font-semibold">
               Major Event
             </h3>
-            <div className="grid grid-cols-2 ">
+            <div className="grid grid-cols-2 mobile:flex mobile:flex-col-reverse mobile:gap-4">
               <div className="border-r-2 border-[#454545] flex flex-col gap-1">
                 <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
                   350+ Attendees
@@ -382,7 +382,7 @@ function HomePage() {
             <h3 className="text-normalHeading text-mainHeading font-semibold">
               EXPERIENCES
             </h3>
-            <div className="grid grid-cols-2 ">
+            <div className="grid grid-cols-2 mobile:flex mobile:flex-col mobile:gap-4">
               <div className="flex items-center justify-center">
                 <img src={image} alt="marjor" className="h-[22rem]" />
               </div>
@@ -413,8 +413,8 @@ function HomePage() {
         <div className="w-11/12 flex items-start justify-start flex-col">
           <MarqueeComponet data={marqueedataThird} />
         </div>
-        <div className="w-11/12 grid grid-cols-2 ">
-          <div>
+        <div className="w-11/12 grid grid-cols-2 mobile:grid-cols-1">
+          <div className="mobile:hidden">
             <ImageList variant="masonry" cols={3} gap={8}>
               {itemData.map((item) => (
                 <ImageListItem key={item.img}>
@@ -428,7 +428,7 @@ function HomePage() {
               ))}
             </ImageList>
           </div>
-          <div className="flex items-center justify-center flex-col ml-[-3rem] z-50">
+          <div className="flex items-center justify-center flex-col ml-[-3rem] mobile:ml-0 z-50">
             <div className="w-full h-fit bg-[#F3F5F6] p-[1.5rem] rounded-md flex flex-col gap-1">
               <AccordionComponent />
               <AccordionComponent />

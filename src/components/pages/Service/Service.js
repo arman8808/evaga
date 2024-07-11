@@ -8,7 +8,7 @@ import Footer from "../../layout/Footer/Footer";
 function Service() {
   return (
     <>
-      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem]">
+      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
         <div className="w-full h-[100vh] flex items-center justify-center flex-col relative ">
           <img
             src={aboutus}
@@ -16,7 +16,7 @@ function Service() {
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute flex items-center justify-center flex-col w-[50%] text-[white] text-center gap-3">
+          <div className="absolute flex items-center justify-center flex-col w-[50%] text-[white] text-center gap-3 mobile:w-[90%]">
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>
@@ -25,7 +25,7 @@ function Service() {
             </p>
           </div>
         </div>
-        <div className="w-11/12 grid grid-cols-3 gap-4">
+        <div className="w-11/12 grid grid-cols-3 gap-4 mobile:grid-cols-1">
           <div className="flex items-center justify-center w-full">
             <img src={service} alt="service" className="object-contain" />
           </div>
@@ -63,7 +63,7 @@ function Service() {
             </div>
           </div>
         </div>
-        <div className="w-11/12 grid grid-cols-3 gap-4">
+        <div className="w-11/12 grid grid-cols-3 gap-4 mobile:flex mobile:flex-col-reverse">
           <div className="col-span-2 flex items-center justify-center flex-col gap-4">
             <div className="flex items-start justify-start gap-2 flex-col">
               <h3 className="text-mainHeading text-para font-normalHeading">

@@ -6,7 +6,7 @@ import Footer from "../../layout/Footer/Footer";
 function Contact() {
   return (
     <>
-      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem]">
+      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
         <div className="w-full h-[100vh] flex items-center justify-center flex-col relative ">
           <img
             src={aboutus}
@@ -14,7 +14,7 @@ function Contact() {
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute flex items-center justify-center flex-col w-[50%] text-[white] text-center gap-3">
+          <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] text-[white] text-center gap-3">
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>

@@ -26,7 +26,7 @@ function Gallery() {
   ];
   return (
     <>
-      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem]">
+      <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
         <div className="w-full h-[100vh] flex items-center justify-center flex-col relative ">
           <img
             src={aboutus}
@@ -34,7 +34,7 @@ function Gallery() {
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute flex items-center justify-center flex-col w-[50%] text-[white] text-center gap-3">
+          <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] text-[white] text-center gap-3">
             <h1 className="text-seconderyHeading font-bold">
               Experience Luxury and Elegance in Every Event
             </h1>
@@ -52,7 +52,7 @@ function Gallery() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="w-8/12 gallery grid grid-cols-1 gap-4">
+          <div className="w-8/12 gallery grid grid-cols-1 gap-4 mobile:w-11/12">
             <ImageList variant="masonry" cols={3} gap={8}>
               {itemData.map((item) => (
                 <ImageListItem key={item.img}>

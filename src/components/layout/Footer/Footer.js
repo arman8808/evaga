@@ -11,14 +11,14 @@ function Footer() {
   return (
     <footer className="w-full bg-[black] mt-4 flex items-center justify-center flex-col p-4 pb-[2rem] text-[white] gap-4">
       <img src={logo} alt="logo" className="h-[6rem] object-conatin" />
-      <ul className="flex items-center justify-center gap-4 ">
+      <ul className="flex items-center justify-center gap-4 mobile:flex-wrap">
         <li>Weddings</li>
         <li>Corporate</li>
         <li>Government </li>
         <li>Special </li>
         <li>Community events </li>
       </ul>
-      <ul className="flex items-center justify-center gap-2">
+      <ul className="flex items-center justify-center gap-4 mobile:flex-wrap">
         <li>Privacy Policy</li>
         <li>Contact Us </li>
         <li>Terms & Conditions </li>
@@ -42,7 +42,9 @@ function Footer() {
           <FaFacebookF />
         </li>
       </ul>
-      <p>Copyright © 2024 Designed and Developed by Branding 360</p>
+      <p className="text-center">
+        Copyright © 2024 Designed and Developed by Branding 360
+      </p>
     </footer>
   );
 }

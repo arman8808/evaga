@@ -10,8 +10,8 @@ function Career() {
   return (
     <>
       <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem]">
-        <div className="w-full h-[100vh] grid grid-cols-3  bg-[white] overflow-hidden">
-          <div className="col-span-2 w-full h-full">
+        <div className="w-full h-[100vh] grid grid-cols-3  bg-[white] overflow-hidden mobile:grid-cols-1 mobile:h-fit">
+          <div className="col-span-2 w-full h-full col-span-1 mobile:h-fit">
             <img
               src={aboutus}
               alt="aboutus"
@@ -28,7 +28,7 @@ function Career() {
             </p>
           </div>
         </div>
-        <div className="w-11/12 grid grid-cols-4 gap-4">
+        <div className="w-11/12 grid grid-cols-4 gap-4 mobile:grid-cols-2">
           <div className="col-span-2 flex_start flex-col gap-4">
             <p className="text-mainHeading text-normalHeading font-semibold">
               Benefits
@@ -83,7 +83,7 @@ function Career() {
             </p>
           </div>
         </div>
-        <div className="w-11/12 grid grid-cols-3 gap-4">
+        <div className="w-11/12 grid grid-cols-3 gap-4 mobile:grid-cols-1">
           <JobCard />
           <JobCard />
           <JobCard />

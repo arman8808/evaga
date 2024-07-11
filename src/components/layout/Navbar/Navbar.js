@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "../../../assets/Images/logo-1.png";
 import logo1 from "../../../assets/Images/logo-2.png";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
@@ -42,16 +42,29 @@ function Navbar() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const comRef = useRef();
+  useEffect(() => {
+    let handler = (e) => {
+      if (!comRef.current.contains(e.target)) {
+        document.getElementById("menu__toggle").checked = false;
+      }
+    };
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, []);
   return (
     <nav
-      className={`w-full flex items-center justify-center sticky top-[1rem]  ${
+      className={`w-full flex items-center justify-center  sticky top-[1rem]  ${
         scrolled ? "navbarAnimation" : "invisible"
       }`}
       style={{ zIndex: "999999" }}
     >
-      <div className="w-11/12 flex items-center justify-around p-3 border-2  rounded-full bg-[white]">
-        <img src={logo} alt="logo" className="h-[4.5rem]" />
-        <ul className="flex gap-4 text-[1.1rem] text-marqueColor font-semibold cursor-pointer">
+      <div className="w-11/12 flex items-center justify-around p-3 border-2  rounded-full bg-[white] mobile:justify-between">
+        <img src={logo} alt="logo" className="h-[4.5rem] mobile:h-[3.5rem]" />
+        <ul className="flex gap-4 text-[1.1rem] text-marqueColor font-semibold cursor-pointer mobile:hidden">
           <li>
             <NavLink
               to="/"
@@ -102,11 +115,119 @@ function Navbar() {
           </li>
         </ul>
         <button
-          className="buttonNormal text-marqueColor flex items-center gap-1 text-[1.1rem] font-medium"
+          className="buttonNormal text-marqueColor flex items-center gap-1 text-[1.1rem] font-medium mobile:hidden"
           onClick={handleOpen}
         >
           Call Back Request <MdOutlinePhoneInTalk />
         </button>
+        <div className="hamburger-menu hidden mobile:flex tablet:flex">
+          <input id="menu__toggle" type="checkbox" />
+          <label className="menu__btn" for="menu__toggle">
+            <span
+              onClick={() =>
+                (document.getElementById("menu__toggle").checked = false)
+              }
+            ></span>
+          </label>
+          <ul className="menu__box" ref={comRef}>
+            <li>
+              <NavLink
+                to="/"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/aboutus"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
+              >
+                AboutUs
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/service"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
+              >
+                Service
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/gallery"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
+              >
+                Gallery
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/career"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
+              >
+                Career
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/contactus"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
+              >
+                Conatct
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/blog"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
+              >
+                Blogs
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
       <Modal
         aria-labelledby="transition-modal-title"

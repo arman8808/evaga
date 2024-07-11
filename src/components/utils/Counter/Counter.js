@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 function Counter() {
   return (
-    <div className="w-full flex items-center justify-between  p-[2rem] border-[1px] border-subHeading rounded-2xl boxShadow bg-[white]">
+    <div className="w-full flex items-center justify-between  p-[2rem] border-[1px] border-subHeading rounded-2xl boxShadow bg-[white] mobile:flex-col mobile:items-start">
       <span className="flex items-center justify-center gap-1">
         <strong className="text-seconderyHeading text-mainHeading ">
           <CountUp start={0} end={45} duration={10} />
