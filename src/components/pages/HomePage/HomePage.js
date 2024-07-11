@@ -32,7 +32,8 @@ import ContactUs from "../../layout/ContactUs/ContactUs";
 import AccordionComponent from "../../utils/Accordion/Accordion";
 import { ImageList, ImageListItem } from "@mui/material";
 import Footer from "../../layout/Footer/Footer";
-
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 function HomePage() {
   const imageCarddata = [
     {
@@ -148,6 +149,15 @@ function HomePage() {
     gallery3,
     gallery1,
   ];
+  const responsive = {
+    0: {
+      items: 1,
+    },
+    1024: {
+      items: 1,
+      itemsFit: "contain",
+    },
+  };
   return (
     <>
       <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem]">
@@ -266,7 +276,15 @@ function HomePage() {
               Testimonials
             </h6>
           </span>
-          <TestimonailCard />
+          <div className="flex items-center justify-center w-[50%]">
+            <AliceCarousel
+              mouseTracking
+              responsive={responsive}
+              disableDotsControls
+            >
+              <TestimonailCard />
+            </AliceCarousel>
+          </div>
         </div>
         <div className="w-11/12 flex items-start justify-start flex-col gap-3">
           <span>
