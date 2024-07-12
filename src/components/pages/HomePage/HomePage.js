@@ -41,6 +41,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { useForm } from "react-hook-form";
 import FadeInSection from "../../utils/FadeInSection/FadeInSection";
+import { useNavigate } from "react-router-dom";
 function HomePage() {
   const imageCarddata = [
     {
@@ -192,6 +193,7 @@ function HomePage() {
   const onSubmit = async (data) => {
     console.log(data);
   };
+  const history = useNavigate();
 
   return (
     <>
@@ -309,7 +311,10 @@ function HomePage() {
                 non consectetur eget lobortis mattis aliqua sapien sagittis
                 aliquam malesuada bibendum arcu vitae.
               </p>
-              <button className="button normal flex items-center justify-center border-2 px-2 py-1 rounded-md text-[#5D5D5D] hover:bg-[#5D5D5D] hover:text-[white] hover:animate-bounceIn hover:transition ease-in-out delay-150 ">
+              <button
+                onClick={() => history("/aboutus")}
+                className="button normal flex items-center justify-center border-2 px-2 py-1 rounded-md text-[#5D5D5D] hover:bg-[#5D5D5D] hover:text-[white] hover:animate-bounceIn hover:transition ease-in-out delay-150 "
+              >
                 <IoIosArrowForward /> Know More
               </button>
             </div>
