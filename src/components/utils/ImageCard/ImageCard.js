@@ -7,7 +7,6 @@ function ImageCard({ image, title, para }) {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 450,
     bgcolor: "background.paper",
     border: "0px solid transparent",
     boxShadow: 24,
@@ -45,7 +44,7 @@ function ImageCard({ image, title, para }) {
         }}
       >
         <Fade in={open}>
-          <Box sx={style}>
+          <Box sx={style} className="w-[450px] mobile:w-[380px]">
             <Typography
               id="transition-modal-title"
               variant="h6"
