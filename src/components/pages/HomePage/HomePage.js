@@ -194,33 +194,7 @@ function HomePage() {
     console.log(data);
   };
   const history = useNavigate();
-  const cursorRef = useRef(null);
-  const circleRef = useRef(null);
-  const [showCircle, setShowCircle] = useState(false);
 
-  // Track mouse movement
-  const handleMouseMove = (e) => {
-    const cursor = cursorRef.current;
-    const circle = circleRef.current;
-    if (cursor) {
-      cursor.style.top = `${e.pageY - 10}px`;
-      cursor.style.left = `${e.pageX - 10}px`;
-    }
-    if (circle && showCircle) {
-      circle.style.top = `${e.pageY}px`;
-      circle.style.left = `${e.pageX}px`;
-    }
-  };
-
-  // Handle hover enter
-  const handleHoverEnter = () => {
-    setShowCircle(true);
-  };
-
-  // Handle hover leave
-  const handleHoverLeave = () => {
-    setShowCircle(false);
-  };
   return (
     <>
       <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
@@ -405,15 +379,8 @@ function HomePage() {
                 A Gallery of Our Most Exquisite Events
               </p>
             </span>
-            <div
-              className="w-full cursor"
-              ref={cursorRef}
-              onMouseMove={handleMouseMove}
-              onMouseEnter={handleHoverEnter}
-              onMouseLeave={handleHoverLeave}
-            >
-              <ImageCarosal />
-            </div>
+
+            <ImageCarosal />
           </div>
         </FadeInSection>
         <FadeInSection>
