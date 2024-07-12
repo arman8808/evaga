@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import heroVideo from "../../../assets/Videos/herosection.mp4";
-import poster from "../../../assets/Images/Screenshot 2024-07-08 171201.png";
+import heroVideo from "../../../assets/Videos/6057470-hd_1920_1080_25fps.mp4";
+import poster from "../../../assets/Images/6057470-hd_1920_1080_25fps-0.jpg";
 import Counter from "../../utils/Counter/Counter";
 import img from "../../../assets/Images/card top sev.png";
 import img1 from "../../../assets/Images/card top sev-2.png";
@@ -40,6 +40,7 @@ import Footer from "../../layout/Footer/Footer";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { useForm } from "react-hook-form";
+import FadeInSection from "../../utils/FadeInSection/FadeInSection";
 function HomePage() {
   const imageCarddata = [
     {
@@ -191,6 +192,7 @@ function HomePage() {
   const onSubmit = async (data) => {
     console.log(data);
   };
+
   return (
     <>
       <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
@@ -247,239 +249,266 @@ function HomePage() {
             </form>
           </div>
         </div>
-        <div
-          className="w-10/12 h-fit mobile:w-11/12 mt-[-6rem] z-50"
-          style={{ background: `url("${counterBackground}")` }}
-        >
-          <Counter />
-        </div>
-        <div className="w-11/12 flex items-start justify-start flex-col gap-4">
-          <span>
-            <h2 className="text-seconderyHeading font-semibold text-mainHeading">
-              Creators of luxury
-              <span className="text-mainHeading text-marqueColor">
-                &nbsp; events and experiences&nbsp;
-              </span>
-              that are legendary
-            </h2>
-            <p className="text-para text-marqueColor">
-              We’re an award-winning creative agency that executes exceptional
-              events and brand experiences worldwide.
-            </p>
-          </span>
-          <div className="grid grid-cols-3 gap-4 mobile:grid-cols-1">
-            {imageCarddata?.map((item) => (
-              <ImageCard
-                image={item?.image}
-                title={item?.title}
-                para={item?.para}
-              />
-            ))}
+        <FadeInSection>
+          <div
+            className="w-11/12 h-fit mobile:w-11/12 mt-[-6rem] z-50"
+            style={{ background: `url("${counterBackground}")` }}
+          >
+            <Counter />
           </div>
-        </div>
-        <div className="w-11/12">
-          <MarqueeComponet data={marqueedata} />
-        </div>
-        <div className="w-11/12 grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse mobile:gap-1">
-          <div className="flex items-start justify-start flex-col gap-4">
-            <h6 className="text-normalHeading text-subHeading font-semibold">
-              ABOUT Consession
-            </h6>
-            <h2 className="text-seconderyHeading text-mainHeading font-semibold">
-              Delivering Excellence and Class in Every Detail
-            </h2>
-            <p className="text-textColor">
-              Lorem ipsum dolor sit amet consectetur adipiscing elitsed eiusmod
-              tempor incididunt dolore magna ali Scelerisque in dictum non
-              consectetur eget lobortis mattis aliqua sapien sagittis aliquam
-              malesuada bibendum arcu vitae.
-            </p>
-            <p className="text-textColor">
-              Lorem ipsum dolor sit amet consectetur adipiscing elitsed eiusmod
-              tempor incididunt dolore magna ali Scelerisque in dictum non
-              consectetur eget lobortis mattis aliqua sapien sagittis aliquam
-              malesuada bibendum arcu vitae.
-            </p>
-            <button className="button normal flex items-center justify-center border-2 px-2 py-1 rounded-md text-[#5D5D5D]">
-              <IoIosArrowForward /> Know More
-            </button>
-          </div>
-          <div className="flex items-center justify-center">
-            <img
-              src={aboutSection}
-              alt="aboutSection"
-              className="h-[32rem] object-contain mobile:object-cover"
-            />
-          </div>
-        </div>
-        <div
-          className="w-full h-[30rem] flex items-center justify-start flex-col gap-4 py-4"
-          style={{
-            background: `url('${testimonailBackground}')`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
-          }}
-        >
-          <span className="flex items-center justify-center flex-col">
-            <img src={favicon} alt="favicon" />
-            <h6 className="text-subHeading text-normalHeading font-semibold">
-              Testimonials
-            </h6>
-          </span>
-          <div className="flex items-center justify-center w-[50%] mobile:w-[85%] tablet:w-[80%]">
-            <AliceCarousel
-              mouseTracking
-              responsive={responsive}
-              disableDotsControls
-              ref={carouselRef}
-              renderPrevButton={({ isDisabled }) => (
-                <CustomPrevButton
-                  onClick={() => carouselRef.current.slidePrev()}
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-11/12 flex items-start justify-start flex-col gap-4">
+            <span>
+              <h2 className="text-seconderyHeading font-semibold text-mainHeading">
+                Creators of luxury
+                <span className="text-mainHeading text-marqueColor">
+                  &nbsp; events and experiences&nbsp;
+                </span>
+                that are legendary
+              </h2>
+              <p className="text-para text-marqueColor">
+                We’re an award-winning creative agency that executes exceptional
+                events and brand experiences worldwide.
+              </p>
+            </span>
+            <div className="grid grid-cols-3 gap-4 mobile:grid-cols-1">
+              {imageCarddata?.map((item) => (
+                <ImageCard
+                  image={item?.image}
+                  title={item?.title}
+                  para={item?.para}
                 />
-              )}
-              renderNextButton={({ isDisabled }) => (
-                <CustomNextButton
-                  onClick={() => carouselRef.current.slideNext()}
-                />
-              )}
-            >
-              <TestimonailCard />
-              <TestimonailCard />
-              <TestimonailCard />
-              <TestimonailCard />
-            </AliceCarousel>
-          </div>
-        </div>
-        <div className="w-11/12 flex items-start justify-start flex-col gap-3">
-          <span>
-            <h2 className="text-seconderyHeading text-mainHeading font-semibold">
-              Our Signature Events Where Elegance Meets Expertise
-            </h2>
-            <p className="text-textColor">
-              A Gallery of Our Most Exquisite Events
-            </p>
-          </span>
-          <ImageCarosal />
-        </div>
-        <div className="w-full">
-          <BackgroundImage />
-        </div>
-        <div className="w-11/12 flex items-start justify-start flex-col">
-          <span>
-            <h2 className="text-seconderyHeading text-mainHeading font-semibold">
-              Our Rich Legacy of Excellence
-            </h2>
-            <p className="text-textColor">
-              A Timeline of Milestones and Achievements
-            </p>
-          </span>
-          <MarqueeComponet data={marqueedataSecond} />
-        </div>
-        <div className="w-11/12 flex flex-col items-center justify-center gap-3">
-          <div className="flex flex-col items-center justify-center gap-3">
-            <h3 className="text-normalHeading text-mainHeading font-semibold">
-              Major Event
-            </h3>
-            <div className="grid grid-cols-2 mobile:flex mobile:flex-col-reverse mobile:gap-4">
-              <div className="border-r-2 border-[#454545] flex flex-col gap-1">
-                <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                  350+ Attendees
-                </p>
-                <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                  High-Energy Inspiration
-                </p>
-                <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                  Industry-Specific Programming
-                </p>
-                <p className="text-textColor leading-9">
-                  Our summits are the epitome of impactful networking and
-                  creative event immersion. More than 350 leaders, innovators,
-                  and top names in the wedding and event industry gather for an
-                  unparalleled level of energy and inspiration. Each summit
-                  offers specialized tracks based on industry experience, market
-                  segment, and area of focus, ensuring a tailored and enriching
-                  experience for all attendees.
-                </p>
-              </div>
-              <div className="flex items-center justify-center">
-                <img src={image} alt="marjor" className="h-[22rem]" />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-3">
-            <h3 className="text-normalHeading text-mainHeading font-semibold">
-              EXPERIENCES
-            </h3>
-            <div className="grid grid-cols-2 mobile:flex mobile:flex-col mobile:gap-4">
-              <div className="flex items-center justify-center">
-                <img src={image} alt="marjor" className="h-[22rem]" />
-              </div>
-              <div className="border-l-2 border-[#454545] flex flex-col gap-1">
-                <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                  10+ Years
-                </p>
-                <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                  Engaging Networking
-                </p>
-                <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                  Creative Event Immersion
-                </p>
-                <p className="p-2 text-textColor leading-9">
-                  Our events provide engaging networking and creative immersion
-                  for weddings, corporate gatherings, government functions, and
-                  community events. With 350+ attendees including industry
-                  leaders, innovators, and professionals, each event inspires
-                  and energizes. Tailored tracks ensure valuable insights. Craft
-                  unforgettable moments, deliver professional excellence, uphold
-                  standards with precision, and celebrate diversity—every event
-                  is a success
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-full origin-center rotate-180">
-          <BackgroundImage />
-        </div>
-        <div className="w-11/12 flex items-start justify-start flex-col">
-          <MarqueeComponet data={marqueedataThird} />
-        </div>
-        <div className="w-11/12 grid grid-cols-2 mobile:grid-cols-1">
-          <div className="mobile:hidden">
-            <ImageList variant="masonry" cols={3} gap={8}>
-              {itemData.map((item) => (
-                <ImageListItem key={item.img}>
-                  <img
-                    srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                    src={`${item}?w=248&fit=crop&auto=format`}
-                    alt={item.title}
-                    loading="lazy"
-                  />
-                </ImageListItem>
               ))}
-            </ImageList>
-          </div>
-          <div className="flex items-center justify-center flex-col ml-[-3rem] mobile:ml-0 z-50">
-            <div className="w-full h-fit bg-[#F3F5F6] p-[1.5rem] rounded-md flex flex-col gap-1">
-              <AccordionComponent />
-              <AccordionComponent />
-              <AccordionComponent />
-              <AccordionComponent />
-              <AccordionComponent />
-              <AccordionComponent />
-              <AccordionComponent />
             </div>
           </div>
-        </div>
-        <div className="w-11/12">
-          <MarqueeComponet data={marqueedataFourth} />
-        </div>
-
-        <div className="w-full">
-          <ContactUs />
-        </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-11/12">
+            <MarqueeComponet data={marqueedata} />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-11/12 grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse mobile:gap-1">
+            <div className="flex items-start justify-start flex-col gap-4">
+              <h6 className="text-normalHeading text-subHeading font-semibold">
+                About Consession
+              </h6>
+              <h2 className="text-seconderyHeading text-mainHeading font-semibold">
+                Delivering Excellence and Class in Every Detail
+              </h2>
+              <p className="text-textColor">
+                Lorem ipsum dolor sit amet consectetur adipiscing elitsed
+                eiusmod tempor incididunt dolore magna ali Scelerisque in dictum
+                non consectetur eget lobortis mattis aliqua sapien sagittis
+                aliquam malesuada bibendum arcu vitae.
+              </p>
+              <p className="text-textColor">
+                Lorem ipsum dolor sit amet consectetur adipiscing elitsed
+                eiusmod tempor incididunt dolore magna ali Scelerisque in dictum
+                non consectetur eget lobortis mattis aliqua sapien sagittis
+                aliquam malesuada bibendum arcu vitae.
+              </p>
+              <button className="button normal flex items-center justify-center border-2 px-2 py-1 rounded-md text-[#5D5D5D] hover:bg-[#5D5D5D] hover:text-[white] hover:animate-bounceIn hover:transition ease-in-out delay-150 ">
+                <IoIosArrowForward /> Know More
+              </button>
+            </div>
+            <div className="flex items-center justify-center">
+              <img
+                src={aboutSection}
+                alt="aboutSection"
+                className="h-[32rem] object-contain mobile:object-cover"
+              />
+            </div>
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div
+            className="w-full h-[30rem] flex items-center justify-start flex-col gap-4 py-4"
+            style={{
+              background: `url('${testimonailBackground}')`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundAttachment: "fixed",
+            }}
+          >
+            <span className="flex items-center justify-center flex-col">
+              <img src={favicon} alt="favicon" />
+              <h6 className="text-subHeading text-normalHeading font-semibold">
+                Testimonials
+              </h6>
+            </span>
+            <div className="flex items-center justify-center w-[50%] mobile:w-[85%] tablet:w-[80%]">
+              <AliceCarousel
+                mouseTracking
+                responsive={responsive}
+                disableDotsControls
+                ref={carouselRef}
+                renderPrevButton={({ isDisabled }) => (
+                  <CustomPrevButton
+                    onClick={() => carouselRef.current.slidePrev()}
+                  />
+                )}
+                renderNextButton={({ isDisabled }) => (
+                  <CustomNextButton
+                    onClick={() => carouselRef.current.slideNext()}
+                  />
+                )}
+              >
+                <TestimonailCard />
+                <TestimonailCard />
+                <TestimonailCard />
+                <TestimonailCard />
+              </AliceCarousel>
+            </div>
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-11/12 flex items-start justify-start flex-col gap-3">
+            <span>
+              <h2 className="text-seconderyHeading text-mainHeading font-semibold">
+                Our Signature Events Where Elegance Meets Expertise
+              </h2>
+              <p className="text-textColor">
+                A Gallery of Our Most Exquisite Events
+              </p>
+            </span>
+            <ImageCarosal />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-full">
+            <BackgroundImage />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-11/12 flex items-start justify-start flex-col">
+            <span>
+              <h2 className="text-seconderyHeading text-mainHeading font-semibold">
+                Our Rich Legacy of Excellence
+              </h2>
+              <p className="text-textColor">
+                A Timeline of Milestones and Achievements
+              </p>
+            </span>
+            <MarqueeComponet data={marqueedataSecond} />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-11/12 flex flex-col items-center justify-center gap-3">
+            <div className="flex flex-col items-center justify-center gap-3">
+              <h3 className="text-normalHeading text-mainHeading font-semibold">
+                Major Event
+              </h3>
+              <div className="grid grid-cols-2 mobile:flex mobile:flex-col-reverse mobile:gap-4">
+                <div className="border-r-2 border-[#454545] flex flex-col gap-1">
+                  <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    350+ Attendees
+                  </p>
+                  <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    High-Energy Inspiration
+                  </p>
+                  <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    Industry-Specific Programming
+                  </p>
+                  <p className="text-textColor leading-9">
+                    Our summits are the epitome of impactful networking and
+                    creative event immersion. More than 350 leaders, innovators,
+                    and top names in the wedding and event industry gather for
+                    an unparalleled level of energy and inspiration. Each summit
+                    offers specialized tracks based on industry experience,
+                    market segment, and area of focus, ensuring a tailored and
+                    enriching experience for all attendees.
+                  </p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src={image} alt="marjor" className="h-[22rem]" />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-3">
+              <h3 className="text-normalHeading text-mainHeading font-semibold">
+                EXPERIENCES
+              </h3>
+              <div className="grid grid-cols-2 mobile:flex mobile:flex-col mobile:gap-4">
+                <div className="flex items-center justify-center">
+                  <img src={image} alt="marjor" className="h-[22rem]" />
+                </div>
+                <div className="border-l-2 border-[#454545] flex flex-col gap-1">
+                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    10+ Years
+                  </p>
+                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    Engaging Networking
+                  </p>
+                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    Creative Event Immersion
+                  </p>
+                  <p className="p-2 text-textColor leading-9">
+                    Our events provide engaging networking and creative
+                    immersion for weddings, corporate gatherings, government
+                    functions, and community events. With 350+ attendees
+                    including industry leaders, innovators, and professionals,
+                    each event inspires and energizes. Tailored tracks ensure
+                    valuable insights. Craft unforgettable moments, deliver
+                    professional excellence, uphold standards with precision,
+                    and celebrate diversity—every event is a success
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-full origin-center rotate-180">
+            <BackgroundImage />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-11/12 flex items-start justify-start flex-col">
+            <MarqueeComponet data={marqueedataThird} />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-11/12 grid grid-cols-2 mobile:grid-cols-1">
+            <div className="mobile:hidden">
+              <ImageList variant="masonry" cols={3} gap={8}>
+                {itemData.map((item) => (
+                  <ImageListItem key={item.img}>
+                    <img
+                      srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                      src={`${item}?w=248&fit=crop&auto=format`}
+                      alt={item.title}
+                      loading="lazy"
+                    />
+                  </ImageListItem>
+                ))}
+              </ImageList>
+            </div>
+            <div className="flex items-center justify-center flex-col ml-[-3rem] mobile:ml-0 z-50">
+              <div className="w-full h-fit bg-[#F3F5F6] p-[1.5rem] rounded-md flex flex-col gap-1">
+                <AccordionComponent />
+                <AccordionComponent />
+                <AccordionComponent />
+                <AccordionComponent />
+                <AccordionComponent />
+                <AccordionComponent />
+                <AccordionComponent />
+              </div>
+            </div>
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-11/12">
+            <MarqueeComponet data={marqueedataFourth} />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="w-full">
+            <ContactUs />
+          </div>
+        </FadeInSection>
       </div>
       <Footer />
     </>

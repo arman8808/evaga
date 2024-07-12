@@ -25,10 +25,10 @@ function BannerCard() {
         </div>
 
         <span className="flex items-center justify-center gap-2">
-          <button className="buttonNormal py-[1.5rem] text-[1rem] font-semibold hover:bg-[white] hover:text-[#4D0C6C] hover:transition ease-in-out delay-150">
+          <button className="buttonNormal py-[1.5rem] text-[1rem] font-semibold hover:bg-[white] hover:text-[#4D0C6C] hover:transition ease-in-out delay-150  hover:animate-bounceIn ">
             Call With Us
           </button>
-          <button className="buttonNormal py-[1.5rem] text-[1rem] font-semibold hover:bg-[white] hover:text-[#4D0C6C] hover:transition ease-in-out delay-150">
+          <button className="buttonNormal py-[1.5rem] text-[1rem] font-semibold hover:bg-[white] hover:text-[#4D0C6C] hover:transition ease-in-out delay-150 hover:animate-bounceIn">
             Mail Us
           </button>
         </span>

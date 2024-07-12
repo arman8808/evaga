@@ -20,13 +20,17 @@ function Navbar() {
   };
   let activeStyle = {
     color: "#9253A6",
-    fontweight: "600",
+    fontweight: "500",
+    fontFamily: "tan-pearl",
+    fontSize: "1.2rem",
     textDecoration: "none",
     borderBottom: "2px solid #9253A6",
   };
   let unActiveStyle = {
     color: "#B0B0B0",
-    fontweight: "600",
+    fontFamily: "tan-pearl",
+    fontSize: "1.2rem",
+    fontweight: "400",
     textDecoration: "none",
   };
   const [scrolled, setScrolled] = useState(false);
@@ -57,7 +61,7 @@ function Navbar() {
   }, []);
   return (
     <nav
-      className={`w-full flex items-center justify-center  sticky top-[1rem]  ${
+      className={`w-full flex items-center justify-center  sticky top-[0.7rem]  ${
         scrolled ? "navbarAnimation" : "invisible"
       }`}
       style={{ zIndex: "999999" }}
@@ -115,7 +119,7 @@ function Navbar() {
           </li>
         </ul>
         <button
-          className="buttonNormal text-marqueColor flex items-center gap-1 text-[1.1rem] font-medium mobile:hidden tablet:hidden"
+          className="buttonNormal text-marqueColor hover:bg-marqueColor hover:text-[white] hover:transition ease-in-out delay-150 hover:scale-105 flex items-center gap-1 text-[1.1rem] font-medium mobile:hidden tablet:hidden hover:animate-bounceIn"
           onClick={handleOpen}
         >
           Call Back Request <MdOutlinePhoneInTalk />

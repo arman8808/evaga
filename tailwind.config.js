@@ -27,6 +27,15 @@ module.exports = {
         normal: "bg-transparent outline-none border-[#888888] border-4",
       },
     },
+    keyframes: {
+      bounceIn: {
+        "0%, 100%": { transform: "scale(0.95)" },
+        "50%": { transform: "scale(1.05)" },
+      },
+    },
+    animation: {
+      bounceIn: "bounceIn 0.5s ease-in-out",
+    },
     screens: {
       mobile: { min: "320px", max: "639px" },
       tablet: { min: "640px", max: "767px" },

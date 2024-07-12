@@ -106,7 +106,7 @@ function ContactUs() {
           </p>
         </span>
         <span className="flex items-center justify-start w-6/12 gap-2 text-[white] mobile:w-11/12 tablet:w-9/12 mobile:justify-center">
-          <button className="button normal border-[1px] py-2 px-2 rounded-md flex items-center justify-center gap-1">
+          <button className="button normal border-[1px] py-2 px-2 rounded-md flex items-center justify-center gap-1 hover:animate-bounceIn">
             Send Enquiry <FaLongArrowAltRight />
           </button>
         </span>

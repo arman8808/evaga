@@ -13,6 +13,7 @@ import gallery7 from "../../../assets/Images/traditional-beauty-face-2023-11-27-
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Footer from "../../layout/Footer/Footer";
+import FadeInSection from "../../utils/FadeInSection/FadeInSection";
 function Gallery() {
   const itemData = [
     { img: gallery },
@@ -27,46 +28,50 @@ function Gallery() {
   return (
     <>
       <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
-        <div className="w-full h-[100vh] flex items-center justify-center flex-col relative ">
-          <img
-            src={aboutus}
-            alt="aboutus"
-            className="w-full h-full object-cover"
-          />
+        <FadeInSection>
+          <div className="w-full h-[100vh] flex items-center justify-center flex-col relative ">
+            <img
+              src={aboutus}
+              alt="aboutus"
+              className="w-full h-full object-cover"
+            />
 
-          <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] text-[white] text-center gap-3">
-            <h1 className="text-seconderyHeading font-bold">
-              Experience Luxury and Elegance in Every Event
-            </h1>
-            <p className="text-[white] text-normalHeading font-semibold">
-              Gallery
-            </p>
+            <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] text-[white] text-center gap-3">
+              <h1 className="text-seconderyHeading font-bold">
+                Experience Luxury and Elegance in Every Event
+              </h1>
+              <p className="text-[white] text-normalHeading font-semibold">
+                Gallery
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          className="w-11/12 h-fit flex items-center justify-center"
-          style={{
-            background: `url("${background}")`,
+        </FadeInSection>
+        <FadeInSection>
+          <div
+            className="w-11/12 h-fit flex items-center justify-center"
+            style={{
+              background: `url("${background}")`,
 
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="w-8/12 gallery grid grid-cols-1 gap-4 mobile:w-11/12 tablet:w-11/12">
-            <ImageList variant="masonry" cols={3} gap={8}>
-              {itemData.map((item) => (
-                <ImageListItem key={item.img}>
-                  <img
-                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                    src={`${item.img}?w=248&fit=crop&auto=format`}
-                    alt={item?.title}
-                    loading="lazy"
-                  />
-                </ImageListItem>
-              ))}
-            </ImageList>
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <div className="w-8/12 gallery grid grid-cols-1 gap-4 mobile:w-11/12 tablet:w-11/12">
+              <ImageList variant="masonry" cols={3} gap={8}>
+                {itemData.map((item) => (
+                  <ImageListItem key={item.img}>
+                    <img
+                      srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                      src={`${item.img}?w=248&fit=crop&auto=format`}
+                      alt={item?.title}
+                      loading="lazy"
+                    />
+                  </ImageListItem>
+                ))}
+              </ImageList>
+            </div>
           </div>
-        </div>
+        </FadeInSection>
       </div>
       <Footer />
     </>

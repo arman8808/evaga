@@ -40,7 +40,7 @@ function JobCard() {
         </h6>
         <p>Key highlights, quotes, or a brief story you want to share.</p>
         <button
-          className="buttonNormal flex items-center justify-center gap-2"
+          className="buttonNormal flex items-center justify-center gap-2 hover:animate-bounceIn"
           onClick={handleOpen}
         >
           Apply <FaArrowUpRightFromSquare />

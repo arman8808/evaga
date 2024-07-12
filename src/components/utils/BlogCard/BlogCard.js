@@ -20,7 +20,7 @@ function BlogCard({ image, title, para }) {
           : "Discover essential tips and creative ideas to make your wedding planning process smooth"}
       </p>
       <button
-        className="buttonNormal border-[white]"
+        className="buttonNormal border-[white] hover:animate-bounceIn"
         style={{ borderColor: "white" }}
         onClick={() => history(`/blog/Planning the Perfect Wedding`)}
       >

@@ -25,7 +25,7 @@ function ImageCard({ image, title, para }) {
         <h6 className="text-para font-[700]">{title}</h6>
         <p className="text-[0.8rem] font-medium text-[white]">{para}</p>
         <button
-          className="bg-white outline-none text-mainHeading py-1 px-1 rounded-md"
+          className="bg-white outline-none text-mainHeading py-1 px-2 rounded-md hover:animate-bounceIn"
           onClick={() => handleOpen()}
         >
           Send Enquiry
