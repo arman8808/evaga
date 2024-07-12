@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import logo from "../../../assets/Images/logo-1.png";
 import logo1 from "../../../assets/Images/logo-2.png";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Backdrop, Box, Fade, Modal, Typography } from "@mui/material";
 function Navbar() {
   const style = {
@@ -58,6 +58,7 @@ function Navbar() {
       document.removeEventListener("mousedown", handler);
     };
   }, []);
+  const history = useNavigate();
   return (
     <nav
       className={`w-full flex items-center justify-center  sticky top-[0.7rem]  ${
@@ -66,7 +67,12 @@ function Navbar() {
       style={{ zIndex: "999999" }}
     >
       <div className="w-11/12 flex items-center justify-around p-3 border-2  rounded-full bg-[white] mobile:justify-between tablet:justify-between">
-        <img src={logo} alt="logo" className="h-[4.5rem] mobile:h-[3.5rem]" />
+        <img
+          src={logo}
+          alt="logo"
+          className="h-[4.5rem] mobile:h-[3.5rem] cursor-pointer"
+          onClick={() => history("/")}
+        />
         <ul className="flex gap-4 text-[1.1rem] text-marqueColor font-semibold cursor-pointer mobile:hidden tablet:hidden">
           <li>
             <NavLink
