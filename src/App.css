@@ -95,3 +95,31 @@
   opacity: 1;
   transform: translateY(0); /* Move to its final position */
 }
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none; /* Allows elements below to receive mouse events */
+}
+
+.arrow-icon {
+  position: relative;
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  color: #ffffff; /* Arrow icon color */
+  font-size: 24px; /* Adjust icon size as needed */
+  z-index: 9999; /* Ensure it's above the circle */
+}
+
+.circle {
+  position: fixed;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+  border-radius: 50%; /* Circle shape */
+  z-index: 9998; /* Behind the arrow */
+  pointer-events: none; /* Allows elements below to receive mouse events */
+  transform: translate(-50%, -50%); /* Center the circle on the cursor */
+}

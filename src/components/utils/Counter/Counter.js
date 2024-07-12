@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import CountUp from "react-countup";
 import bg from "../../../assets/Images/section.png";
+import { useInView } from "react-intersection-observer";
 
 function Counter() {
+  const { ref, inView } = useInView({ triggerOnce: false });
+  const animationRef = useRef(null);
+
   return (
     <div
       className="w-full h-fit flex items-center justify-center"
@@ -12,11 +16,12 @@ function Counter() {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
+      ref={ref}
     >
       <div className="w-11/12 flex items-center justify-between  p-[2rem] border-[1px] border-subHeading rounded-2xl boxShadow bg-[white]  mobile:grid mobile:grid-cols-2 mobile:gap-4 tablet:grid tablet:grid-cols-2">
         <span className="flex items-center justify-center gap-1 mobile:justify-start">
           <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            <CountUp start={0} end={45} duration={10} />
+            {inView && <CountUp start={0} end={45} duration={10} />}
             K+
           </strong>
           <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
@@ -25,7 +30,7 @@ function Counter() {
         </span>
         <span className="flex items-center justify-center gap-1 mobile:justify-start">
           <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            <CountUp start={0} end={25} duration={10} />
+            {inView && <CountUp start={0} end={25} duration={10} />}
             K+
           </strong>
           <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
@@ -34,7 +39,7 @@ function Counter() {
         </span>
         <span className="flex items-center justify-center gap-1 mobile:justify-start">
           <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            <CountUp start={0} end={50} duration={10} />
+            {inView && <CountUp start={0} end={50} duration={10} />}
             K+
           </strong>
           <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
@@ -43,7 +48,7 @@ function Counter() {
         </span>
         <span className="flex items-center justify-center gap-1 mobile:justify-start">
           <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            <CountUp start={0} end={3} duration={10} />
+            {inView && <CountUp start={0} end={3} duration={10} />}
             K+
           </strong>
           <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
