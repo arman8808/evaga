@@ -1,5 +1,8 @@
 import React from "react";
 import aboutus from "../../../assets/Images/wedding  pic about us.png";
+import aboutus1 from "../../../assets/Images/pexels-joshsorenson-976866.webp";
+import aboutus2 from "../../../assets/Images/pexels-teddy-2263436.webp";
+import aboutus3 from "../../../assets/Images/pexels-wendywei-1190297.webp";
 import service from "../../../assets/Images/Group 52.png";
 import Rectangle from "../../../assets/Images/Rectangle 99.png";
 import BannerCard from "../../utils/BannerCard/BannerCard";
@@ -106,17 +109,17 @@ function Service() {
               </div>
             </div>
             <div className="flex items-center justify-center w-full">
-              <img src={Rectangle} alt="service" className="object-contain" />
+              <img src={aboutus1} alt="service" className="object-contain" />
             </div>
           </div>
         </FadeInSection>
         <FadeInSection>
           <div className="w-11/12 grid grid-cols-2 gap-4">
             <div className="w-full flex items-center justify-center">
-              <img src={Rectangle} alt={Rectangle} className="object-contain" />
+              <img src={aboutus2} alt={Rectangle} className="object-contain" />
             </div>
             <div className="w-full flex items-center justify-center">
-              <img src={Rectangle} alt={Rectangle} className="object-contain" />
+              <img src={aboutus3} alt={Rectangle} className="object-contain" />
             </div>
           </div>
         </FadeInSection>
