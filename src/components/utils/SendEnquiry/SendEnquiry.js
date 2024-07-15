@@ -6,7 +6,7 @@ import girlImage from "../../../assets/Images/Rectangle 103.png";
 import { HomePagePopup } from "../Style/Style";
 function SendEnquiry({ setOpen, open }) {
   //   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
+  //   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
     <Modal

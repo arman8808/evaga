@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import heroVideo from "../../../assets/Videos/6057470-hd_1920_1080_25fps.mp4";
 import poster from "../../../assets/Images/6057470-hd_1920_1080_25fps-0.jpg";
 import Counter from "../../utils/Counter/Counter";

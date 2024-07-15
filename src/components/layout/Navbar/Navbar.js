@@ -67,7 +67,7 @@ function Navbar() {
       className={`w-full flex items-center justify-center  sticky top-[0.7rem]  ${
         scrolled ? "navbarAnimation" : "invisible"
       }`}
-      style={{ zIndex: "999999" }}
+      style={{ zIndex: "999" }}
     >
       <div className="w-11/12 flex items-center justify-around p-3 border-2  rounded-full bg-[white] mobile:justify-between tablet:justify-between">
         <img
