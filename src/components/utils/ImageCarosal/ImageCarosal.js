@@ -8,6 +8,7 @@ import image3 from "../../../assets/Images/pexels-lalu-fatoni-228553-724500.jpg"
 import image4 from "../../../assets/Images/pexels-suvan-chowdhury-37305-1616228.jpg";
 import image5 from "../../../assets/Images/pexels-thatguycraig000-2306279.jpg";
 import image6 from "../../../assets/Images/pexels-wendywei-1540406.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 function ImageCarosal() {
   const responsive = {
     0: {
@@ -68,12 +69,17 @@ function ImageCarosal() {
       infinite
     >
       {data?.map((item) => (
-        <img
+        // <img
+        //   src={item?.img}
+        //   className="w-[90%] h-[32rem] mobile:h-[25rem] rounded-md cursor-pointer"
+        //   alt="ImageCarosal"
+        //   key={item?.id}
+        //   loading="lazy"
+        // />
+        <LazyLoadImage
+          alt={item?.img}
           src={item?.img}
           className="w-[90%] h-[32rem] mobile:h-[25rem] rounded-md cursor-pointer"
-          alt="ImageCarosal"
-          key={item?.id}
-          loading="lazy"
         />
       ))}
     </AliceCarousel>

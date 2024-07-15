@@ -327,23 +327,24 @@ function HomePage() {
             </div>
           </div>
         </FadeInSection>
-        <FadeInSection>
-          <div
-            className="w-full h-[30rem] flex items-center justify-start flex-col gap-4 py-4"
-            style={{
-              background: `url('${testimonailBackground}')`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundAttachment: "fixed",
-            }}
-          >
-            <span className="flex items-center justify-center flex-col">
-              <img src={favicon} alt="favicon" />
-              <h6 className="text-subHeading text-normalHeading font-semibold">
-                Testimonials
-              </h6>
-            </span>
+
+        <div
+          className="w-full h-[30rem] flex items-center justify-start flex-col gap-4 py-4"
+          style={{
+            background: `url('${testimonailBackground}')`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
+          }}
+        >
+          <span className="flex items-center justify-center flex-col">
+            <img src={favicon} alt="favicon" />
+            <h6 className="text-subHeading text-normalHeading font-semibold">
+              Testimonials
+            </h6>
+          </span>
+          <FadeInSection>
             <div className="flex items-center justify-center w-[50%] mobile:w-[85%] tablet:w-[80%]">
               <AliceCarousel
                 mouseTracking
@@ -367,22 +368,23 @@ function HomePage() {
                 <TestimonailCard />
               </AliceCarousel>
             </div>
-          </div>
-        </FadeInSection>
-        <FadeInSection>
-          <div className="w-11/12 flex items-start justify-start flex-col gap-3">
-            <span>
-              <h2 className="text-seconderyHeading text-mainHeading font-semibold">
-                Our Signature Events Where Elegance Meets Expertise
-              </h2>
-              <p className="text-textColor">
-                A Gallery of Our Most Exquisite Events
-              </p>
-            </span>
+          </FadeInSection>
+        </div>
 
+        <div className="w-11/12 flex items-start justify-start flex-col gap-3">
+          <span>
+            <h2 className="text-seconderyHeading text-mainHeading font-semibold">
+              Our Signature Events Where Elegance Meets Expertise
+            </h2>
+            <p className="text-textColor">
+              A Gallery of Our Most Exquisite Events
+            </p>
+          </span>
+
+          <FadeInSection>
             <ImageCarosal />
-          </div>
-        </FadeInSection>
+          </FadeInSection>
+        </div>
         <FadeInSection>
           <div className="w-full">
             <BackgroundImage />
@@ -403,67 +405,72 @@ function HomePage() {
         </FadeInSection>
         <FadeInSection>
           <div className="w-11/12 flex flex-col items-center justify-center gap-3">
-            <div className="flex flex-col items-center justify-center gap-3">
-              <h3 className="text-normalHeading text-mainHeading font-semibold">
-                Major Event
-              </h3>
-              <div className="grid grid-cols-2 mobile:flex mobile:flex-col-reverse mobile:gap-4">
-                <div className="border-r-2 border-[#454545] flex flex-col gap-1">
-                  <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    350+ Attendees
-                  </p>
-                  <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    High-Energy Inspiration
-                  </p>
-                  <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    Industry-Specific Programming
-                  </p>
-                  <p className="text-textColor leading-9">
-                    Our summits are the epitome of impactful networking and
-                    creative event immersion. More than 350 leaders, innovators,
-                    and top names in the wedding and event industry gather for
-                    an unparalleled level of energy and inspiration. Each summit
-                    offers specialized tracks based on industry experience,
-                    market segment, and area of focus, ensuring a tailored and
-                    enriching experience for all attendees.
-                  </p>
-                </div>
-                <div className="flex items-center justify-center">
-                  <img src={image} alt="marjor" className="h-[22rem]" />
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-center gap-3">
-              <h3 className="text-normalHeading text-mainHeading font-semibold">
-                EXPERIENCES
-              </h3>
-              <div className="grid grid-cols-2 mobile:flex mobile:flex-col mobile:gap-4">
-                <div className="flex items-center justify-center">
-                  <img src={image} alt="marjor" className="h-[22rem]" />
-                </div>
-                <div className="border-l-2 border-[#454545] flex flex-col gap-1">
-                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    10+ Years
-                  </p>
-                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    Engaging Networking
-                  </p>
-                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    Creative Event Immersion
-                  </p>
-                  <p className="p-2 text-textColor leading-9">
-                    Our events provide engaging networking and creative
-                    immersion for weddings, corporate gatherings, government
-                    functions, and community events. With 350+ attendees
-                    including industry leaders, innovators, and professionals,
-                    each event inspires and energizes. Tailored tracks ensure
-                    valuable insights. Craft unforgettable moments, deliver
-                    professional excellence, uphold standards with precision,
-                    and celebrate diversity—every event is a success
-                  </p>
+            <FadeInSection>
+              <div className="flex flex-col items-center justify-center gap-3">
+                <h3 className="text-normalHeading text-mainHeading font-semibold">
+                  Major Event
+                </h3>
+                <div className="grid grid-cols-2 mobile:flex mobile:flex-col-reverse mobile:gap-4">
+                  <div className="border-r-2 border-[#454545] flex flex-col gap-1">
+                    <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      350+ Attendees
+                    </p>
+                    <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      High-Energy Inspiration
+                    </p>
+                    <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      Industry-Specific Programming
+                    </p>
+                    <p className="text-textColor leading-9">
+                      Our summits are the epitome of impactful networking and
+                      creative event immersion. More than 350 leaders,
+                      innovators, and top names in the wedding and event
+                      industry gather for an unparalleled level of energy and
+                      inspiration. Each summit offers specialized tracks based
+                      on industry experience, market segment, and area of focus,
+                      ensuring a tailored and enriching experience for all
+                      attendees.
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <img src={image} alt="marjor" className="h-[22rem]" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </FadeInSection>
+            <FadeInSection>
+              <div className="flex flex-col items-center justify-center gap-3">
+                <h3 className="text-normalHeading text-mainHeading font-semibold">
+                  EXPERIENCES
+                </h3>
+                <div className="grid grid-cols-2 mobile:flex mobile:flex-col mobile:gap-4">
+                  <div className="flex items-center justify-center">
+                    <img src={image} alt="marjor" className="h-[22rem]" />
+                  </div>
+                  <div className="border-l-2 border-[#454545] flex flex-col gap-1">
+                    <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      10+ Years
+                    </p>
+                    <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      Engaging Networking
+                    </p>
+                    <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      Creative Event Immersion
+                    </p>
+                    <p className="p-2 text-textColor leading-9">
+                      Our events provide engaging networking and creative
+                      immersion for weddings, corporate gatherings, government
+                      functions, and community events. With 350+ attendees
+                      including industry leaders, innovators, and professionals,
+                      each event inspires and energizes. Tailored tracks ensure
+                      valuable insights. Craft unforgettable moments, deliver
+                      professional excellence, uphold standards with precision,
+                      and celebrate diversity—every event is a success
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </FadeInSection>
           </div>
         </FadeInSection>
         <FadeInSection>

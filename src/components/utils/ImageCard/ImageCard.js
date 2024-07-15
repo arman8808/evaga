@@ -163,12 +163,13 @@ function ImageCard({ image, title, para }) {
                 </h6>
               </div>
             </div>
-            <img
-              src={girlImage}
-              alt="girlImage"
-              loading="lazy"
-              className="rounded-md boxShadow h-[25rem] mobile:hidden"
-            />
+            <div className="flex items-center justify-center">
+              <img
+                src={girlImage}
+                alt="girlImage"
+                className="rounded-md boxShadow h-[25rem] mobile:hidden"
+              />
+            </div>
           </Box>
         </Slide>
       </Modal>

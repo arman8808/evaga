@@ -96,8 +96,9 @@ function AboutUs() {
             <MarqueeComponet data={marqueedataSecond} />
           </div>
         </FadeInSection>
-        <FadeInSection>
-          <div className="w-11/12 flex flex-col items-center justify-center gap-3">
+
+        <div className="w-11/12 flex flex-col items-center justify-center gap-3">
+          <FadeInSection>
             <div className="flex flex-col items-center justify-center gap-3">
               <h3 className="text-normalHeading text-mainHeading font-semibold">
                 Major Event
@@ -127,7 +128,9 @@ function AboutUs() {
                   <img src={image} alt="marjor" className="h-[22rem]" />
                 </div>
               </div>
-            </div>
+            </div>{" "}
+          </FadeInSection>
+          <FadeInSection>
             <div className="flex flex-col items-center justify-center gap-3">
               <h3 className="text-normalHeading text-mainHeading font-semibold">
                 EXPERIENCES
@@ -159,8 +162,9 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-          </div>
-        </FadeInSection>
+          </FadeInSection>
+        </div>
+
         <FadeInSection>
           <div className="w-11/12 flex items-start justify-start flex-col gap-3">
             <ImageCarosal />

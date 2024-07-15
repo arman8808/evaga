@@ -2,8 +2,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layout/Navbar/Navbar";
 import GoToTop from "./GoToTop";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import Loader from "./components/utils/Loader/Loader";
+import SendEnquiry from "./components/utils/SendEnquiry/SendEnquiry";
 const HomePage = lazy(() => import("./components/pages/HomePage/HomePage"));
 const AboutUs = lazy(() => import("./components/pages/AboutUs/AboutUs"));
 const Service = lazy(() => import("./components/pages/Service/Service"));
@@ -13,11 +14,18 @@ const Contact = lazy(() => import("./components/pages/Contact/Contact"));
 const Blog = lazy(() => import("./components/pages/Blog/Blog"));
 const SingleBlog = lazy(() => import("./components/pages/Blog/SingleBlog"));
 function App() {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="App">
+    <div className="App relative">
       <BrowserRouter>
         <Navbar />
         <GoToTop />
+        <button
+          onClick={() => setOpen(true)}
+          className="button-normal border-marqueColor border-2 outline-none rounded-md py-1 px-2 fixed bg-[white] z-50 bottom-3 right-4 "
+        >
+          Make an Enquiry
+        </button>
         <Routes>
           <Route
             path="/"
@@ -84,6 +92,7 @@ function App() {
             }
           />
         </Routes>
+        <SendEnquiry setOpen={setOpen} open={open} />
       </BrowserRouter>
     </div>
   );
