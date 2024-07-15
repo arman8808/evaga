@@ -73,6 +73,7 @@ function ImageCarosal() {
           className="w-[90%] h-[32rem] mobile:h-[25rem] rounded-md cursor-pointer"
           alt="ImageCarosal"
           key={item?.id}
+          loading="lazy"
         />
       ))}
     </AliceCarousel>
