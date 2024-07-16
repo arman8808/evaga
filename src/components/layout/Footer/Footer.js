@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 function Footer() {
   const history = useNavigate();
   return (
-    <footer className="w-full bg-[black] mt-4 flex items-center justify-center flex-col p-4 pb-[2rem] text-[white] gap-4">
+    <footer className="w-full bg-[black] mt-[2rem] flex items-center justify-center flex-col p-4 pb-[2rem] text-[white] gap-4">
       <img src={logo} alt="logo" className="h-[6rem] object-conatin" />
       <ul className="flex items-center justify-center gap-4 mobile:flex-wrap cursor-pointer">
         <li onClick={() => history("/service")}>Weddings</li>

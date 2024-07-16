@@ -64,16 +64,6 @@ function HomePage() {
       title: "Government Events",
       para: "Evaga has mastered the art of organizing governmental and institutional events, which require a thorough understanding of protocols and strict adherence to security measures.",
     },
-    {
-      image: img4,
-      title: "Elegant Weddings",
-      para: "Crafting Unforgettable Moments of Love and Joy",
-    },
-    {
-      image: img5,
-      title: "Elegant Weddings",
-      para: "Crafting Unforgettable Moments of Love and Joy",
-    },
   ];
   const marqueedata = [
     {

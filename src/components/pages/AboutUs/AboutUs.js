@@ -90,29 +90,31 @@ function AboutUs() {
           </div>
         </FadeInSection>
         <div className="w-full flex items-center justify-center bg-[black]">
-          <div className="w-10/12 p-4 py-[3rem] flex items-start justify-start flex-col gap-3">
-            <h2 className="text-[#FEC536] text-subHeading font-normal text-seconderyHeading">
-              ~ WHO WE ARE
-            </h2>
-            <h3 className="text-[#fff] text-subHeading font-normal text-seconderyHeading">
-              About Evaga Entertainment!
-            </h3>
-            <p className="w-10/12">
-              Combining strategic planning with innovative creativity, we
-              achieve a harmonious blend of analytical thinking and artistic
-              inspiration. Our team of experienced professionals shares a
-              passion for crafting memorable events that make a significant
-              impact.
-            </p>
-            <p className="w-10/12">
-              At Evaga Entertainment, we are dedicated to creating purposeful
-              experiences. Each event we design is meticulously planned to
-              captivate, inspire, and actively engage attendees. From initial
-              concept to flawless execution, we integrate creativity, precision,
-              and seamless logistics to ensure every detail surpasses
-              expectations.
-            </p>
-          </div>
+          <FadeInSection>
+            <div className="w-10/12 p-4 py-[3rem] flex items-start justify-start flex-col gap-3">
+              <h2 className="text-[#FEC536] text-subHeading font-normal text-seconderyHeading">
+                ~ WHO WE ARE
+              </h2>
+              <h3 className="text-[#fff] text-subHeading font-normal text-seconderyHeading">
+                About Evaga Entertainment!
+              </h3>
+              <p className="w-10/12">
+                Combining strategic planning with innovative creativity, we
+                achieve a harmonious blend of analytical thinking and artistic
+                inspiration. Our team of experienced professionals shares a
+                passion for crafting memorable events that make a significant
+                impact.
+              </p>
+              <p className="w-10/12">
+                At Evaga Entertainment, we are dedicated to creating purposeful
+                experiences. Each event we design is meticulously planned to
+                captivate, inspire, and actively engage attendees. From initial
+                concept to flawless execution, we integrate creativity,
+                precision, and seamless logistics to ensure every detail
+                surpasses expectations.
+              </p>
+            </div>
+          </FadeInSection>
         </div>
         <FadeInSection>
           <div className="w-10/12">
