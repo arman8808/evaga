@@ -92,10 +92,10 @@ function AboutUs() {
         <div className="w-full flex items-center justify-center bg-[black]">
           <FadeInSection>
             <div className="w-10/12 p-4 py-[3rem] flex items-start justify-start flex-col gap-3">
-              <h2 className="text-[#FEC536] text-subHeading font-normal text-seconderyHeading">
+              <h2 className="text-[#FEC536]  font-normal text-seconderyHeading">
                 ~ WHO WE ARE
               </h2>
-              <h3 className="text-[#fff] text-subHeading font-normal text-seconderyHeading">
+              <h3 className="text-[#fff]  font-normal text-seconderyHeading">
                 About Evaga Entertainment!
               </h3>
               <p className="w-10/12">
