@@ -25,7 +25,7 @@ function SendEnquiry({ setOpen, open }) {
       <Slide direction="up" in={open}>
         <Box
           sx={HomePagePopup}
-          className="w-[800px] mobile:w-[380px] grid grid-cols-2 gap-4 mobile:grid-cols-1"
+          className="w-[800px] mobile:w-[380px] grid grid-cols-2 gap-4 mobile:grid-cols-1 tablet:w-[480px] tablet:grid-cols-1"
         >
           <div className="flex items-start justify-center flex-col gap-3">
             <Typography
@@ -70,7 +70,7 @@ function SendEnquiry({ setOpen, open }) {
             <img
               src={girlImage}
               alt="girlImage"
-              className="rounded-md boxShadow h-[25rem] mobile:hidden"
+              className="rounded-md boxShadow h-[25rem] mobile:hidden tablet:hidden"
             />
           </div>
         </Box>
