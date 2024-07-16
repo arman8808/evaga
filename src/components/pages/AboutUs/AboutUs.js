@@ -54,26 +54,33 @@ function AboutUs() {
           <div className="w-11/12 grid grid-cols-2 gap-1 mobile:flex mobile:flex-col-reverse tablet:flex tablet:flex-col-reverse">
             <div className="flex items-start justify-start flex-col gap-3 w-full h-fit">
               <h2 className="text-subHeading  text-seconderyHeading font-semibold">
-                About Evaga Entertainment!
+                Our Founder!
               </h2>
               <p className="text-textColor leading-8">
-                Combining strategic planning with innovative creativity, we
-                achieve a harmonious blend of analytical thinking and artistic
-                inspiration. Our team of experienced professionals shares a
-                passion for crafting memorable events that make a significant
-                impact.
+                Arroon is a seasoned business executive with more than 15 years
+                of experience in the corporate sector. He is a visionary leader
+                passionate about the event management industry. With a profound
+                grasp of industry dynamics and emerging trends, he set out to
+                establish a company that would revolutionize event management.
+                Through his innovative vision, strategic guidance, and
+                unwavering commitment, he has transformed Evaga into a
+                well-regarded and influential name in the events industry.
               </p>
               <p className="text-textColor leading-8">
-                Combining strategic planning with innovative creativity, we
-                achieve a harmonious blend of analytical thinking and artistic
-                inspiration. Our team of experienced professionals shares a
-                passion for crafting memorable events that make a significant
-                impact.
+                His dedication to creativity, storytelling, and pushing the
+                limits of innovation remains a source of inspiration for the
+                team and fuels the company's achievements. As an innovative
+                entrepreneur, the founder's legacy is built on his capacity to
+                turn concepts into immersive experiences that captivate
+                audiences and make a lasting impression in the events industry.
               </p>
               <p className="text-textColor leading-8">
-                We are a passionate team dedicated to capturing the most
-                beautiful moments of your special day. Our mission is to create
-                timeless memories that you will cherish forever.
+                The founder actively organizes and hosts personal events,
+                ranging from intimate gatherings to large-scale functions, where
+                he channels his creativity and expertise beyond the professional
+                sphere. Overall, his hobbies are intricately linked to his
+                passion for event management, reinforcing his continuous
+                dedication to crafting memorable experiences for clients.
               </p>
               <img src={Group} alt="snake skin" className="mobile:hidden" />
             </div>
@@ -82,6 +89,31 @@ function AboutUs() {
             </div>
           </div>
         </FadeInSection>
+        <div className="w-full flex items-center justify-center bg-[black]">
+          <div className="w-10/12 p-4 py-[3rem] flex items-start justify-start flex-col gap-3">
+            <h2 className="text-[#FEC536] text-subHeading font-normal text-seconderyHeading">
+              ~ WHO WE ARE
+            </h2>
+            <h3 className="text-[#fff] text-subHeading font-normal text-seconderyHeading">
+              About Evaga Entertainment!
+            </h3>
+            <p className="w-10/12">
+              Combining strategic planning with innovative creativity, we
+              achieve a harmonious blend of analytical thinking and artistic
+              inspiration. Our team of experienced professionals shares a
+              passion for crafting memorable events that make a significant
+              impact.
+            </p>
+            <p className="w-10/12">
+              At Evaga Entertainment, we are dedicated to creating purposeful
+              experiences. Each event we design is meticulously planned to
+              captivate, inspire, and actively engage attendees. From initial
+              concept to flawless execution, we integrate creativity, precision,
+              and seamless logistics to ensure every detail surpasses
+              expectations.
+            </p>
+          </div>
+        </div>
         <FadeInSection>
           <div className="w-10/12">
             <Counter />
