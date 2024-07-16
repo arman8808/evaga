@@ -6,8 +6,6 @@ import img from "../../../assets/Images/card top sev.png";
 import img1 from "../../../assets/Images/card top sev-2.png";
 import img2 from "../../../assets/Images/card top sev-4.png";
 import img3 from "../../../assets/Images/card top sev-5.png";
-import img4 from "../../../assets/Images/card top sev-1.png";
-import img5 from "../../../assets/Images/card top sev-3.png";
 import gallery from "../../../assets/Images/Rectangle 10.png";
 import gallery1 from "../../../assets/Images/Rectangle 12.png";
 import gallery3 from "../../../assets/Images/Rectangle 13.png";

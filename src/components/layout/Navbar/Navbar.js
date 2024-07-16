@@ -5,21 +5,9 @@ import logo2 from "../../../assets/Images/favicon.png";
 import girlImage from "../../../assets/Images/Rectangle 103.png";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { NavLink, useNavigate } from "react-router-dom";
-import { Backdrop, Box, Fade, Modal, Slide, Typography } from "@mui/material";
+import { Backdrop, Box, Modal, Slide, Typography } from "@mui/material";
 import { HomePagePopup } from "../../utils/Style/Style";
 function Navbar() {
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    bgcolor: "background.paper",
-    border: "0px solid transparent",
-    boxShadow: 24,
-    p: 4,
-    outline: "none",
-    borderRadius: "8px",
-  };
   let activeStyle = {
     color: "#9253A6",
     fontweight: "500",

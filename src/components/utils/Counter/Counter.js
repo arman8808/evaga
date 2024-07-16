@@ -1,11 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import CountUp from "react-countup";
 import bg from "../../../assets/Images/section.png";
 import { useInView } from "react-intersection-observer";
 
 function Counter() {
   const { ref, inView } = useInView({ triggerOnce: false });
-  const animationRef = useRef(null);
 
   return (
     <div

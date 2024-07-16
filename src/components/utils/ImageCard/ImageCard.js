@@ -1,28 +1,13 @@
-import {
-  Backdrop,
-  Box,
-  Dialog,
-  Fade,
-  Modal,
-  Slide,
-  Typography,
-} from "@mui/material";
+import { Backdrop, Box, Modal, Slide, Typography } from "@mui/material";
 import React from "react";
 import logo1 from "../../../assets/Images/logo-2.png";
 import logo from "../../../assets/Images/favicon.png";
 import girlImage from "../../../assets/Images/Rectangle 103.png";
 import { HomePagePopup } from "../Style/Style";
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
 function ImageCard({ image, title, para }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const dialogStyle = {
-    maxWidth: "800px", // Adjust maxWidth as needed
-    width: "100%", // Ensure dialog takes full width within maxWidth
-  };
   return (
     <div className="flex items-center justify-center relative imageCard rounded-md">
       <img
