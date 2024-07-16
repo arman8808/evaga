@@ -18,7 +18,7 @@ function Contact() {
 
             <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] text-[white] text-center gap-3">
               <h1 className="text-seconderyHeading font-bold">
-                Experience Luxury and Elegance in Every Event
+                Reach out to us, and let’s redefine your event!
               </h1>
               <p className="text-[white] text-normalHeading font-semibold">
                 Contact Us

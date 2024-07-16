@@ -46,23 +46,23 @@ function HomePage() {
   const imageCarddata = [
     {
       image: img,
-      title: "Elegant Weddings",
-      para: "Crafting Unforgettable Moments of Love and Joy",
+      title: "Corporate Events",
+      para: "Evaga excels in handling corporate events by expertly managing intricate details, smoothly coordinating various elements, and comprehending the diverse needs and expectations of both clients and attendees.",
     },
     {
       image: img1,
-      title: "Elegant Weddings",
-      para: "Crafting Unforgettable Moments of Love and Joy",
+      title: "Wedding Planner",
+      para: "At Evaga, we specialize in wedding event planning by intricately blending the couple's dreams, emotions, and preferences into a seamless and magical experience.",
     },
     {
       image: img2,
-      title: "Elegant Weddings",
-      para: "Crafting Unforgettable Moments of Love and Joy",
+      title: "Community Events",
+      para: "At Evaga, our proficiency in community events stems from our profound understanding of the unique dynamics and requirements of various communities.",
     },
     {
       image: img3,
-      title: "Elegant Weddings",
-      para: "Crafting Unforgettable Moments of Love and Joy",
+      title: "Government Events",
+      para: "Evaga has mastered the art of organizing governmental and institutional events, which require a thorough understanding of protocols and strict adherence to security measures.",
     },
     {
       image: img4,
@@ -147,6 +147,56 @@ function HomePage() {
       title: "Logoipsum",
     },
   ];
+  const testimonialData = [
+    {
+      name: "Prabhu Dayal",
+      review:
+        "We are thrilled to recount our experience with Evaga Entertainment. From the outset of our 500-person, two-day internal event, Evaga Entertainment impressed us. Their comprehensive proposals and professionalism instilled confidence in us throughout the planning phase. The event surpassed all expectations, hailed by our team and partners as the best in a decade. Evaga Entertainment’s proficiency in MICE and hospitality ensured a truly memorable experience. We appreciate their outstanding work and eagerly anticipate future successful collaborations. Thank you, Evaga Entertainment!",
+    },
+    {
+      name: "Arpita Jain",
+      review:
+        "Working with Evaga Entertainment has been an outstanding experience for us at MEI. They are among the top event management companies we've partnered with. Collaborating with the entire team at Evaga Entertainment has been remarkable due to their responsiveness to our ongoing feedback. They demonstrate exceptional skill in organizing activities for children, and their commitment shines through in every event we've hosted together. Our enduring partnership with Evaga Entertainment has been exceptional, and we sincerely thank everyone involved in this exemplary organization.",
+    },
+    {
+      name: "Manju Srivastava ",
+      review:
+        "I want to extend my sincere gratitude for organizing such an incredible event! Everything went flawlessly, and it was truly enjoyable. A special acknowledgment to the exceptional coordinators who ensured smooth operations, and to the talented musicians whose outstanding performances illuminated the stage. Their dedication and skill were instrumental in making the event exceptional, and I deeply appreciate their efforts. I eagerly anticipate more fantastic events with your team! Thank you for an outstanding event!",
+    },
+  ];
+  const faqData = [
+    {
+      question: "What are the Services Covered in Event Management?",
+      answer:
+        "A: We provide a wide array of event management services, encompassing venue selection, theme conceptualization, decor and design, catering, entertainment booking, logistics coordination, and on-site event supervision.",
+    },
+    {
+      question: "Can You Help you With Both Social and Corporate Events?",
+      answer:
+        "A: Certainly, we specialize in organizing both corporate and social events. Whether you are arranging a corporate conference, wedding, birthday party, or any other type of event, we possess the expertise and capabilities to transform your vision into reality.",
+    },
+    {
+      question: "Is There Any Customized Packages for Event Management?",
+      answer:
+        "A: Certainly! We recognize that each event is distinct, which is why we provide personalized packages designed to meet your specific requirements, preferences, and financial considerations.",
+    },
+    {
+      question:
+        "Do You Also Provide Event Coordination Service On the Day of Event?",
+      answer:
+        "A: Certainly! Our team will be present onsite throughout your event to ensure seamless execution according to your plans. From coordinating vendors to overseeing setup and teardown, we will manage every detail, allowing you to relax and fully enjoy your event. ",
+    },
+    {
+      question: "What Type of Venues are Selected for the Events?",
+      answer:
+        "A: We maintain partnerships with a diverse array of venues, such as hotels, conference centers, banquet halls, outdoor locations, and beyond. Whatever your preferences may be, we will assist you in discovering the ideal venue that matches your event's style and size.",
+    },
+    {
+      question: "How to Start Planning for My Event?",
+      answer:
+        "A: Starting is straightforward! Just contact us via our contact page or by phone, and one of our skilled event planners will assist you every step of the way.",
+    },
+  ];
   const itemData = [
     gallery,
     gallery1,
@@ -211,12 +261,12 @@ function HomePage() {
           </video>
           <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] md:w-[70%] tablet:w-[90%] text-[white] text-center gap-3">
             <h1 className="text-seconderyHeading font-bold">
-              Experience Luxury and Elegance in Every Event
+              Transforming Visions into Unforgettable Experiences!
             </h1>
             <p className="text-[white]">
-              Lorem ipsum dolor sit amet consectetur adipiscing elitsed eiusmod
-              tempor incididunt dolore magna ali scelerisque in dictum non
-              consectetur.
+              What can you expect when Evaga Entertainment handles your events?
+              We bring your vision to life, surpassing your expectations and
+              creating an unforgettable event that makes a lasting impression.
             </p>
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -263,15 +313,16 @@ function HomePage() {
           <div className="w-11/12 flex items-start justify-start flex-col gap-4">
             <span>
               <h2 className="text-seconderyHeading font-semibold text-mainHeading">
-                Creators of luxury
+                Transforming Events:
                 <span className="text-mainHeading text-marqueColor">
-                  &nbsp; events and experiences&nbsp;
+                  &nbsp;Creating Lasting Memories &nbsp;
                 </span>
-                that are legendary
               </h2>
               <p className="text-para text-marqueColor">
-                We’re an award-winning creative agency that executes exceptional
-                events and brand experiences worldwide.
+                Evaga Entertainment is a renowned event planning and organizing
+                company located in Bangalore. Our mission began with the aim of
+                offering comprehensive solutions for all your event-related
+                concerns.
               </p>
             </span>
             <div className="grid grid-cols-3 gap-4 mobile:grid-cols-1">
@@ -294,22 +345,22 @@ function HomePage() {
           <div className="w-11/12 grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse mobile:gap-1">
             <div className="flex items-start justify-start flex-col gap-4">
               <h6 className="text-normalHeading text-subHeading font-semibold">
-                About Consession
+                About Evaga Entertainment
               </h6>
               <h2 className="text-seconderyHeading text-mainHeading font-semibold">
-                Delivering Excellence and Class in Every Detail
+                Delivering Excellence & Creating Unforgettable Memories!
               </h2>
               <p className="text-textColor">
-                Lorem ipsum dolor sit amet consectetur adipiscing elitsed
-                eiusmod tempor incididunt dolore magna ali Scelerisque in dictum
-                non consectetur eget lobortis mattis aliqua sapien sagittis
-                aliquam malesuada bibendum arcu vitae.
+                At Evaga Entertainment, we transform visions into reality
+                through a fusion of creativity, a relentless pursuit of
+                excellence, and precise execution. For us, the focus is on both
+                the minutiae and the overarching vision. We are always ready to
+                go the extra mile to perfect every detail and surpassing
+                expectations.
               </p>
               <p className="text-textColor">
-                Lorem ipsum dolor sit amet consectetur adipiscing elitsed
-                eiusmod tempor incididunt dolore magna ali Scelerisque in dictum
-                non consectetur eget lobortis mattis aliqua sapien sagittis
-                aliquam malesuada bibendum arcu vitae.
+                Crafting memorable experiences is not only our passion but is
+                also ingrained in our very essence.
               </p>
               <button
                 onClick={() => history("/aboutus")}
@@ -362,10 +413,9 @@ function HomePage() {
                   />
                 )}
               >
-                <TestimonailCard />
-                <TestimonailCard />
-                <TestimonailCard />
-                <TestimonailCard />
+                {testimonialData?.map((item) => (
+                  <TestimonailCard name={item?.name} review={item?.review} />
+                ))}
               </AliceCarousel>
             </div>
           </FadeInSection>
@@ -394,10 +444,10 @@ function HomePage() {
           <div className="w-11/12 flex items-start justify-start flex-col">
             <span>
               <h2 className="text-seconderyHeading text-mainHeading font-semibold">
-                Our Rich Legacy of Excellence
+                Our Legacy of Excellence!
               </h2>
               <p className="text-textColor">
-                A Timeline of Milestones and Achievements
+                The Achievements and Milestones Achieved!
               </p>
             </span>
             <MarqueeComponet data={marqueedataSecond} />
@@ -501,13 +551,12 @@ function HomePage() {
             </div>
             <div className="flex items-center justify-center flex-col ml-[-3rem] mobile:ml-0 z-50">
               <div className="w-full h-fit bg-[#F3F5F6] p-[1.5rem] rounded-md flex flex-col gap-1">
-                <AccordionComponent />
-                <AccordionComponent />
-                <AccordionComponent />
-                <AccordionComponent />
-                <AccordionComponent />
-                <AccordionComponent />
-                <AccordionComponent />
+                {faqData?.map((item) => (
+                  <AccordionComponent
+                    question={item?.question}
+                    answer={item?.answer}
+                  />
+                ))}
               </div>
             </div>
           </div>

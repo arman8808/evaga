@@ -23,7 +23,7 @@ function Service() {
 
             <div className="absolute flex items-center justify-center flex-col w-[50%] text-[white] text-center gap-3 mobile:w-[90%]">
               <h1 className="text-seconderyHeading font-bold">
-                Experience Luxury and Elegance in Every Event
+                You Dream It, We Make it True!
               </h1>
               <p className="text-[white] text-normalHeading font-semibold">
                 Service
@@ -39,33 +39,47 @@ function Service() {
             <div className="col-span-2 flex items-center justify-center flex-col gap-4">
               <div className="flex items-start justify-start gap-2 flex-col">
                 <h3 className="text-mainHeading text-normalHeading font-normalHeading">
-                  Unforgettable Weddings
+                  Wedding Planner
                 </h3>
                 <p>
-                  Make your dream wedding a reality. We handle everything from
-                  décor and venues to catering and coordination. Enjoy a magical
-                  day that you and your guests will remember forever.
+                  At Evaga, we specialize in crafting weddings that intricately
+                  blend the dreams, emotions, and preferences of each couple
+                  into a seamless and enchanting experience. Our strength lies
+                  in capturing the unique narrative and vision of every pair,
+                  designing personalized weddings that authentically reflect
+                  their love story and personalities. We excel in orchestrating
+                  the delicate balance of love and celebration, ensuring each
+                  moment is filled with beauty, significance, and happiness,
+                  creating lasting memories for the newlyweds and their guests.
                 </p>
               </div>{" "}
               <div className="flex items-start justify-start gap-2 flex-col">
                 <h3 className="text-mainHeading text-normalHeading font-normalHeading">
-                  Exceptional Corporate Events
+                  Corporate Event
                 </h3>
                 <p>
-                  Impress clients and colleagues with a flawlessly organized
-                  corporate event. From conferences to team-building activities,
-                  we ensure your event reflects your brand and values.
+                  Evaga excels in managing corporate events, adeptly handling
+                  intricate details, seamlessly coordinating numerous elements,
+                  and meeting the diverse needs and expectations of clients and
+                  attendees. We orchestrate events like a finely tuned symphony,
+                  ensuring every aspect harmonizes to deliver a memorable and
+                  impactful experience for everyone involved.
                 </p>
               </div>{" "}
               <div className="flex items-start justify-start gap-2 flex-col">
                 <h3 className="text-mainHeading text-normalHeading font-normalHeading">
-                  Distinguished Government Events
+                  Community Events
                 </h3>
                 <p>
-                  We specialize in government functions, ensuring every detail
-                  meets the highest standards. Whether it's an official ceremony
-                  or a community outreach program, we deliver with expertise and
-                  discretion.
+                  Evaga's proficiency in community events stems from our
+                  thorough grasp of each community's distinct dynamics and
+                  needs. We specialize in crafting events that reflect the
+                  values, interests, and aspirations of community members,
+                  fostering inclusive and meaningful experiences for all
+                  participants. Our approach is grounded in empathy,
+                  collaboration, and a sincere dedication to making a positive
+                  impact, ensuring each event makes a lasting impression and
+                  enhances community enrichment and cohesion.
                 </p>
               </div>
             </div>
@@ -75,33 +89,29 @@ function Service() {
           <div className="w-11/12 grid grid-cols-3 gap-4 mobile:flex mobile:flex-col-reverse tablet:flex tablet:flex-col-reverse">
             <div className="col-span-2 flex items-center justify-center flex-col gap-4">
               <div className="flex items-start justify-start gap-2 flex-col">
-                <h3 className="text-mainHeading text-para font-normalHeading">
-                  Spectacular Special Events
+                <h3 className="text-mainHeading text-normalHeading font-normalHeading">
+                  Government Events
                 </h3>
                 <p>
-                  Celebrate milestones with a unique touch. Be it birthdays,
-                  anniversaries, galas, or fundraisers, we turn your vision into
-                  an unforgettable reality.
-                </p>
-              </div>{" "}
-              <div className="flex items-start justify-start gap-2 flex-col">
-                <h3 className="text-mainHeading text-para font-normalHeading">
-                  Engaging Community Events
-                </h3>
-                <p>
-                  Celebrate milestones with a unique touch. Be it birthdays,
-                  anniversaries, galas, or fundraisers, we turn your vision into
-                  an unforgettable reality.
+                  Evaga has demonstrated excellence in orchestrating
+                  governmental and institutional events, requiring a profound
+                  grasp of protocols and security protocols. Our expertise spans
+                  organizing high-profile gatherings and managing events at a
+                  VVIP level, ranging from diplomatic meetings to defense
+                  conferences. We prioritize precision, formality, and
+                  meticulous planning, ensuring each event reflects dignity and
+                  impeccable execution.
                 </p>
               </div>{" "}
               <div className="flex items-start justify-start gap-2 flex-col">
                 <h3 className="text-subHeading text-normalHeading font-normalHeading">
-                  Let Us Create Your Perfect Event
+                  Let’s Create Memories Together!
                 </h3>
                 <p>
-                  No matter the occasion, our dedicated team will handle
-                  everything to ensure a seamless and stress-free experience.
-                  Share your vision with us, and we'll make it unforgettable.
+                  For questions, event planning assistance, or collaboration
+                  discussions, Evaga Entertainment is here to help. Provide your
+                  details and specific requirements, and we’ll promptly offer
+                  exceptional solutions.
                 </p>
                 <button className="buttonNormal hover:bg-[#5D5D5D] hover:text-[white] hover:animate-bounceIn hover:transition ease-in-out delay-150">
                   Make a Enquiry

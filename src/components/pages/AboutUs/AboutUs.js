@@ -42,7 +42,7 @@ function AboutUs() {
 
             <div className="absolute flex items-center justify-center flex-col w-[50%] text-[white] text-center gap-3 mobile:w-[90%]">
               <h1 className="text-seconderyHeading font-bold">
-                Experience Luxury and Elegance in Every Event
+                Transforming Moments into Remarkable Experiences!
               </h1>
               <p className="text-[white] text-normalHeading font-semibold">
                 About us
@@ -54,17 +54,21 @@ function AboutUs() {
           <div className="w-11/12 grid grid-cols-2 gap-1 mobile:flex mobile:flex-col-reverse tablet:flex tablet:flex-col-reverse">
             <div className="flex items-start justify-start flex-col gap-3 w-full h-fit">
               <h2 className="text-subHeading  text-seconderyHeading font-semibold">
-                Chronicle Quest
+                About Evaga Entertainment!
               </h2>
               <p className="text-textColor leading-8">
-                We are a passionate team dedicated to capturing the most
-                beautiful moments of your special day. Our mission is to create
-                timeless memories that you will cherish forever.
+                Combining strategic planning with innovative creativity, we
+                achieve a harmonious blend of analytical thinking and artistic
+                inspiration. Our team of experienced professionals shares a
+                passion for crafting memorable events that make a significant
+                impact.
               </p>
               <p className="text-textColor leading-8">
-                We are a passionate team dedicated to capturing the most
-                beautiful moments of your special day. Our mission is to create
-                timeless memories that you will cherish forever.
+                Combining strategic planning with innovative creativity, we
+                achieve a harmonious blend of analytical thinking and artistic
+                inspiration. Our team of experienced professionals shares a
+                passion for crafting memorable events that make a significant
+                impact.
               </p>
               <p className="text-textColor leading-8">
                 We are a passionate team dedicated to capturing the most
@@ -87,10 +91,10 @@ function AboutUs() {
           <div className="w-11/12 flex items-start justify-start flex-col">
             <span>
               <h2 className="text-seconderyHeading text-mainHeading font-semibold">
-                Our Rich Legacy of Excellence
+                Our Legacy of Excellence!
               </h2>
               <p className="text-textColor">
-                A Timeline of Milestones and Achievements
+                The Achievements and Milestones Achieved!
               </p>
             </span>
             <MarqueeComponet data={marqueedataSecond} />
