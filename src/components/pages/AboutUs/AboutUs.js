@@ -85,7 +85,7 @@ function AboutUs() {
               <img src={Group} alt="snake skin" className="mobile:hidden" />
             </div>
             <div className="flex items-center justify-center">
-              <img src={woman} alt="about" className="h-[25rem] " />
+              <img src={woman} alt="about" className="h-[30rem] " />
             </div>
           </div>
         </FadeInSection>
@@ -98,14 +98,14 @@ function AboutUs() {
               <h3 className="text-[#fff]  font-normal text-seconderyHeading">
                 About Evaga Entertainment!
               </h3>
-              <p className="w-10/12">
+              <p className="w-10/12 mobile:w-full">
                 Combining strategic planning with innovative creativity, we
                 achieve a harmonious blend of analytical thinking and artistic
                 inspiration. Our team of experienced professionals shares a
                 passion for crafting memorable events that make a significant
                 impact.
               </p>
-              <p className="w-10/12">
+              <p className="w-10/12 mobile:w-full">
                 At Evaga Entertainment, we are dedicated to creating purposeful
                 experiences. Each event we design is meticulously planned to
                 captivate, inspire, and actively engage attendees. From initial
