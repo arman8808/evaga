@@ -9,6 +9,7 @@ import background5 from "../../../assets/Images/Frame 68.png";
 import background6 from "../../../assets/Images/Frame 69.png";
 import Footer from "../../layout/Footer/Footer";
 import FadeInSection from "../../utils/FadeInSection/FadeInSection";
+import { blogData } from "../../../blogdata";
 function Blog() {
   return (
     <>
@@ -18,60 +19,33 @@ function Blog() {
             <div>
               <BlogCard
                 image={background}
-                title={"Planning the Perfect Wedding"}
-                para={
-                  "Discover essential tips and creative ideas to make your wedding planning process smooth"
-                }
+                title={blogData?.[0]?.title}
+                para={blogData?.[0]?.decsription}
               />
             </div>
             <div className="w-full gap-4 grid grid-cols-1">
               <BlogCard
                 image={background1}
-                title={"Unique Wedding Themes"}
-                para={
-                  "Discover essential tips and creative ideas to make your wedding planning process smooth"
-                }
+                title={blogData?.[1]?.title}
+                para={blogData?.[1]?.decsription}
               />
               <BlogCard
                 image={background2}
-                title={"Unique Wedding Themes"}
-                para={
-                  "Discover essential tips and creative ideas to make your wedding planning process smooth"
-                }
+                title={blogData?.[2]?.title}
+                para={blogData?.[2]?.decsription}
               />
             </div>
           </div>
         </FadeInSection>
         <FadeInSection>
           <div className="w-10/12 gap-4 grid grid-cols-2  mobile:grid-cols-1 tablet:grid-cols-1">
-            <BlogCard
-              image={background3}
-              title={"Planning the Perfect Wedding"}
-              para={
-                "Discover essential tips and creative ideas to make your wedding planning process smooth"
-              }
-            />
-            <BlogCard
-              image={background4}
-              title={"Planning the Perfect Wedding"}
-              para={
-                "Discover essential tips and creative ideas to make your wedding planning process smooth"
-              }
-            />
-            <BlogCard
-              image={background5}
-              title={"Planning the Perfect Wedding"}
-              para={
-                "Discover essential tips and creative ideas to make your wedding planning process smooth"
-              }
-            />
-            <BlogCard
-              image={background6}
-              title={"Planning the Perfect Wedding"}
-              para={
-                "Discover essential tips and creative ideas to make your wedding planning process smooth"
-              }
-            />
+            {blogData?.slice(3)?.map((item) => (
+              <BlogCard
+                image={background3}
+                title={item?.title}
+                para={item?.decsription}
+              />
+            ))}
           </div>
         </FadeInSection>
       </div>

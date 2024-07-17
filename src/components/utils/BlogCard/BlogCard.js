@@ -22,7 +22,7 @@ function BlogCard({ image, title, para }) {
       <button
         className="buttonNormal border-[white] hover:animate-bounceIn"
         style={{ borderColor: "white" }}
-        onClick={() => history(`/blog/Planning the Perfect Wedding`)}
+        onClick={() => history(`/blog/${title}`)}
       >
         Know More
       </button>
