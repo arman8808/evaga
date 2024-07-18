@@ -2,11 +2,15 @@ import React from "react";
 import aboutus from "../../../assets/Images/555 1@2x.png";
 import { AiOutlineTeam } from "react-icons/ai";
 import { MdMotionPhotosPaused } from "react-icons/md";
-import { FaGraduationCap } from "react-icons/fa";
+import { FaGraduationCap, FaRegLightbulb } from "react-icons/fa";
 import { FiBarChart } from "react-icons/fi";
 import JobCard from "../../utils/JobCard/JobCard";
 import Footer from "../../layout/Footer/Footer";
 import FadeInSection from "../../utils/FadeInSection/FadeInSection";
+import { GiShakingHands } from "react-icons/gi";
+import { IoIosRocket } from "react-icons/io";
+import { IoExtensionPuzzleOutline } from "react-icons/io5";
+import { PiLadderLight } from "react-icons/pi";
 function Career() {
   return (
     <>
@@ -55,7 +59,7 @@ function Career() {
             </div>
             <div className="flex_start gap-3 flex-col">
               <span className="flex items-center justify-center bg-[#E7F2FF] w-fit p-2 rounded-md">
-                <AiOutlineTeam className="text-[3rem]" />
+                <FaRegLightbulb className="text-[3rem]" />
               </span>
               <h6>Freedom to be Creative</h6>
               <p>
@@ -68,9 +72,9 @@ function Career() {
             </div>
             <div className="flex_start gap-3 flex-col">
               <span className="flex items-center justify-center bg-[#F1F7E8] w-fit p-2 rounded-md">
-                <MdMotionPhotosPaused className="text-[3rem]" />
+                <GiShakingHands className="text-[3rem]" />
               </span>
-              <h6>Vibrant Team Environment:</h6>
+              <h6>Vibrant Team Environment</h6>
               <p>
                 At Evaga, you'll join a dynamic, collaborative team where we
                 harness the power of teamwork to achieve outstanding results.
@@ -81,9 +85,9 @@ function Career() {
             </div>{" "}
             <div className="flex_start gap-3 flex-col">
               <span className="flex items-center justify-center bg-[#EFF2F5] w-fit p-2 rounded-md">
-                <FaGraduationCap className="text-[3rem]" />
+                <IoIosRocket className="text-[3rem]" />
               </span>
-              <h6>Cutting-Edge Projects:</h6>
+              <h6>Cutting-Edge Projects</h6>
               <p>
                 Evaga offers the chance to engage in pioneering projects that
                 redefine entertainment. Whether crafting immersive virtual
@@ -95,9 +99,9 @@ function Career() {
             </div>{" "}
             <div className="flex_start gap-3 flex-col">
               <span className="flex items-center justify-center bg-[#FFEEED] w-fit p-2 rounded-md">
-                <FiBarChart className="text-[3rem]" />
+                <IoExtensionPuzzleOutline className="text-[3rem]" />
               </span>
-              <h6>Dedication to Diversity and Inclusion:</h6>
+              <h6>Dedication to Diversity and Inclusion</h6>
               <p>
                 Evaga Entertainment is dedicated to cultivating a diverse and
                 inclusive workplace where everyone feels valued, respected, and
@@ -108,10 +112,10 @@ function Career() {
               </p>
             </div>{" "}
             <div className="flex_start gap-3 flex-col">
-              <span className="flex items-center justify-center bg-[#FFEEED] w-fit p-2 rounded-md">
-                <FiBarChart className="text-[3rem]" />
+              <span className="flex items-center justify-center bg-[#E7F2FF] w-fit p-2 rounded-md">
+                <PiLadderLight className="text-[3rem]" />
               </span>
-              <h6>Growth and Advancement Opportunities:</h6>
+              <h6>Growth and Advancement Opportunities</h6>
               <p>
                 Discover the benefits of joining us, where growth and personal
                 development take center stage. At Evaga, we nurture a culture
