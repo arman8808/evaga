@@ -17,7 +17,7 @@ function ImageCard({ image, title, para }) {
         loading="lazy"
       />
       <span className="rounded-md absolute blur-effect w-full h-full flex items-center justify-center flex-col text-center text-[white] cardInnerText gap-2">
-        <h6 className="text-para font-[700]">{title}</h6>
+        <h6 className="text-normalHeading font-[600]">{title}</h6>
         <p className="text-[0.8rem] font-medium text-[white]">{para}</p>
         <button
           className="bg-white outline-none text-mainHeading py-1 px-2 rounded-md hover:animate-bounceIn"
