@@ -102,14 +102,14 @@ function AboutUs() {
               <h3 className="text-[#fff]  font-normal text-seconderyHeading">
                 About Evaga Entertainment!
               </h3>
-              <p className="w-10/12 mobile:w-full">
+              <p className="w-10/12 text-[#fff] mobile:w-full">
                 Combining strategic planning with innovative creativity, we
                 achieve a harmonious blend of analytical thinking and artistic
                 inspiration. Our team of experienced professionals shares a
                 passion for crafting memorable events that make a significant
                 impact.
               </p>
-              <p className="w-10/12 mobile:w-full">
+              <p className="w-10/12 text-[#fff] mobile:w-full">
                 At Evaga Entertainment, we are dedicated to creating purposeful
                 experiences. Each event we design is meticulously planned to
                 captivate, inspire, and actively engage attendees. From initial
