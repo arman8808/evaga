@@ -1,5 +1,5 @@
 import React from "react";
-import aboutus from "../../../assets/Images/555 1@2x.png";
+import aboutus from "../../../assets/Images/pikaso_enhance__custom_2K_Standard_r62_c61_ 1.png";
 import { FaRegLightbulb } from "react-icons/fa";
 import JobCard from "../../utils/JobCard/JobCard";
 import Footer from "../../layout/Footer/Footer";

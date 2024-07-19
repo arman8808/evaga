@@ -13,7 +13,7 @@ function ImageCard({ image, title, para }) {
       <img
         src={image}
         alt="work which we do"
-        className="rounded-md"
+        className="rounded-md w-full h-full object-cover"
         loading="lazy"
       />
       <span className="rounded-md absolute blur-effect w-full h-full flex items-center justify-center flex-col text-center text-[white] cardInnerText gap-2">

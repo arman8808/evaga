@@ -1,5 +1,9 @@
+import blogImage from "./assets/Images/image 20.png";
+import blogImage1 from "./assets/Images/image 18.png";
+import blogImage2 from "./assets/Images/image 19.png";
 export const blogData = [
   {
+    image: blogImage1,
     title: "The Newest Trends in Indian Wedding Decorations for 2024",
     decsription:
       "As we step into 2024, Indian weddings continue to evolve, reflecting a blend of tradition and modernity. From opulent floral arrangements to eco-friendly decor, the trends in wedding decorations are setting new benchmarks. Here are the latest trends that are making waves in the Indian wedding scene this year.",
@@ -62,6 +66,7 @@ export const blogData = [
     ],
   },
   {
+    image: blogImage2,
     title: "Top 10 Wedding Venues in Jaipur: A Guide to Memorable Celebrations",
     decsription:
       "Top 10 Wedding Venues in Jaipur: A Guide to Memorable Celebrations.",
@@ -123,6 +128,7 @@ export const blogData = [
     ],
   },
   {
+    image: blogImage,
     title: "Top 5 Strategies to Ensure Your Corporate Event is a Huge Success",
     decsription:
       "Planning a corporate event requires meticulous attention to detail and strategic planning to ensure it runs smoothly and achieves its goals. Whether it's a product launch, a conference, or an annual company gathering, making the event successful involves several key elements. Here are five strategies to ensure your corporate event is a grand success.",

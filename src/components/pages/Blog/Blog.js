@@ -18,19 +18,19 @@ function Blog() {
           <div className="w-10/12 gap-4 grid grid-cols-2 mobile:grid-cols-1 tablet:grid-cols-1">
             <div>
               <BlogCard
-                image={background}
+                image={blogData?.[0]?.image}
                 title={blogData?.[0]?.title}
                 para={blogData?.[0]?.decsription}
               />
             </div>
             <div className="w-full gap-4 grid grid-cols-1">
               <BlogCard
-                image={background1}
+                image={blogData?.[1]?.image}
                 title={blogData?.[1]?.title}
                 para={blogData?.[1]?.decsription}
               />
               <BlogCard
-                image={background2}
+                image={blogData?.[2]?.image}
                 title={blogData?.[2]?.title}
                 para={blogData?.[2]?.decsription}
               />

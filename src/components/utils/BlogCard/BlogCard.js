@@ -5,7 +5,7 @@ function BlogCard({ image, title, para }) {
   const history = useNavigate();
   return (
     <div
-      className="blur-effect  w-full  h-full min-h-[15rem] p-4 flex items-start justify-end flex-col text-[white] rounded-md gap-2"
+      className=" blur-effect  w-full  h-full min-h-[15rem] p-4 flex items-start justify-end flex-col text-[white] rounded-md gap-2"
       style={{
         background: `url('${image ? image : background}')`,
         backgroundPosition: "center",
