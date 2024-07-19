@@ -1,5 +1,5 @@
 import React from "react";
-import aboutus from "../../../assets/Images/wedding  pic about us.png";
+import aboutus from "../../../assets/Images/wedding  pic about us2.png";
 import background from "../../../assets/Images/bg  img.png";
 import gallery from "../../../assets/Images/Frame 51.png";
 import gallery1 from "../../../assets/Images/Frame 52.png";

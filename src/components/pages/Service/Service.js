@@ -1,5 +1,5 @@
 import React from "react";
-import aboutus from "../../../assets/Images/wedding  pic about us.png";
+import aboutus from "../../../assets/Images/wedding  pic about us2.png";
 import aboutus1 from "../../../assets/Images/pexels-joshsorenson-976866.webp";
 import aboutus2 from "../../../assets/Images/pexels-teddy-2263436.webp";
 import aboutus3 from "../../../assets/Images/pexels-wendywei-1190297.webp";

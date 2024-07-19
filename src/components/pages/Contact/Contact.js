@@ -1,5 +1,5 @@
 import React from "react";
-import aboutus from "../../../assets/Images/wedding  pic about us.png";
+import aboutus from "../../../assets/Images/wedding  pic about us1.png";
 import ContactUs from "../../layout/ContactUs/ContactUs";
 import ImageCarosal from "../../utils/ImageCarosal/ImageCarosal";
 import Footer from "../../layout/Footer/Footer";
