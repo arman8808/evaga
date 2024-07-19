@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import heroVideo from "../../../assets/Videos/6057470-hd_1920_1080_25fps.mp4";
-import poster from "../../../assets/Images/6057470-hd_1920_1080_25fps-0.jpg";
+import heroVideo from "../../../assets/Videos/2361938-hd_1920_1080_30fps.mp4";
+import poster from "../../../assets/Images/2361938-hd_1920_1080_30fps-0 (1).jpg";
 import Counter from "../../utils/Counter/Counter";
 import img from "../../../assets/Images/card top sev.png";
 import img1 from "../../../assets/Images/card top sev-2.png";
@@ -66,19 +66,23 @@ function HomePage() {
   const marqueedata = [
     {
       image: favicon,
-      title: "The Evaga Weddings ",
+      title: "The Evaga Weddings Events",
     },
     {
       image: favicon,
-      title: "The Evaga Weddings ",
+      title: "The Evaga Corporate Events",
     },
     {
       image: favicon,
-      title: "The Evaga Weddings ",
+      title: "The Evaga Special Events",
     },
     {
       image: favicon,
-      title: "The Evaga Weddings ",
+      title: "The Evaga Community Events",
+    },
+    {
+      image: favicon,
+      title: "The Evaga Government Events",
     },
   ];
   const marqueedataSecond = [

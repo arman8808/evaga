@@ -1,9 +1,6 @@
 import React from "react";
 import aboutus from "../../../assets/Images/555 1@2x.png";
-import { AiOutlineTeam } from "react-icons/ai";
-import { MdMotionPhotosPaused } from "react-icons/md";
-import { FaGraduationCap, FaRegLightbulb } from "react-icons/fa";
-import { FiBarChart } from "react-icons/fi";
+import { FaRegLightbulb } from "react-icons/fa";
 import JobCard from "../../utils/JobCard/JobCard";
 import Footer from "../../layout/Footer/Footer";
 import FadeInSection from "../../utils/FadeInSection/FadeInSection";
