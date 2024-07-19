@@ -4,7 +4,7 @@ import MarqueeComponet from "../../utils/Marquee/Marquee";
 import favicon from "../../../assets/Images/favicon.png";
 import Counter from "../../utils/Counter/Counter";
 import image from "../../../assets/Images/image.png";
-import woman from "../../../assets/Images/woman image.png";
+import founder from "../../../assets/Images/Group 69.png";
 import Group from "../../../assets/Images/bgimg.png";
 import ImageCarosal from "../../utils/ImageCarosal/ImageCarosal";
 import BannerCard from "../../utils/BannerCard/BannerCard";
@@ -82,17 +82,21 @@ function AboutUs() {
                 passion for event management, reinforcing his continuous
                 dedication to crafting memorable experiences for clients.
               </p>
-              <img src={Group} alt="snake skin" className="mobile:hidden" />
+              <img
+                src={Group}
+                alt="snake skin"
+                className="mobile:hidden h-[7rem] object-cover w-full"
+              />
             </div>
-            <div className="flex items-center justify-center">
-              <img src={woman} alt="about" className="h-[30rem] " />
+            <div className="flex items-start justify-center">
+              <img src={founder} alt="about" className="h-[30rem] " />
             </div>
           </div>
         </FadeInSection>
         <div className="w-full flex items-center justify-center bg-[black]">
           <FadeInSection>
             <div className="w-10/12 p-4 py-[3rem] flex items-start justify-start flex-col gap-3">
-              <h2 className="text-[#FEC536]  font-normal text-seconderyHeading">
+              <h2 className="text-subHeading  font-normal text-seconderyHeading">
                 ~ WHO WE ARE
               </h2>
               <h3 className="text-[#fff]  font-normal text-seconderyHeading">

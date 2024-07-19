@@ -240,7 +240,7 @@ function HomePage() {
   return (
     <>
       <div className="mt-[-8rem] w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
-        <div className="w-full h-[100vh] flex items-center justify-center flex-col relative ">
+        <div className=" w-full h-[100vh] flex items-center justify-center flex-col relative ">
           <video
             controls={false}
             muted
@@ -251,11 +251,11 @@ function HomePage() {
           >
             <source src={heroVideo} type="video/mp4" />
           </video>
-          <div className="absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] md:w-[70%] tablet:w-[90%] text-[white] text-center gap-3">
+          <div className="overlay  absolute flex items-center justify-center flex-col w-[50%] mobile:w-[90%] md:w-[70%] tablet:w-[90%] text-[white] text-center gap-3">
             <h1 className="text-seconderyHeading font-bold">
               Transforming Visions into Unforgettable Experiences!
             </h1>
-            <p className="text-[white]">
+            <p className="text-[white] w-[50%] md:w[70%] lg:w-[60%] mobile:w-[90%]">
               What can you expect when Evaga Entertainment handles your events?
               We bring your vision to life, surpassing your expectations and
               creating an unforgettable event that makes a lasting impression.

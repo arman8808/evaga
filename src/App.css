@@ -123,3 +123,31 @@
   pointer-events: none; /* Allows elements below to receive mouse events */
   transform: translate(-50%, -50%); /* Center the circle on the cursor */
 }
+.overlay-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    98.57deg,
+    #894a9b -46.9%,
+    #8c4b9d 25.76%,
+    #4e3a77 118.6%,
+    0.7
+  );
+
+  pointer-events: none;
+}
