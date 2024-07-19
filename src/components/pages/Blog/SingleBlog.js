@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import image from "../../../assets/Images/Frame 64.png";
 import Footer from "../../layout/Footer/Footer";
 import FadeInSection from "../../utils/FadeInSection/FadeInSection";
 import { useParams } from "react-router-dom";
