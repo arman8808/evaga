@@ -16,7 +16,11 @@ function SingleBlog() {
       <div className=" w-full flex items-center flex-col gap-[3rem] mobile:gap-[2rem]">
         <FadeInSection>
           <div className="w-11/12 grid grid-cols-3 gap-4  mobile:grid-cols-1 tablet:grid-cols-1">
-            <img src={blog?.[0]?.image} alt="banner" className="col-span-2" />
+            <img
+              src={blog?.[0]?.image}
+              alt="banner"
+              className="col-span-2 rounded-md object-cover w-11/12"
+            />
             <div className="flex items-start justify-end flex-col gap-3">
               <h2 className="text-normalHeading font-semibold">
                 {blog?.[0]?.title
