@@ -21,9 +21,11 @@ function Footer() {
         <li onClick={() => history("/service")}>Community events </li>
       </ul>
       <ul className="flex items-center justify-center gap-4 mobile:flex-wrap cursor-pointer">
-        <li>Privacy Policy</li>
+        <li onClick={() => history("/privacypolicy")}>Privacy Policy</li>
         <li onClick={() => history("/contactus")}>Contact Us </li>
-        <li>Terms & Conditions </li>
+        <li onClick={() => history("/termandcondition")}>
+          Terms & Conditions{" "}
+        </li>
         <li onClick={() => history("/career")}>Careers </li>
         <li onClick={() => history("/blog")}>Blog</li>
       </ul>
