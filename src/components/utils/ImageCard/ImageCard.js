@@ -1,5 +1,5 @@
 import { Backdrop, Box, Modal, Slide, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import logo1 from "../../../assets/Images/logo-2.png";
 import logo from "../../../assets/Images/favicon.png";
 import girlImage from "../../../assets/Images/Rectangle 103.png";
@@ -9,6 +9,7 @@ function ImageCard({ image, title, para }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -16,7 +17,16 @@ function ImageCard({ image, title, para }) {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
+    setLoading(true);
     console.log(data);
+    setTimeout(() => {
+      setLoading(false);
+      reset({
+        phone: "",
+        EventType: "",
+      });
+      handleClose();
+    }, 1000);
   };
   return (
     <div className="flex items-center justify-center relative imageCard rounded-md">
@@ -165,9 +175,15 @@ function ImageCard({ image, title, para }) {
                     This Field is required*
                   </p>
                 )}
-                <button className="w-full h-[2.3rem] outline-none border-2 border-[#A9A9A9] rounded-md text-[#A9A9A9]">
-                  Enquiry Now
-                </button>
+                {!loading ? (
+                  <button className="w-full h-[2.3rem] outline-none border-2 border-[#A9A9A9] rounded-md text-[#A9A9A9]">
+                    Enquiry Now
+                  </button>
+                ) : (
+                  <div className="w-full flex items-center justify-center">
+                    <span class="loader"></span>
+                  </div>
+                )}
               </form>
               <div className="w-full mt-3 flex items-center justify-between text-[0.8rem]">
                 <p>+91 8296157611</p>

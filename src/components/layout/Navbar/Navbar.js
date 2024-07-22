@@ -50,6 +50,7 @@ function Navbar() {
       document.removeEventListener("mousedown", handler);
     };
   }, []);
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -57,7 +58,16 @@ function Navbar() {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
+    setLoading(true);
     console.log(data);
+    setTimeout(() => {
+      setLoading(false);
+      reset({
+        phone: "",
+        EventType: "",
+      });
+      handleClose();
+    }, 1000);
   };
   const history = useNavigate();
   return (
@@ -314,9 +324,15 @@ function Navbar() {
                     This Field is required*
                   </p>
                 )}
-                <button className="w-full h-[2.3rem] outline-none border-2 border-[#A9A9A9] rounded-md text-[#A9A9A9]">
-                  Enquiry Now
-                </button>
+                {!loading ? (
+                  <button className="w-full h-[2.3rem] outline-none border-2 border-[#A9A9A9] rounded-md text-[#A9A9A9]">
+                    Enquiry Now
+                  </button>
+                ) : (
+                  <div className="w-full flex items-center justify-center">
+                    <span class="loader"></span>
+                  </div>
+                )}
               </form>
               <div className="w-full mt-3 flex items-center justify-between text-[0.8rem]">
                 <p>+91 8296157611</p>
