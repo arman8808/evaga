@@ -7,7 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Footer() {
   const history = useNavigate();
   return (
@@ -29,19 +29,29 @@ function Footer() {
       </ul>
       <ul className="flex items-center justify-center gap-4">
         <li>
-          <FaXTwitter className="text-[1.2rem]" />
+          <Link
+            to="https://www.instagram.com/evagaentertainment/?igsh=MmcwdjJzMHUwd3k2&utm_source=qr"
+            target="_blank"
+          >
+            <FaInstagram className="text-[1.2rem]" />{" "}
+          </Link>
         </li>
         <li>
-          <FaLinkedinIn className="text-[1.2rem]" />
+          <Link
+            to="https://www.linkedin.com/company/evaga-entertainment/mycompany/?viewAsMember=true"
+            target="_blank"
+          >
+            <FaLinkedinIn className="text-[1.2rem]" />
+          </Link>
         </li>
+
         <li>
-          <FaWhatsapp className="text-[1.2rem]" />
-        </li>
-        <li>
-          <FaInstagram className="text-[1.2rem]" />{" "}
-        </li>
-        <li>
-          <FaFacebookF className="text-[1.2rem]" />
+          <Link
+            to="https://www.facebook.com/profile.php?id=61558342726961&mibextid=LQQJ4d&rdid=hbTcNnKomSA2cybi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fx1jaiDjL7ys4QwXG%2F%3Fmibextid%3DLQQJ4d"
+            target="_blank"
+          >
+            <FaFacebookF className="text-[1.2rem]" />
+          </Link>
         </li>
       </ul>
       <p className="text-center">

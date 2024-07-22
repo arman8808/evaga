@@ -30,6 +30,10 @@ p {
   font-family: "Open Sans";
   color: #5d5d5d;
 }
+ol li {
+  font-family: "Open Sans";
+  color: #5d5d5d;
+}
 
 #menu__toggle {
   opacity: 0;

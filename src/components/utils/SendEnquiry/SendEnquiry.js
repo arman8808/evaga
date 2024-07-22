@@ -4,10 +4,20 @@ import logo1 from "../../../assets/Images/logo-2.png";
 import logo2 from "../../../assets/Images/favicon.png";
 import girlImage from "../../../assets/Images/Rectangle 103.png";
 import { HomePagePopup } from "../Style/Style";
+import { useForm } from "react-hook-form";
 function SendEnquiry({ setOpen, open }) {
   //   const [open, setOpen] = React.useState(false);
   //   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data) => {
+    console.log(data);
+  };
   return (
     <Modal
       aria-labelledby="transition-modal-title"
@@ -40,24 +50,50 @@ function SendEnquiry({ setOpen, open }) {
                 events and brand experiences worldwide.
               </p>
             </Typography>
-            <form className="w-full mt-4 flex items-start justify-start flex-col gap-4">
+            <form
+              className="w-full mt-4 flex items-start justify-start flex-col gap-4"
+              onSubmit={handleSubmit(onSubmit)}
+            >
               <input
                 type="text"
                 placeholder="Event"
                 className="outline-none border-2 border-[#A9A9A9] w-full rounded-md pl-2 h-[2.3rem]"
+                {...register("EventType", {
+                  required: true,
+
+                  validate: (value) => {
+                    return !!value.trim();
+                  },
+                })}
               />
+              {errors.EventType && (
+                <p className="loginFormError  mobile:w-11/12 tablet:w-9/12 text-[red] text-[0.8rem]">
+                  This Field is required*
+                </p>
+              )}
               <input
                 type="text"
                 placeholder="Contact Number"
                 className="outline-none border-2 border-[#A9A9A9] w-full rounded-md pl-2 h-[2.3rem]"
+                {...register("phone", {
+                  required: true,
+                  pattern: /^[0-9+-]+$/,
+                  minLength: 10,
+                  maxLength: 10,
+                })}
               />
+              {errors.phone && (
+                <p className="loginFormError  mobile:w-11/12 tablet:w-9/12 text-[red] text-[0.8rem]">
+                  This Field is required*
+                </p>
+              )}
               <button className="w-full h-[2.3rem] outline-none border-2 border-[#A9A9A9] rounded-md text-[#A9A9A9]">
                 Enquiry Now
               </button>
             </form>
-            <div className="w-full mt-3 flex items-center justify-between">
-              <p>+91 9044542535</p>
-              <p>test@gmail.com</p>
+            <div className="w-full mt-3 flex items-center justify-between text-[0.8rem]">
+              <p>+91 8296157611</p>
+              <p>info@evagaentertainment.com</p>
             </div>
             <div className="w-full mt-3 flex items-center justify-center gap-1">
               <img src={logo2} alt="logo" className="h-[4rem] object-contain" />

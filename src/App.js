@@ -5,6 +5,8 @@ import GoToTop from "./GoToTop";
 import { lazy, Suspense, useState } from "react";
 import Loader from "./components/utils/Loader/Loader";
 import SendEnquiry from "./components/utils/SendEnquiry/SendEnquiry";
+import TermsAndCondition from "./components/pages/TermsAndCondition/TermsAndCondition";
+import PrivacyPolicy from "./components/pages/PrivacyPolicy/PrivacyPolicy";
 const HomePage = lazy(() => import("./components/pages/HomePage/HomePage"));
 const AboutUs = lazy(() => import("./components/pages/AboutUs/AboutUs"));
 const Service = lazy(() => import("./components/pages/Service/Service"));
@@ -88,6 +90,22 @@ function App() {
             element={
               <Suspense fallback={<Loader />}>
                 <SingleBlog />
+              </Suspense>
+            }
+          />{" "}
+          <Route
+            path="/termandcondition"
+            element={
+              <Suspense fallback={<Loader />}>
+                <TermsAndCondition />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/privacypolicy"
+            element={
+              <Suspense fallback={<Loader />}>
+                <PrivacyPolicy />
               </Suspense>
             }
           />

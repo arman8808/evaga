@@ -264,29 +264,44 @@ function HomePage() {
               onSubmit={handleSubmit(onSubmit)}
               className="glass-effect flex items-center justify-center gap-2 mobile:flex-col mobile:w-11/12 md:w-[100%] liner_grident_border"
             >
-              <input
-                type="text"
-                placeholder="Event"
-                className="bg-transparent  outline-none border-b-2 p-1 mobile:w-full"
-                {...register("EventType", {
-                  required: true,
+              <span className=" flex items-start justify-center flex-col">
+                <input
+                  type="text"
+                  placeholder="Event"
+                  className="bg-transparent  outline-none border-b-2 p-1 mobile:w-full"
+                  {...register("EventType", {
+                    required: true,
 
-                  validate: (value) => {
-                    return !!value.trim();
-                  },
-                })}
-              />
-              <input
-                type="text"
-                placeholder="Phone Number"
-                className="bg-transparent  outline-none border-b-2 p-1 mobile:w-full"
-                {...register("phone", {
-                  required: true,
-                  pattern: /^[0-9+-]+$/,
-                  minLength: 10,
-                  maxLength: 10,
-                })}
-              />
+                    validate: (value) => {
+                      return !!value.trim();
+                    },
+                  })}
+                />
+                {errors.EventType && (
+                  <p className="loginFormError  mobile:w-11/12 tablet:w-9/12 text-[white] text-[0.8rem]">
+                    This Field is required*
+                  </p>
+                )}
+              </span>
+              <span className=" flex items-start justify-center flex-col">
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  className="bg-transparent  outline-none border-b-2 p-1 mobile:w-full"
+                  {...register("phone", {
+                    required: true,
+                    pattern: /^[0-9+-]+$/,
+                    minLength: 10,
+                    maxLength: 10,
+                  })}
+                />
+                {errors.phone && (
+                  <p className="loginFormError  mobile:w-11/12 tablet:w-9/12 text-[white] text-[0.8rem]">
+                    This Field is required*
+                  </p>
+                )}
+              </span>
+
               <button className="normal border-2 rounded-md p-1">
                 Book Now
               </button>

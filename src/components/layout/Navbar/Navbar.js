@@ -7,6 +7,7 @@ import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Backdrop, Box, Modal, Slide, Typography } from "@mui/material";
 import { HomePagePopup } from "../../utils/Style/Style";
+import { useForm } from "react-hook-form";
 function Navbar() {
   let activeStyle = {
     color: "#9253A6",
@@ -49,6 +50,15 @@ function Navbar() {
       document.removeEventListener("mousedown", handler);
     };
   }, []);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data) => {
+    console.log(data);
+  };
   const history = useNavigate();
   return (
     <nav
@@ -267,24 +277,50 @@ function Navbar() {
                   exceptional events and brand experiences worldwide.
                 </p>
               </Typography>
-              <form className="w-full mt-4 flex items-start justify-start flex-col gap-4">
+              <form
+                className="w-full mt-4 flex items-start justify-start flex-col gap-4"
+                onSubmit={handleSubmit(onSubmit)}
+              >
                 <input
                   type="text"
                   placeholder="Event"
                   className="outline-none border-2 border-[#A9A9A9] w-full rounded-md pl-2 h-[2.3rem]"
+                  {...register("EventType", {
+                    required: true,
+
+                    validate: (value) => {
+                      return !!value.trim();
+                    },
+                  })}
                 />
+                {errors.EventType && (
+                  <p className="loginFormError  mobile:w-11/12 tablet:w-9/12 text-[red] text-[0.8rem]">
+                    This Field is required*
+                  </p>
+                )}
                 <input
                   type="text"
                   placeholder="Contact Number"
                   className="outline-none border-2 border-[#A9A9A9] w-full rounded-md pl-2 h-[2.3rem]"
+                  {...register("phone", {
+                    required: true,
+                    pattern: /^[0-9+-]+$/,
+                    minLength: 10,
+                    maxLength: 10,
+                  })}
                 />
+                {errors.phone && (
+                  <p className="loginFormError  mobile:w-11/12 tablet:w-9/12 text-[red] text-[0.8rem]">
+                    This Field is required*
+                  </p>
+                )}
                 <button className="w-full h-[2.3rem] outline-none border-2 border-[#A9A9A9] rounded-md text-[#A9A9A9]">
                   Enquiry Now
                 </button>
               </form>
-              <div className="w-full mt-3 flex items-center justify-between">
-                <p>+91 9044542535</p>
-                <p>test@gmail.com</p>
+              <div className="w-full mt-3 flex items-center justify-between text-[0.8rem]">
+                <p>+91 8296157611</p>
+                <p>info@evagaentertainment.com</p>
               </div>
               <div className="w-full mt-3 flex items-center justify-center gap-1">
                 <img
