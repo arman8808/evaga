@@ -442,7 +442,7 @@ function HomePage() {
         </FadeInSection>
 
         <div
-          className="w-full h-[30rem] mobile:h-[35rem] flex items-center justify-start flex-col gap-4 py-4"
+          className="w-full h-[30rem] mobile:h-[37rem] flex items-center justify-start flex-col gap-4 py-4"
           style={{
             background: `url('${testimonailBackground}')`,
             backgroundPosition: "center",
