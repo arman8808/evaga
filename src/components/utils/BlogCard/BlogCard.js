@@ -13,7 +13,7 @@ function BlogCard({ image, title, para }) {
         backgroundSize: "cover",
       }}
     >
-      <div className=" blur-effect1 rounded flex items-start justify-end flex-col text-[white] gap-2">
+      <div className="blur-effect1 rounded flex items-start justify-end flex-col text-[white] gap-2">
         <h6>{title ? title : "Planning the Perfect Wedding"}</h6>
         <p className="text-[white]">
           {para

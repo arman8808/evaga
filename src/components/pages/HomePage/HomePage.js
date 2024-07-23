@@ -25,6 +25,7 @@ import ImageCard from "../../utils/ImageCard/ImageCard";
 import MarqueeComponet from "../../utils/Marquee/Marquee";
 import favicon from "../../../assets/Images/favicon.png";
 import image from "../../../assets/Images/image.png";
+import image1 from "../../../assets/Images/image1.png";
 import {
   IoIosArrowForward,
   IoIosArrowRoundBack,
@@ -556,7 +557,7 @@ function HomePage() {
                 </h3>
                 <div className="grid grid-cols-2 mobile:flex mobile:flex-col mobile:gap-4">
                   <div className="flex items-center justify-center">
-                    <img src={image} alt="marjor" className="h-[22rem]" />
+                    <img src={image1} alt="marjor" className="h-[22rem]" />
                   </div>
                   <div className="border-l-2 border-[#454545] flex flex-col gap-1">
                     <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
@@ -597,7 +598,7 @@ function HomePage() {
         <FadeInSection>
           <div className="w-11/12 grid grid-cols-2 mobile:grid-cols-1">
             <div className="mobile:hidden">
-              <ImageList variant="masonry" cols={3} gap={8}>
+              <ImageList variant="masonry" cols={3} gap={10}>
                 {itemData.map((item) => (
                   <ImageListItem key={item.img}>
                     <img

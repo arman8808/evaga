@@ -4,6 +4,7 @@ import MarqueeComponet from "../../utils/Marquee/Marquee";
 import favicon from "../../../assets/Images/favicon.png";
 import Counter from "../../utils/Counter/Counter";
 import image from "../../../assets/Images/image.png";
+import image1 from "../../../assets/Images/image1.png";
 import founder from "../../../assets/Images/Group 69.png";
 import Group from "../../../assets/Images/bgimg.png";
 import ImageCarosal from "../../utils/ImageCarosal/ImageCarosal";
@@ -179,7 +180,7 @@ function AboutUs() {
               </h3>
               <div className="grid grid-cols-2 mobile:flex mobile:flex-col mobile:gap-4">
                 <div className="flex items-center justify-center">
-                  <img src={image} alt="marjor" className="h-[22rem]" />
+                  <img src={image1} alt="marjor" className="h-[22rem]" />
                 </div>
                 <div className="border-l-2 border-[#454545] flex flex-col gap-1">
                   <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
