@@ -1,12 +1,6 @@
 import React from "react";
 import logo from "../../../assets/Images/logo-1.png";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaWhatsapp,
-} from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 function Footer() {
   const history = useNavigate();

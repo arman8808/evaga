@@ -79,15 +79,11 @@ function HomePage() {
   const marqueedata = [
     {
       image: favicon,
-      title: "The Evaga Weddings Events",
-    },
-    {
-      image: favicon,
       title: "The Evaga Corporate Events",
     },
     {
       image: favicon,
-      title: "The Evaga Special Events",
+      title: "The Evaga Wedding Planner",
     },
     {
       image: favicon,
@@ -96,6 +92,14 @@ function HomePage() {
     {
       image: favicon,
       title: "The Evaga Government Events",
+    },
+    {
+      image: favicon,
+      title: "The Evaga Exclusive Events",
+    },
+    {
+      image: favicon,
+      title: "The Evaga Bespoke Events",
     },
   ];
   const marqueedataSecond = [
