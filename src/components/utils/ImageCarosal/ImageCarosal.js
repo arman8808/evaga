@@ -1,7 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import image from "../../../assets/Images/images.png";
+import image from "../../../assets/Images/Rectangle 80.png";
 import image1 from "../../../assets/Images/Rectangle 81.png";
 import image2 from "../../../assets/Images/Rectangle 82.png";
 import image3 from "../../../assets/Images/Rectangle 83.png";
@@ -79,7 +79,7 @@ function ImageCarosal() {
         <LazyLoadImage
           alt={item?.img}
           src={item?.img}
-          className="w-[90%] h-[32rem] mobile:h-[25rem] rounded-md cursor-pointer"
+          className="w-[90%] h-[35rem] mobile:h-[25rem] rounded-md cursor-pointer"
         />
       ))}
     </AliceCarousel>

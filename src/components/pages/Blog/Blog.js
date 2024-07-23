@@ -13,19 +13,19 @@ function Blog() {
               <BlogCard
                 image={blogData?.[0]?.image}
                 title={blogData?.[0]?.title}
-                para={blogData?.[0]?.decsription}
+                para={blogData?.[0]?.subDesc}
               />
             </div>
             <div className="w-full gap-4 grid grid-cols-1">
               <BlogCard
                 image={blogData?.[1]?.image}
                 title={blogData?.[1]?.title}
-                para={blogData?.[1]?.decsription}
+                para={blogData?.[0]?.subDesc}
               />
               <BlogCard
                 image={blogData?.[2]?.image}
                 title={blogData?.[2]?.title}
-                para={blogData?.[2]?.decsription}
+                para={blogData?.[0]?.subDesc}
               />
             </div>
           </div>
@@ -36,7 +36,7 @@ function Blog() {
               <BlogCard
                 image={item?.image}
                 title={item?.title}
-                para={item?.decsription}
+                para={blogData?.[0]?.subDesc}
               />
             ))}
           </div>

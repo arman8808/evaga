@@ -6,6 +6,8 @@ import img from "../../../assets/Images/group-of-business-people-drinking-togeth
 import img1 from "../../../assets/Images/first-i-gave-you-my-heart-now-i-give-you-this-rin-2023-11-27-05-32-30-utc.png";
 import img2 from "../../../assets/Images/image 17.png";
 import img3 from "../../../assets/Images/pikaso_enhance__custom_2K_Standard_r93_c53_ 1.png";
+import img4 from "../../../assets/Images/Exclusive Events.png";
+import img5 from "../../../assets/Images/Bespoke Events.png";
 import gallery from "../../../assets/Images/Rectangle 10.png";
 import gallery1 from "../../../assets/Images/Rectangle 12.png";
 import gallery3 from "../../../assets/Images/Rectangle 13.png";
@@ -61,6 +63,16 @@ function HomePage() {
       image: img3,
       title: "Government Events",
       para: "Evaga has mastered the art of organizing governmental and institutional events, which require a thorough understanding of protocols and strict adherence to security measures.",
+    },
+    {
+      image: img4,
+      title: "Exclusive Events",
+      para: "Exclusive events are custom-designed gatherings crafted to match the unique preferences, tastes, and needs of each client or guest.",
+    },
+    {
+      image: img5,
+      title: "Bespoke Events",
+      para: "At Evaga, we excel in crafting these unique occasions by skillfully combining creativity, meticulous attention to detail, and strategic planning.",
     },
   ];
   const marqueedata = [
@@ -264,11 +276,9 @@ function HomePage() {
               onSubmit={handleSubmit(onSubmit)}
               className="glass-effect flex items-center justify-center gap-2 mobile:flex-col mobile:w-11/12 md:w-[100%] liner_grident_border"
             >
-              <span className=" flex items-start justify-center flex-col">
-                <input
-                  type="text"
-                  placeholder="Event"
-                  className="bg-transparent  outline-none border-b-2 p-1 mobile:w-full"
+              <span className=" flex items-start justify-center flex-col w-[10rem]">
+                <select
+                  className="bg-transparent outline-none   border-b-2 p-1 w-full  mobile:w-full "
                   {...register("EventType", {
                     required: true,
 
@@ -276,7 +286,51 @@ function HomePage() {
                       return !!value.trim();
                     },
                   })}
-                />
+                >
+                  <option
+                    value=""
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Select Event
+                  </option>
+                  <option
+                    value="Corporate Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Corporate Events
+                  </option>
+                  <option
+                    value="Wedding Planner"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Wedding Planner
+                  </option>
+                  <option
+                    value="Community Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Community Events
+                  </option>
+                  <option
+                    value="Government Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Government Events
+                  </option>
+                  <option
+                    value="Exclusive Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Exclusive Events
+                  </option>
+                  <option
+                    value="Bespoke Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Bespoke Events
+                  </option>
+                </select>
+
                 {errors.EventType && (
                   <p className="loginFormError  mobile:w-11/12 tablet:w-9/12 text-[white] text-[0.8rem]">
                     This Field is required*
@@ -387,7 +441,7 @@ function HomePage() {
         </FadeInSection>
 
         <div
-          className="w-full h-[30rem] flex items-center justify-start flex-col gap-4 py-4"
+          className="w-full h-[30rem] mobile:h-[35rem] flex items-center justify-start flex-col gap-4 py-4"
           style={{
             background: `url('${testimonailBackground}')`,
             backgroundPosition: "center",

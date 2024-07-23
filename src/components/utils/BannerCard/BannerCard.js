@@ -1,6 +1,7 @@
 import React from "react";
 import women from "../../../assets/Images/portrait-of-india-women-on-red-saree-2023-11-27-05-35-18-utc 1.png";
 import Group from "../../../assets/Images/bg.png";
+import { Link } from "react-router-dom";
 
 function BannerCard() {
   return (
@@ -26,10 +27,10 @@ function BannerCard() {
 
         <span className="flex items-center justify-center gap-2">
           <button className="buttonNormal py-[1.5rem] text-[1rem] font-semibold hover:bg-[white] hover:text-[#4D0C6C] hover:transition ease-in-out delay-150  hover:animate-bounceIn ">
-            Call With Us
+            <Link to="tel:+918296157611">Call With Us</Link>
           </button>
           <button className="buttonNormal py-[1.5rem] text-[1rem] font-semibold hover:bg-[white] hover:text-[#4D0C6C] hover:transition ease-in-out delay-150 hover:animate-bounceIn">
-            Mail Us
+            <Link to="mailto:info@evagaentertainment.com">Mail Us</Link>
           </button>
         </span>
       </div>

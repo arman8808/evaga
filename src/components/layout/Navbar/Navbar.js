@@ -135,7 +135,7 @@ function Navbar() {
           </li>
         </ul>
         <button
-          className="buttonNormal text-marqueColor hover:bg-marqueColor hover:text-[white] hover:transition ease-in-out delay-150 hover:scale-105 flex items-center gap-1 text-[1.1rem] font-medium mobile:hidden tablet:hidden hover:animate-bounceIn"
+          className="buttonNormal text-marqueColor hover:bg-subHeading hover:text-[white] hover:transition ease-in-out delay-150 hover:scale-105 flex items-center gap-1 text-[1.1rem] font-medium mobile:hidden tablet:hidden hover:animate-bounceIn"
           onClick={handleOpen}
         >
           Call Back Request <MdOutlinePhoneInTalk />
@@ -291,10 +291,8 @@ function Navbar() {
                 className="w-full mt-4 flex items-start justify-start flex-col gap-4"
                 onSubmit={handleSubmit(onSubmit)}
               >
-                <input
-                  type="text"
-                  placeholder="Event"
-                  className="outline-none border-2 border-[#A9A9A9] w-full rounded-md pl-2 h-[2.3rem]"
+                <select
+                  className="bg-transparent outline-none   p-1 w-full  mobile:w-full outline-none border-2 border-[#A9A9A9] w-full rounded-md pl-2 h-[2.3rem] "
                   {...register("EventType", {
                     required: true,
 
@@ -302,7 +300,51 @@ function Navbar() {
                       return !!value.trim();
                     },
                   })}
-                />
+                >
+                  <option
+                    value=""
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Select Event
+                  </option>
+                  <option
+                    value="Corporate Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Corporate Events
+                  </option>
+                  <option
+                    value="Wedding Planner"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Wedding Planner
+                  </option>
+                  <option
+                    value="Community Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Community Events
+                  </option>
+                  <option
+                    value="Government Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Government Events
+                  </option>
+                  <option
+                    value="Exclusive Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Exclusive Events
+                  </option>
+                  <option
+                    value="Bespoke Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Bespoke Events
+                  </option>
+                </select>
+
                 {errors.EventType && (
                   <p className="loginFormError  mobile:w-11/12 tablet:w-9/12 text-[red] text-[0.8rem]">
                     This Field is required*

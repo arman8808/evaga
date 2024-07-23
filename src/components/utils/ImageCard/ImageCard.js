@@ -142,10 +142,8 @@ function ImageCard({ image, title, para }) {
                 className="w-full mt-4 flex items-start justify-start flex-col gap-4"
                 onSubmit={handleSubmit(onSubmit)}
               >
-                <input
-                  type="text"
-                  placeholder="Event"
-                  className="outline-none border-2 border-[#A9A9A9] w-full rounded-md pl-2 h-[2.3rem]"
+                <select
+                  className="bg-transparent outline-none   p-1 w-full  mobile:w-full outline-none border-2 border-[#A9A9A9] w-full rounded-md pl-2 h-[2.3rem] "
                   {...register("EventType", {
                     required: true,
 
@@ -153,7 +151,51 @@ function ImageCard({ image, title, para }) {
                       return !!value.trim();
                     },
                   })}
-                />
+                >
+                  <option
+                    value=""
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Select Event
+                  </option>
+                  <option
+                    value="Corporate Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Corporate Events
+                  </option>
+                  <option
+                    value="Wedding Planner"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Wedding Planner
+                  </option>
+                  <option
+                    value="Community Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Community Events
+                  </option>
+                  <option
+                    value="Government Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Government Events
+                  </option>
+                  <option
+                    value="Exclusive Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Exclusive Events
+                  </option>
+                  <option
+                    value="Bespoke Events"
+                    className="bg-transparent outline-none  border-none text-subHeading"
+                  >
+                    Bespoke Events
+                  </option>
+                </select>
+
                 {errors.EventType && (
                   <p className="loginFormError  mobile:w-11/12 tablet:w-9/12 text-[red] text-[0.8rem]">
                     This Field is required*
