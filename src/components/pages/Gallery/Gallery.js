@@ -122,6 +122,7 @@ function Gallery() {
                       src={`${item.img}?w=248&fit=crop&auto=format`}
                       alt={item?.title}
                       loading="lazy"
+                      className="rounded-md"
                     />
                   </ImageListItem>
                 ))}
