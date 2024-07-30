@@ -125,11 +125,15 @@ function Career() {
           </div>
         </FadeInSection>
         <FadeInSection>
-          <div className="w-11/12 grid grid-cols-3 gap-4 mobile:grid-cols-1 tablet:grid-cols-1">
+          <p className="font-semibold text-start w-11/12">
+            We are not hiring at the moment. We will inform you once recruitment
+            resumes
+          </p>
+          {/* <div className="w-11/12 grid grid-cols-3 gap-4 mobile:grid-cols-1 tablet:grid-cols-1">
             <JobCard />
             <JobCard />
             <JobCard />
-          </div>
+          </div> */}
         </FadeInSection>
       </div>
       <Footer />

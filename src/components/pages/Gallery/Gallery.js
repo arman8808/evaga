@@ -1,14 +1,42 @@
 import React from "react";
 import aboutus from "../../../assets/Images/wedding  pic about us2.png";
 import background from "../../../assets/Images/bg  img.png";
-import gallery from "../../../assets/Images/Frame 51.png";
-import gallery1 from "../../../assets/Images/Frame 52.png";
-import gallery2 from "../../../assets/Images/Frame 53.png";
-import gallery3 from "../../../assets/Images/Frame 54.png";
-import gallery4 from "../../../assets/Images/Frame 55.png";
-import gallery5 from "../../../assets/Images/Frame 58.png";
-import gallery6 from "../../../assets/Images/Frame 61.png";
-import gallery7 from "../../../assets/Images/traditional-beauty-face-2023-11-27-04-57-31-utc 1.png";
+import gallery from "../../../assets/Images/gallery/1-scaled.webp";
+import gallery1 from "../../../assets/Images/gallery/12-scaled-e1712216090425.webp";
+import gallery2 from "../../../assets/Images/gallery/Ali-Bakhtiar-Designs-Dubai.webp";
+import gallery3 from "../../../assets/Images/gallery/amish-thakkar-7O422yG_b80-unsplash_1650456963232_1650457184254.jpg";
+import gallery4 from "../../../assets/Images/gallery/IMG-20240404-WA0012.webp";
+import gallery5 from "../../../assets/Images/gallery/IMG-20240404-WA0013.webp";
+import gallery6 from "../../../assets/Images/gallery/IMG-20240404-WA0014.webp";
+import gallery7 from "../../../assets/Images/gallery/IMG-20240404-WA0015.webp";
+import gallery8 from "../../../assets/Images/gallery/IMG-20240404-WA0017-e1712325756815.webp";
+import gallery9 from "../../../assets/Images/gallery/IMG-20240404-WA0018-e1712236612868.webp";
+import gallery10 from "../../../assets/Images/gallery/IMG-20240404-WA0019.webp";
+import gallery11 from "../../../assets/Images/gallery/IMG-20240404-WA0021-e1712236711962.webp";
+import gallery12 from "../../../assets/Images/gallery/IMG-20240416-WA0013.webp";
+import gallery13 from "../../../assets/Images/gallery/IMG-20240416-WA0014.webp";
+import gallery14 from "../../../assets/Images/gallery/IMG-20240416-WA0015.webp";
+import gallery15 from "../../../assets/Images/gallery/IMG-20240416-WA0016.webp";
+import gallery16 from "../../../assets/Images/gallery/IMG-20240416-WA0018.webp";
+import gallery17 from "../../../assets/Images/gallery/IMG-20240416-WA0021.webp";
+import gallery18 from "../../../assets/Images/gallery/IMG-20240416-WA0020.webp";
+import gallery19 from "../../../assets/Images/gallery/IMG-20240416-WA0022.webp";
+import gallery20 from "../../../assets/Images/gallery/IMG-20240416-WA0027.webp";
+import gallery21 from "../../../assets/Images/gallery/IMG-20240416-WA0028.webp";
+import gallery22 from "../../../assets/Images/gallery/IMG-20240416-WA0031.webp";
+import gallery23 from "../../../assets/Images/gallery/IMG-20240416-WA0032.webp";
+import gallery24 from "../../../assets/Images/gallery/IMG-20240416-WA0034.webp";
+import gallery25 from "../../../assets/Images/gallery/IMG-20240416-WA0030-e1713332333513.webp";
+import gallery26 from "../../../assets/Images/gallery/Rad3-scaled-e1712217081404.webp";
+import gallery27 from "../../../assets/Images/gallery/Rad5-scaled.webp";
+import gallery28 from "../../../assets/Images/gallery/Set2.01-scaled.webp";
+import gallery29 from "../../../assets/Images/gallery/Set2.03-scaled.webp";
+import gallery30 from "../../../assets/Images/gallery/Rad6-scaled.webp";
+import gallery31 from "../../../assets/Images/gallery/Set2.02.webp";
+import gallery32 from "../../../assets/Images/gallery/set2.04-e1712217994110.webp";
+import gallery33 from "../../../assets/Images/gallery/IMG-20240416-WA0036.webp";
+import gallery34 from "../../../assets/Images/gallery/IMG-20240416-WA0035.webp";
+import gallery35 from "../../../assets/Images/gallery/IMG-20240416-WA0038.webp";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -24,6 +52,34 @@ function Gallery() {
     { img: gallery5 },
     { img: gallery6 },
     { img: gallery7 },
+    { img: gallery8 },
+    { img: gallery9 },
+    { img: gallery10 },
+    { img: gallery11 },
+    { img: gallery12 },
+    { img: gallery13 },
+    { img: gallery14 },
+    { img: gallery15 },
+    { img: gallery16 },
+    { img: gallery17 },
+    { img: gallery18 },
+    { img: gallery19 },
+    { img: gallery20 },
+    { img: gallery21 },
+    { img: gallery22 },
+    { img: gallery23 },
+    { img: gallery24 },
+    { img: gallery25 },
+    { img: gallery26 },
+    { img: gallery27 },
+    { img: gallery28 },
+    { img: gallery29 },
+    { img: gallery30 },
+    { img: gallery31 },
+    { img: gallery32 },
+    { img: gallery33 },
+    { img: gallery34 },
+    { img: gallery35 },
   ];
   return (
     <>
@@ -54,9 +110,10 @@ function Gallery() {
 
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
             }}
           >
-            <div className="w-8/12 gallery grid grid-cols-1 gap-4 mobile:w-11/12 tablet:w-11/12">
+            <div className="w-10/12 gallery grid grid-cols-1 gap-4 mobile:w-11/12 tablet:w-11/12">
               <ImageList variant="masonry" cols={3} gap={8}>
                 {itemData.map((item) => (
                   <ImageListItem key={item.img}>

@@ -250,7 +250,11 @@ function HomePage() {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    console.log(data);
+    const whatsappMessage = `EventType: ${data.EventType}\nPhoneNumber: ${data.phone}`;
+    const whatsappURL = `https://wa.me/8808907050?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+    window.open(whatsappURL, "_blank");
   };
   const history = useNavigate();
 
@@ -627,11 +631,11 @@ function HomePage() {
             </div>
           </div>
         </FadeInSection>
-        <FadeInSection>
+        {/* <FadeInSection>
           <div className="w-11/12">
             <MarqueeComponet data={marqueedataFourth} />
           </div>
-        </FadeInSection>
+        </FadeInSection> */}
         <FadeInSection>
           <div className="w-full">
             <ContactUs />

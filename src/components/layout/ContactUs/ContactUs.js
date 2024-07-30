@@ -1,16 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import background from "../../../assets/Images/Frame.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 function ContactUs() {
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm();
+
   const onSubmit = async (data) => {
+    setLoading(true);
     console.log(data);
+    setTimeout(() => {
+      setLoading(false);
+      const whatsappMessage = `
+      *Evaga Entertainment Enquiry*
+      *Event Type:* ${data.EventType}
+      *Name:* ${data.name}
+      *Phone Number:* ${data.phone}
+      *Email Address:* ${data.email}
+      *Message:*
+          ${data.message}
+    
+      We look forward to making your event a success! 
+    `;
+      const whatsappURL = `https://wa.me/8808907050?text=${encodeURIComponent(
+        whatsappMessage
+      )}`;
+      window.open(whatsappURL, "_blank");
+      reset({
+        phone: "",
+        EventType: "",
+      });
+    }, 1000);
   };
   return (
     <div
@@ -97,18 +122,18 @@ function ContactUs() {
           type="text"
           placeholder="Write your comment here "
           className="w-6/12 border-b-2 border-[white] bg-transparent pb-3 text-[white] outline-none mb-4 mobile:w-11/12 tablet:w-9/12"
+          {...register("message", {})}
         />
-        <span className="flex items-center justify-start w-6/12 gap-2 text-[white] mobile:w-11/12 tablet:w-9/12">
-          <input type="radio" required />{" "}
-          <p>
-            I confirm that I have read and agree with the Terms &
-            Conditions and Privacy Policy*
-          </p>
-        </span>
         <span className="flex items-center justify-start w-6/12 gap-2 text-[white] mobile:w-11/12 tablet:w-9/12 mobile:justify-center">
-          <button className="button normal border-[1px] py-2 px-2 rounded-md flex items-center justify-center gap-1 hover:animate-bounceIn">
-            Send Enquiry <FaLongArrowAltRight />
-          </button>
+          {!loading ? (
+            <button className="button normal border-[1px] py-2 px-2 rounded-md flex items-center justify-center gap-1 hover:animate-bounceIn">
+              Send Enquiry <FaLongArrowAltRight />
+            </button>
+          ) : (
+            <div className=" flex items-center justify-center">
+              <span class="loader"></span>
+            </div>
+          )}
         </span>
       </form>
     </div>

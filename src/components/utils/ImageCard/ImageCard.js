@@ -21,6 +21,17 @@ function ImageCard({ image, title, para }) {
     console.log(data);
     setTimeout(() => {
       setLoading(false);
+      const whatsappMessage = `
+      *Evaga Entertainment Enquiry*
+      *Event Type:* ${data.EventType}
+      *Phone Number:* ${data.phone}
+  
+      We look forward to making your event a success! 
+    `;
+      const whatsappURL = `https://wa.me/8808907050?text=${encodeURIComponent(
+        whatsappMessage
+      )}`;
+      window.open(whatsappURL, "_blank");
       reset({
         phone: "",
         EventType: "",
