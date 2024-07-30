@@ -250,8 +250,14 @@ function HomePage() {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    const whatsappMessage = `EventType: ${data.EventType}\nPhoneNumber: ${data.phone}`;
-    const whatsappURL = `https://wa.me/8808907050?text=${encodeURIComponent(
+    const whatsappMessage = `
+      *Evaga Entertainment Enquiry*
+      *Event Type:* ${data.EventType}
+      *Phone Number:* ${data.phone}
+  
+      We look forward to making your event a success! 
+    `;
+    const whatsappURL = `https://wa.me/+918296157611?text=${encodeURIComponent(
       whatsappMessage
     )}`;
     window.open(whatsappURL, "_blank");

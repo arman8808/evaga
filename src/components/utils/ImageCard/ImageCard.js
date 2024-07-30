@@ -28,7 +28,7 @@ function ImageCard({ image, title, para }) {
   
       We look forward to making your event a success! 
     `;
-      const whatsappURL = `https://wa.me/8808907050?text=${encodeURIComponent(
+      const whatsappURL = `https://wa.me/+918296157611?text=${encodeURIComponent(
         whatsappMessage
       )}`;
       window.open(whatsappURL, "_blank");
