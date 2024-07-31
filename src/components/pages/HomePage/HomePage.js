@@ -291,7 +291,7 @@ function HomePage() {
               onSubmit={handleSubmit(onSubmit)}
               className="glass-effect flex items-center justify-center gap-2 mobile:flex-col mobile:w-11/12 md:w-[100%] liner_grident_border"
             >
-              <span className=" flex items-start justify-center flex-col w-[10rem]">
+              <span className=" flex items-start justify-center flex-col w-[10rem] mobile:w-full">
                 <select
                   className="bg-transparent outline-none   border-b-2 p-1 w-full  mobile:w-full "
                   {...register("EventType", {
@@ -352,7 +352,7 @@ function HomePage() {
                   </p>
                 )}
               </span>
-              <span className=" flex items-start justify-center flex-col">
+              <span className=" flex items-start justify-center flex-col  mobile:w-full">
                 <input
                   type="text"
                   placeholder="Phone Number"
