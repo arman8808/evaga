@@ -4,10 +4,11 @@ import logo1 from "../../../assets/Images/logo-2.png";
 import logo2 from "../../../assets/Images/favicon.png";
 import girlImage from "../../../assets/Images/Rectangle 103.png";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Backdrop, Box, Modal, Slide, Typography } from "@mui/material";
 import { HomePagePopup } from "../../utils/Style/Style";
 import { useForm } from "react-hook-form";
+
 function Navbar() {
   let activeStyle = {
     color: "#9253A6",
@@ -388,8 +389,13 @@ function Navbar() {
                 )}
               </form>
               <div className="w-full mt-3 flex items-center justify-between text-[0.8rem]">
-                <p>+91 8296157611</p>
-                <p>info@evagaentertainment.com</p>
+                <Link to="tel:+918296157611">
+                  {" "}
+                  <p>+91 8296157611</p>
+                </Link>
+                <Link to="mailto:info@evagaentertainment.com">
+                  <p>info@evagaentertainment.com</p>
+                </Link>
               </div>
               <div className="w-full mt-3 flex items-center justify-center gap-1">
                 <img

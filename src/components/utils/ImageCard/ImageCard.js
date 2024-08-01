@@ -5,6 +5,7 @@ import logo from "../../../assets/Images/favicon.png";
 import girlImage from "../../../assets/Images/Rectangle 103.png";
 import { HomePagePopup } from "../Style/Style";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 function ImageCard({ image, title, para }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -239,8 +240,13 @@ function ImageCard({ image, title, para }) {
                 )}
               </form>
               <div className="w-full mt-3 flex items-center justify-between text-[0.8rem]">
-                <p>+91 8296157611</p>
-                <p>info@evagaentertainment.com</p>
+                <Link to="tel:+918296157611">
+                  {" "}
+                  <p>+91 8296157611</p>
+                </Link>
+                <Link to="mailto:info@evagaentertainment.com">
+                  <p>info@evagaentertainment.com</p>
+                </Link>
               </div>
               <div className="w-full mt-3 flex items-center justify-center gap-1">
                 <img
