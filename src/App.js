@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layout/Navbar/Navbar";
 import GoToTop from "./GoToTop";
@@ -7,6 +7,8 @@ import Loader from "./components/utils/Loader/Loader";
 import SendEnquiry from "./components/utils/SendEnquiry/SendEnquiry";
 import TermsAndCondition from "./components/pages/TermsAndCondition/TermsAndCondition";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy/PrivacyPolicy";
+import wahtsappIcon from "./assets/Images/icons8-whatsapp.svg";
+
 const HomePage = lazy(() => import("./components/pages/HomePage/HomePage"));
 const AboutUs = lazy(() => import("./components/pages/AboutUs/AboutUs"));
 const Service = lazy(() => import("./components/pages/Service/Service"));
@@ -22,6 +24,14 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <GoToTop />
+        <Link to="https://wa.me/+918296157611" target="_blank">
+          <img
+            src={wahtsappIcon}
+            alt="wahtsappIcon"
+            className="whatsapp-icon fixed  left-4  bottom-3 z-50 h-[3.5rem] hover:scale-125 transition delay-150 duration-400 ease-in-out cursor-pointer"
+          />
+        </Link>
+
         <button
           onClick={() => setOpen(true)}
           className="button-normal border-marqueColor border-2 outline-none rounded-md py-1 px-2 fixed bg-[white] z-50 bottom-3 right-4 "

@@ -156,3 +156,20 @@
     0.7
   );
 }
+.whatsapp-icon {
+  animation: fade 3s infinite ease-in-out;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
