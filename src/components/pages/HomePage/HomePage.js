@@ -541,18 +541,41 @@ function HomePage() {
                     <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
                       Corporate Family Day
                     </p>
-                    {/* <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
                       High-Energy Inspiration
                     </p>
                     <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                      Industry-Specific Programming
-                    </p> */}
-                    <p className="text-textColor leading-9">
                       Evaga Entertainment Pvt Ltd recently orchestrated an
                       unforgettable Corporate Family Day for a prestigious
                       company, accommodating 800 participants. The event was
                       hosted at a luxurious 5-star property, featuring a vibrant
                       Hawaiian theme.
+                    </p>{" "}
+                    <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      Event Highlights:
+                    </p>
+                    <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      Hawaiian Welcome: Guests were greeted with a traditional
+                      Hawaiian welcome, setting the tone for a day full of fun
+                      and relaxation.
+                    </p>
+                    <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      Engaging Activities: The event included a variety of
+                      games, stalls, and fun activities designed for both kids
+                      and adults, ensuring everyone had a great time.
+                    </p>
+                    <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      Themed Entertainment: The day was packed with captivating
+                      shows, including a Hawaiian bar, Poi Pixel performances, a
+                      live music band, a magic show, and DIY activities.
+                    </p>
+                    <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      Accommodation: With stays arranged for over 400 people,
+                      guests could enjoy the event without any worries.
+                    </p>
+                    <p className="text-start  p-2 mb-2 text-[#6D6D6D]">
+                      Exquisite Cuisine: A diverse and delicious set of cuisines
+                      was available, adding to the overall experience.
                     </p>
                   </div>
                   <div className="flex items-center justify-center">

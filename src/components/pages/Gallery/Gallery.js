@@ -13,20 +13,20 @@ import gallery8 from "../../../assets/Images/gallery/IMG-20240404-WA0017-e171232
 import gallery9 from "../../../assets/Images/gallery/IMG-20240404-WA0018-e1712236612868.webp";
 import gallery10 from "../../../assets/Images/gallery/IMG-20240404-WA0019.webp";
 import gallery11 from "../../../assets/Images/gallery/IMG-20240404-WA0021-e1712236711962.webp";
-import gallery12 from "../../../assets/Images/gallery/IMG-20240416-WA0013.webp";
+// import gallery12 from "../../../assets/Images/gallery/IMG-20240416-WA0013.webp";
 import gallery13 from "../../../assets/Images/gallery/IMG-20240416-WA0014.webp";
 import gallery14 from "../../../assets/Images/gallery/IMG-20240416-WA0015.webp";
 import gallery15 from "../../../assets/Images/gallery/IMG-20240416-WA0016.webp";
 import gallery16 from "../../../assets/Images/gallery/IMG-20240416-WA0018.webp";
 import gallery17 from "../../../assets/Images/gallery/IMG-20240416-WA0021.webp";
-import gallery18 from "../../../assets/Images/gallery/IMG-20240416-WA0020.webp";
+// import gallery18 from "../../../assets/Images/gallery/IMG-20240416-WA0020.webp";
 import gallery19 from "../../../assets/Images/gallery/IMG-20240416-WA0022.webp";
 import gallery20 from "../../../assets/Images/gallery/IMG-20240416-WA0027.webp";
 import gallery21 from "../../../assets/Images/gallery/IMG-20240416-WA0028.webp";
 import gallery22 from "../../../assets/Images/gallery/IMG-20240416-WA0031.webp";
 import gallery23 from "../../../assets/Images/gallery/IMG-20240416-WA0032.webp";
 import gallery24 from "../../../assets/Images/gallery/IMG-20240416-WA0034.webp";
-import gallery25 from "../../../assets/Images/gallery/IMG-20240416-WA0030-e1713332333513.webp";
+// import gallery25 from "../../../assets/Images/gallery/IMG-20240416-WA0030-e1713332333513.webp";
 import gallery26 from "../../../assets/Images/gallery/Rad3-scaled-e1712217081404.webp";
 import gallery27 from "../../../assets/Images/gallery/Rad5-scaled.webp";
 import gallery28 from "../../../assets/Images/gallery/Set2.01-scaled.webp";
@@ -36,7 +36,7 @@ import gallery31 from "../../../assets/Images/gallery/Set2.02.webp";
 import gallery32 from "../../../assets/Images/gallery/set2.04-e1712217994110.webp";
 import gallery33 from "../../../assets/Images/gallery/IMG-20240416-WA0036.webp";
 import gallery34 from "../../../assets/Images/gallery/IMG-20240416-WA0035.webp";
-import gallery35 from "../../../assets/Images/gallery/IMG-20240416-WA0038.webp";
+// import gallery35 from "../../../assets/Images/gallery/IMG-20240416-WA0038.webp";
 import gallery36 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.34 PM (1).webp";
 import gallery37 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.34 PM.webp";
 import gallery38 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.35 PM (1).webp";
@@ -70,13 +70,16 @@ import gallery65 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 
 import gallery66 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (1).webp";
 import gallery67 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (2).webp";
 import gallery68 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Footer from "../../layout/Footer/Footer";
 import FadeInSection from "../../utils/FadeInSection/FadeInSection";
-function Gallery() {
+function Gallery({ scrollPosition }) {
   const itemData = [
     { img: gallery },
     { img: gallery1 },
@@ -90,20 +93,20 @@ function Gallery() {
     { img: gallery9 },
     { img: gallery10 },
     { img: gallery11 },
-    { img: gallery12 },
+    // { img: gallery12 },
     { img: gallery13 },
     { img: gallery14 },
     { img: gallery15 },
     { img: gallery16 },
     { img: gallery17 },
-    { img: gallery18 },
+    // { img: gallery18 },
     { img: gallery19 },
     { img: gallery20 },
     { img: gallery21 },
     { img: gallery22 },
     { img: gallery23 },
     { img: gallery24 },
-    { img: gallery25 },
+    // { img: gallery25 },
     { img: gallery26 },
     { img: gallery27 },
     { img: gallery28 },
@@ -113,7 +116,7 @@ function Gallery() {
     { img: gallery32 },
     { img: gallery33 },
     { img: gallery34 },
-    { img: gallery35 },
+    // { img: gallery35 },
     { img: gallery36 },
     { img: gallery37 },
     { img: gallery38 },
@@ -199,6 +202,7 @@ function Gallery() {
                       }}
                       src={`${item.img}?w=248&fit=crop&auto=format`}
                       srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                      scrollPosition={scrollPosition}
                     />
                   </ImageListItem>
                 ))}
@@ -212,4 +216,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default trackWindowScroll(Gallery);

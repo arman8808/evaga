@@ -29,8 +29,7 @@ function Counter() {
         </span>
         <span className="flex items-center justify-center gap-1 mobile:justify-start">
           <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            {inView && <CountUp start={0} end={300} duration={10} />}
-            K+
+            {inView && <CountUp start={0} end={300} duration={10} />}+
           </strong>
           <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
             Weddings
@@ -38,8 +37,7 @@ function Counter() {
         </span>
         <span className="flex items-center justify-center gap-1 mobile:justify-start">
           <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            {inView && <CountUp start={0} end={120} duration={10} />}
-            K+
+            {inView && <CountUp start={0} end={120} duration={10} />}+
           </strong>
           <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
             Corporate Events
@@ -47,8 +45,7 @@ function Counter() {
         </span>
         <span className="flex items-center justify-center gap-1 mobile:justify-start">
           <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            {inView && <CountUp start={0} end={100} duration={10} />}
-            K+
+            {inView && <CountUp start={0} end={100} duration={10} />}+
           </strong>
           <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
             Sessions
