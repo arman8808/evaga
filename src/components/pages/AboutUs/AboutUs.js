@@ -3,7 +3,7 @@ import aboutus from "../../../assets/Images/wedding  pic about us.png";
 import MarqueeComponet from "../../utils/Marquee/Marquee";
 import favicon from "../../../assets/Images/favicon.png";
 import Counter from "../../utils/Counter/Counter";
-import image from "../../../assets/Images/image.png";
+import image from "../../../assets/Images/Group 71.webp";
 import image1 from "../../../assets/Images/image1.png";
 import founder from "../../../assets/Images/Group 69.png";
 import Group from "../../../assets/Images/bgimg.png";

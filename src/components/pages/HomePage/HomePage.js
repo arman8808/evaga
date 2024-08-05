@@ -24,7 +24,7 @@ import testimonailBackground from "../../../assets/Images/Container.png";
 import ImageCard from "../../utils/ImageCard/ImageCard";
 import MarqueeComponet from "../../utils/Marquee/Marquee";
 import favicon from "../../../assets/Images/favicon.png";
-import image from "../../../assets/Images/image.png";
+import image from "../../../assets/Images/Group 71.webp";
 import image1 from "../../../assets/Images/image1.png";
 import {
   IoIosArrowForward,
