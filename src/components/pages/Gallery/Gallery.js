@@ -37,6 +37,39 @@ import gallery32 from "../../../assets/Images/gallery/set2.04-e1712217994110.web
 import gallery33 from "../../../assets/Images/gallery/IMG-20240416-WA0036.webp";
 import gallery34 from "../../../assets/Images/gallery/IMG-20240416-WA0035.webp";
 import gallery35 from "../../../assets/Images/gallery/IMG-20240416-WA0038.webp";
+import gallery36 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.34 PM (1).webp";
+import gallery37 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.34 PM.webp";
+import gallery38 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.35 PM (1).webp";
+import gallery39 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.35 PM.webp";
+import gallery40 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.36 PM (1).webp";
+import gallery41 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.36 PM.webp";
+import gallery42 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.37 PM (1).webp";
+import gallery43 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.37 PM (2).webp";
+import gallery44 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.37 PM.webp";
+import gallery45 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.38 PM.webp";
+import gallery46 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.41 PM (1).webp";
+import gallery47 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.41 PM.webp";
+import gallery48 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.42 PM (1).webp";
+import gallery49 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.42 PM.webp";
+import gallery50 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.43 PM (1).webp";
+import gallery51 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.43 PM.webp";
+import gallery52 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.44 PM.webp";
+import gallery53 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.45 PM (1).webp";
+import gallery54 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.45 PM.webp";
+import gallery55 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.46 PM (1).webp";
+import gallery56 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.46 PM.webp";
+import gallery57 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.47 PM (1).webp";
+import gallery58 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.47 PM.webp";
+import gallery59 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.48 PM (1).webp";
+import gallery60 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.48 PM.webp";
+import gallery61 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.49 PM (1).webp";
+import gallery62 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.49 PM (2).webp";
+import gallery63 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.49 PM (3).webp";
+import gallery64 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.49 PM (4).webp";
+import gallery65 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.49 PM.webp";
+import gallery66 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (1).webp";
+import gallery67 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (2).webp";
+import gallery68 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM.webp";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -80,6 +113,40 @@ function Gallery() {
     { img: gallery33 },
     { img: gallery34 },
     { img: gallery35 },
+    { img: gallery36 },
+    { img: gallery37 },
+    { img: gallery38 },
+    { img: gallery39 },
+    { img: gallery40 },
+    { img: gallery41 },
+    { img: gallery42 },
+    { img: gallery43 },
+    { img: gallery44 },
+    { img: gallery45 },
+    { img: gallery46 },
+    { img: gallery47 },
+    { img: gallery48 },
+    { img: gallery49 },
+    { img: gallery50 },
+    { img: gallery51 },
+    { img: gallery52 },
+    { img: gallery53 },
+    { img: gallery54 },
+    { img: gallery55 },
+    { img: gallery56 },
+    { img: gallery57 },
+    { img: gallery58 },
+    { img: gallery59 },
+    { img: gallery60 },
+    { img: gallery61 },
+    { img: gallery62 },
+    { img: gallery63 },
+    { img: gallery64 },
+    { img: gallery65 },
+    { img: gallery66 },
+    { img: gallery67 },
+    { img: gallery68 },
+    { img: gallery68 },
   ];
   return (
     <>
