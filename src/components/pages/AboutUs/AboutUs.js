@@ -144,34 +144,55 @@ function AboutUs() {
           <FadeInSection>
             <div className="flex flex-col items-center justify-center gap-3">
               <h3 className="text-normalHeading text-mainHeading font-semibold">
-                Major Event
+                Recent Major Event
               </h3>
               <div className="grid grid-cols-2 mobile:flex mobile:flex-col-reverse mobile:gap-4">
                 <div className="border-r-2 border-[#454545] flex flex-col gap-1">
                   <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    350+ Attendees
+                    Corporate Family Day
                   </p>
                   <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
                     High-Energy Inspiration
                   </p>
                   <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    Industry-Specific Programming
+                    Evaga Entertainment Pvt Ltd recently orchestrated an
+                    unforgettable Corporate Family Day for a prestigious
+                    company, accommodating 800 participants. The event was
+                    hosted at a luxurious 5-star property, featuring a vibrant
+                    Hawaiian theme.
+                  </p>{" "}
+                  <p className="text-end border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    Event Highlights:
                   </p>
-                  <p className="text-textColor leading-9">
-                    Our summits are the epitome of impactful networking and
-                    creative event immersion. More than 350 leaders, innovators,
-                    and top names in the wedding and event industry gather for
-                    an unparalleled level of energy and inspiration. Each summit
-                    offers specialized tracks based on industry experience,
-                    market segment, and area of focus, ensuring a tailored and
-                    enriching experience for all attendees.
+                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    Hawaiian Welcome: Guests were greeted with a traditional
+                    Hawaiian welcome, setting the tone for a day full of fun and
+                    relaxation.
+                  </p>
+                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    Engaging Activities: The event included a variety of games,
+                    stalls, and fun activities designed for both kids and
+                    adults, ensuring everyone had a great time.
+                  </p>
+                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    Themed Entertainment: The day was packed with captivating
+                    shows, including a Hawaiian bar, Poi Pixel performances, a
+                    live music band, a magic show, and DIY activities.
+                  </p>
+                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                    Accommodation: With stays arranged for over 400 people,
+                    guests could enjoy the event without any worries.
+                  </p>
+                  <p className="text-start  p-2 mb-2 text-[#6D6D6D]">
+                    Exquisite Cuisine: A diverse and delicious set of cuisines
+                    was available, adding to the overall experience.
                   </p>
                 </div>
                 <div className="flex items-center justify-center">
                   <img src={image} alt="marjor" className="h-[22rem]" />
                 </div>
               </div>
-            </div>{" "}
+            </div>
           </FadeInSection>
           <FadeInSection>
             <div className="flex flex-col items-center justify-center gap-3">
@@ -184,23 +205,21 @@ function AboutUs() {
                 </div>
                 <div className="border-l-2 border-[#454545] flex flex-col gap-1">
                   <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    10+ Years
+                    3 Years
                   </p>
                   <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    Engaging Networking
+                    Unforgettable Event Experiences with Evaga Entertainment
                   </p>
-                  <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
-                    Creative Event Immersion
-                  </p>
+                  {/* <p className="text-start border-b-2 border-[#454545] p-2 mb-2 text-[#6D6D6D]">
+                      Creative Event Immersion
+                    </p> */}
                   <p className="p-2 text-textColor leading-9">
-                    Our events provide engaging networking and creative
-                    immersion for weddings, corporate gatherings, government
-                    functions, and community events. With 350+ attendees
-                    including industry leaders, innovators, and professionals,
-                    each event inspires and energizes. Tailored tracks ensure
-                    valuable insights. Craft unforgettable moments, deliver
-                    professional excellence, uphold standards with precision,
-                    and celebrate diversity—every event is a success
+                    At Evaga Entertainment Pvt Ltd, we believe that every event
+                    is a unique story waiting to be told. With our expertise and
+                    passion for creating memorable moments, we transform your
+                    vision into reality. Our comprehensive range of services and
+                    dedicated team ensure that every detail is meticulously
+                    planned and flawlessly executed.
                   </p>
                 </div>
               </div>
