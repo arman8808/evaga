@@ -70,7 +70,8 @@ import gallery65 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 
 import gallery66 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (1).webp";
 import gallery67 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (2).webp";
 import gallery68 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM.webp";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Footer from "../../layout/Footer/Footer";
@@ -184,11 +185,20 @@ function Gallery() {
               <ImageList variant="masonry" cols={3} gap={8}>
                 {itemData.map((item) => (
                   <ImageListItem key={item.img}>
-                    <img
+                    {/* <img
                       srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                       src={`${item.img}?w=248&fit=crop&auto=format`}
                       alt={item?.title}
                       className="rounded-md"
+                    /> */}
+                    <LazyLoadImage
+                      alt={item?.title}
+                      effect="blur"
+                      wrapperProps={{
+                        style: { transitionDelay: "1s" },
+                      }}
+                      src={`${item.img}?w=248&fit=crop&auto=format`}
+                      srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                     />
                   </ImageListItem>
                 ))}
