@@ -29,29 +29,29 @@ function Counter() {
         </span>
         <span className="flex items-center justify-center gap-1 mobile:justify-start">
           <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            {inView && <CountUp start={0} end={25} duration={10} />}
+            {inView && <CountUp start={0} end={300} duration={10} />}
             K+
           </strong>
           <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
-            Speakers
+            Weddings
           </p>
         </span>
         <span className="flex items-center justify-center gap-1 mobile:justify-start">
           <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            {inView && <CountUp start={0} end={50} duration={10} />}
+            {inView && <CountUp start={0} end={120} duration={10} />}
+            K+
+          </strong>
+          <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
+            Corporate Events
+          </p>
+        </span>
+        <span className="flex items-center justify-center gap-1 mobile:justify-start">
+          <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
+            {inView && <CountUp start={0} end={100} duration={10} />}
             K+
           </strong>
           <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
             Sessions
-          </p>
-        </span>
-        <span className="flex items-center justify-center gap-1 mobile:justify-start">
-          <strong className="text-seconderyHeading text-mainHeading md:text-normalHeading mobile:text-normalHeading">
-            {inView && <CountUp start={0} end={3} duration={10} />}
-            K+
-          </strong>
-          <p className="text-marqueColor text-normalHeading font-semibold md:text-para mobile:text-para">
-            Participans
           </p>
         </span>
       </div>
