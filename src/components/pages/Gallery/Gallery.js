@@ -67,8 +67,8 @@ import gallery62 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 
 import gallery63 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.49 PM (3).webp";
 // import gallery64 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.49 PM (4).webp";
 import gallery65 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.49 PM.webp";
-// import gallery66 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (1).webp";
-// import gallery67 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (2).webp";
+import gallery66 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (1).webp";
+import gallery67 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM (2).webp";
 import gallery68 from "../../../assets/Images/gallery/WhatsApp Image 2024-08-05 at 12.06.50 PM.webp";
 import {
   LazyLoadImage,
@@ -147,9 +147,8 @@ function Gallery({ scrollPosition }) {
     { img: gallery63 },
     // { img: gallery64 },
     { img: gallery65 },
-    // { img: gallery66 },
-    // { img: gallery67 },
-    { img: gallery68 },
+    { img: gallery66 },
+    { img: gallery67 },
     { img: gallery68 },
   ];
   return (
