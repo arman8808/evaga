@@ -187,7 +187,7 @@ function Navbar() {
                   (document.getElementById("menu__toggle").checked = false)
                 }
               >
-                AboutUs
+                About Us
               </NavLink>
             </li>
             <li>
@@ -244,7 +244,7 @@ function Navbar() {
                   (document.getElementById("menu__toggle").checked = false)
                 }
               >
-                Conatct
+                Contact
               </NavLink>
             </li>
             <li>

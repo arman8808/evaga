@@ -184,7 +184,20 @@ function Gallery({ scrollPosition }) {
             }}
           >
             <div className="w-10/12 gallery grid grid-cols-1 gap-4 mobile:w-11/12 tablet:w-11/12">
-              <ImageList variant="masonry" cols={3} gap={8}>
+              <ImageList
+                variant="masonry"
+                cols={3}
+                gap={8}
+                sx={{
+                  columnCount: {
+                    xs: "1 !important",
+                    sm: "2 !important",
+                    md: "3 !important",
+                    lg: "3 !important",
+                    xl: "3 !important",
+                  },
+                }}
+              >
                 {itemData.map((item) => (
                   <ImageListItem key={item.img}>
                     {/* <img
